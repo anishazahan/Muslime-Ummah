@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = ({children}) => {
   return (
-    <div className=' navbar-background'>
+    <div className=' navbar-background bg-secondary'>
     <div className="drawer drawer-end">
 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
 <div className="drawer-content flex flex-col ">
@@ -22,7 +22,7 @@ const Navbar = ({children}) => {
       </label>
     </div> 
    
-    <div className="flex-none hidden lg:block mx-auto mt-[-1.8rem] text-black menu-item">
+    <div className="flex-none hidden lg:block mx-auto mt-[-1.6rem] text-white menu-item">
       <ul className="menu menu-horizontal">
         
         <li><Link className='menu' to="/">Home</Link></li>

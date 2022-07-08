@@ -18,7 +18,7 @@ const Header = () => {
             </div>
             <div className="right-content  flex flex-row align-middle pt-2">
                 <p>icon</p>
-                <input className='p-1 border-none rounded-sm' type="text" />
+                <input className='p-1 border-none rounded-sm' placeholder='Search' type="text" />
             </div>
         </div>
       </section>
