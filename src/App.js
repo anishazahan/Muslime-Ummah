@@ -1,20 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import logo1 from '../src/img/retina-logo3.png'
-import Header from './Components/Header/Header';
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+
+import Header from "./Components/Header/Header";
+import Navbar from "./Components/Header/Navbar";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
     <div>
-       <Header></Header>
-      <Routes>
-        <Route>
+      <Header></Header>
+      <Navbar>
+        <Routes>
+          <Route>
+          <Route path="/" element={<Home />} />
          
-        </Route>
-
-      </Routes>
-    
+          </Route>
+        </Routes>
+      </Navbar>
     </div>
   );
 }
