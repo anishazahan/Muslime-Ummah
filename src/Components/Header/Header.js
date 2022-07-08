@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <section className="top-header">
         <div className="top-content max-w-7xl mx-auto lg:flex justify-between px-10 text-white">
-            <div className="left-content flex flex-row align-middle pt-4">
+            <div className="left-content flex flex-row align-middle pt-3">
                 <p className='right-border mr-4 pr-2'>Contact@gmail.com</p>
                 <p className='right-border mr-4 pr-2'>+8893848648875</p>
                 <p className=' pr-2'>Eng</p>
