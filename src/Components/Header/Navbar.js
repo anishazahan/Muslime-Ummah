@@ -1,29 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css'
+import{FiMenu} from 'react-icons/fi'
+import { useState } from 'react';
 
-const Navbar = ({children}) => {
-  return (
-    <div className=' navbar-background bg-secondary'>
-    <div className="drawer drawer-end">
-<input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
-<div className="drawer-content flex flex-col ">
+const Navbar = () => {
 
-  <div className="w-full navbar px-10 py-10">
- 
-    <div className="flex-none lg:hidden">
-      <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path></svg>
-      </label>
-    </div> 
+    const [nav,setNav] = useState(false);
    
-    <div className="flex-none hidden lg:block mx-auto mt-[-1.6rem] text-white menu-item">
-      <ul className="menu menu-horizontal">
+
+  return (
+
+   
+
+    <div className=' navbar-background bg-secondary  w-full '>
+ 
+    {/* <div className="h-full w-full flex justify-end md:block relative">
+       
+       <button onClick={()=> setNav( !nav)} className='block ms-auto md:hidden w-fit'> <FiMenu></FiMenu></button>
+    <ul className={` block md:hidden absolute bg-primary p-4 `}>
         
         <li><Link className='menu' to="/">Home</Link></li>
         <li><Link className='menu' to="/services">Services</Link></li>
@@ -35,25 +30,65 @@ const Navbar = ({children}) => {
         <li><Link className='menu' to="/contact">Contact</Link></li>
        
       </ul>
-    </div>
-  </div>
- 
-{children}
-
-</div> 
-<div className="drawer-side text-white">
-  <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
-  <ul className="menu p-4 overflow-y-auto w-80 bg-black">
+      <ul className="hidden md:flex justify-center items-center h-full">
+        
         <li><Link className='menu' to="/">Home</Link></li>
         <li><Link className='menu' to="/services">Services</Link></li>
         <li><Link className='menu' to="/projects">Projects</Link></li>
-        <li><Link className='menu' to="/about">About</Link></li>
+        <li><Link className='menu' to="/about">About Us</Link></li>
+        <li><Link className='menu' to="/blogs">Blogs</Link></li>
+        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
+        <li><Link className='menu' to="/pages">Pages</Link></li>
         <li><Link className='menu' to="/contact">Contact</Link></li>
-    
-  </ul>
-  
-</div>
-</div>
+       
+      </ul>
+    </div> */}
+
+
+<nav className=" text-white md:flex items-center h-full space-x-8 hidden mx-auto">
+
+
+
+
+<ul className="hidden md:flex justify-center items-center h-full mx-auto">
+        
+        <li><Link className='menu' to="/">Home</Link></li>
+        <li><Link className='menu' to="/services">Services</Link></li>
+        <li><Link className='menu' to="/projects">Projects</Link></li>
+        <li><Link className='menu' to="/about">About Us</Link></li>
+        <li><Link className='menu' to="/blogs">Blogs</Link></li>
+        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
+        <li><Link className='menu' to="/pages">Pages</Link></li>
+        <li><Link className='menu' to="/contact">Contact</Link></li>
+       
+      </ul>
+ 
+        </nav>
+
+       <div className=" justify-end md:hidden  flex relative  duration-200">
+       <button onClick={()=>setNav(!nav)} className='bg-white'> Menu</button>
+        <nav
+          className={` text-base text-gray-light absolute ${
+            nav ? "right-0 top-12" : "-right-[500px]"
+          } bg-red-500 duration-200`}
+        >
+          <ul className={` p-4 `}>
+        
+        <li><Link className='menu' to="/">Home</Link></li>
+        <li><Link className='menu' to="/services">Services</Link></li>
+        <li><Link className='menu' to="/projects">Projects</Link></li>
+        <li><Link className='menu' to="/about">About Us</Link></li>
+        <li><Link className='menu' to="/blogs">Blogs</Link></li>
+        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
+        <li><Link className='menu' to="/pages">Pages</Link></li>
+        <li><Link className='menu' to="/contact">Contact</Link></li>
+       
+      </ul>
+        </nav>
+       </div>
+
+
+
 
   </div>
 )
