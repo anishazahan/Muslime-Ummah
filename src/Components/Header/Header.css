@@ -13,12 +13,7 @@
 
 
 .middle-header{
-    /* background-image:url("https://i.ibb.co/0nmMP6H/istockphoto-1336661359-612x612.jpg"); */
-    width: 100%;
-    /* height: 16vh; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: bisque;
+  
 
 }
 
@@ -26,10 +21,14 @@
     font-size: 14px;
 }
 .pray-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #009146;
     padding: 15px;
     border-radius: 100%;
-    margin: 10px;
+  
     color: #009146;
    
 }

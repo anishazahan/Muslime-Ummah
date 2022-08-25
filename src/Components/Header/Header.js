@@ -1,7 +1,8 @@
 import React from 'react'
 import './Header.css'
 
-import{FaSearch} from 'react-icons/fa'
+import{FaSearch,FaEnvelope} from 'react-icons/fa'
+import{MdCall} from 'react-icons/md'
 
 import logo1 from '../../img/retina-logo3.svg'
 
@@ -9,9 +10,11 @@ const Header = () => {
   return (
     <header>
       <section className="top-header">
-        <div className="top-content h-full max-w-7xl mx-auto flex justify-between px-10 text-white items-center">
+        <div className="top-content h-full max-width mx-auto flex justify-between px-10 text-white items-center">
             <div className="left-content flex flex-row items-center">
-                <p className='right-border text-2xs mr-4 pr-2'>Contact@gmail.com</p>
+            <FaEnvelope className='2xs mr-1'></FaEnvelope> 
+                <p className='right-border mr-4 pr-2'> Contact@gmail.com</p>
+                <MdCall className='2xs mr-1'></MdCall>
                 <p className='right-border mr-4 pr-2 hidden md:block '>+8893848648875</p>
                 <p className='hidden md:block pr-2'>Eng</p>
                 <select className='text-white text-2xs ml-[-.7rem] bg-transparent hidden md:block'>
@@ -22,13 +25,13 @@ const Header = () => {
             <div className="right-content  flex flex-row">
              
                 <div className="relative">
-                <FaSearch className='mr-[-10px] pt-2 text-2xl text-black font-normal absolute search-border'></FaSearch> <input className='p-1 outline-none border-none rounded-sm' type="text"  />
+                <FaSearch className='mr-[-12px] pt-2 text-2xl text-gray-400 text-black font-normal absolute search-border'></FaSearch> <input className='p-1 outline-none border-none rounded-sm' type="text"  />
                 </div>
             </div>
         </div>
       </section>
       <section className="middle-header">
-      <div className="middle-content max-w-7xl flex-col mx-auto flex lg:flex-row justify-between px-10 text-white h-full items-center">
+      <div className="middle-content max-width flex-col mx-auto flex lg:flex-row justify-between px-10 text-white h-full items-center">
             <div className="left-content flex flex-row ">
                 <img className='logo' src={logo1} alt="" />
                 <div className="flex flex-col mt-7">
@@ -37,23 +40,23 @@ const Header = () => {
                 </div>
             </div>
             <div className="right-content  flex flex-row ">
-              <div className="pray-time">
+              <div className="pray-time m-1 sm:m-3">
                 <h2>Fazor</h2>
                 <h2>5:30</h2>
               </div>
-              <div className="pray-time">
+              <div className="pray-time m-1 sm:m-3">
                 <h2>Fazor</h2>
                 <h2>5:30</h2>
               </div>
-              <div className="pray-time">
+              <div className="pray-time m-1 sm:m-3">
                 <h2>Fazor</h2>
                 <h2>5:30</h2>
               </div>
-              <div className="pray-time">
+              <div className="pray-time m-1 sm:m-3">
                 <h2>Fazor</h2>
                 <h2>5:30</h2>
               </div>
-              <div className="pray-time">
+              <div className="pray-time m-1 sm:m-3">
                 <h2>Fazor</h2>
                 <h2>5:30</h2>
               </div>
