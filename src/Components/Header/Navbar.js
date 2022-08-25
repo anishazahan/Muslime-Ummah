@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 import{FiMenu} from 'react-icons/fi'
 import { useState } from 'react';
@@ -14,52 +14,18 @@ const Navbar = () => {
    
 
     <div className=' navbar-background bg-secondary  w-full '>
- 
-    {/* <div className="h-full w-full flex justify-end md:block relative">
-       
-       <button onClick={()=> setNav( !nav)} className='block ms-auto md:hidden w-fit'> <FiMenu></FiMenu></button>
-    <ul className={` block md:hidden absolute bg-primary p-4 `}>
-        
-        <li><Link className='menu' to="/">Home</Link></li>
-        <li><Link className='menu' to="/services">Services</Link></li>
-        <li><Link className='menu' to="/projects">Projects</Link></li>
-        <li><Link className='menu' to="/about">About Us</Link></li>
-        <li><Link className='menu' to="/blogs">Blogs</Link></li>
-        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
-        <li><Link className='menu' to="/pages">Pages</Link></li>
-        <li><Link className='menu' to="/contact">Contact</Link></li>
-       
-      </ul>
-      <ul className="hidden md:flex justify-center items-center h-full">
-        
-        <li><Link className='menu' to="/">Home</Link></li>
-        <li><Link className='menu' to="/services">Services</Link></li>
-        <li><Link className='menu' to="/projects">Projects</Link></li>
-        <li><Link className='menu' to="/about">About Us</Link></li>
-        <li><Link className='menu' to="/blogs">Blogs</Link></li>
-        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
-        <li><Link className='menu' to="/pages">Pages</Link></li>
-        <li><Link className='menu' to="/contact">Contact</Link></li>
-       
-      </ul>
-    </div> */}
-
-
 <nav className=" text-white md:flex items-center h-full space-x-8 hidden mx-auto">
-
-
-
 
 <ul className="hidden md:flex justify-center items-center h-full mx-auto">
         
-        <li><Link className='menu' to="/">Home</Link></li>
-        <li><Link className='menu' to="/services">Services</Link></li>
-        <li><Link className='menu' to="/projects">Projects</Link></li>
-        <li><Link className='menu' to="/about">About Us</Link></li>
-        <li><Link className='menu' to="/blogs">Blogs</Link></li>
-        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
-        <li><Link className='menu' to="/pages">Pages</Link></li>
-        <li><Link className='menu' to="/contact">Contact</Link></li>
+        <li><NavLink className='menu' to="/">Home</NavLink></li>
+        <li><NavLink className='menu' to="/services">Services</NavLink></li>
+        <li><NavLink className='menu' to="/projects">Projects</NavLink></li>
+        <li><NavLink className='menu' to="/about">About Us</NavLink></li>
+        <li><NavLink className='menu' to="/blogs">Blogs</NavLink></li>
+        <li><NavLink className='menu' to="/portfolio">Portfolios</NavLink></li>
+        <li><NavLink className='menu' to="/pages">Pages</NavLink></li>
+        <li><NavLink className='menu' to="/contact">Contact</NavLink></li>
        
       </ul>
  
@@ -74,14 +40,14 @@ const Navbar = () => {
         >
           <ul className={` p-4 `}>
         
-        <li><Link className='menu' to="/">Home</Link></li>
-        <li><Link className='menu' to="/services">Services</Link></li>
-        <li><Link className='menu' to="/projects">Projects</Link></li>
-        <li><Link className='menu' to="/about">About Us</Link></li>
-        <li><Link className='menu' to="/blogs">Blogs</Link></li>
-        <li><Link className='menu' to="/portfolio">Portfolios</Link></li>
-        <li><Link className='menu' to="/pages">Pages</Link></li>
-        <li><Link className='menu' to="/contact">Contact</Link></li>
+        <li><NavLink className='menu' to="/">Home</NavLink></li>
+        <li><NavLink className='menu' to="/services">Services</NavLink></li>
+        <li><NavLink className='menu' to="/projects">Projects</NavLink></li>
+        <li><NavLink className='menu' to="/about">About Us</NavLink></li>
+        <li><NavLink className='menu' to="/blogs">Blogs</NavLink></li>
+        <li><NavLink className='menu' to="/portfolio">Portfolios</NavLink></li>
+        <li><NavLink className='menu' to="/pages">Pages</NavLink></li>
+        <li><NavLink className='menu' to="/contact">Contact</NavLink></li>
        
       </ul>
         </nav>

@@ -6,6 +6,7 @@ import Navbar from "./Components/Header/Navbar";
 import Home from "./Components/Home/Home";
 
 
+
 function App() {
   return (
     <div>
@@ -13,9 +14,7 @@ function App() {
    
 
       <Header></Header>
-      {/* <NewsLetter></NewsLetter> */}
-      {/* <Footer></Footer> */}
-      {/* <Navbar> */}
+     <Navbar></Navbar>
         <Routes>
           <Route>
           <Route path="/" element={<Home></Home>} />
