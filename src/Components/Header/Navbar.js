@@ -31,7 +31,7 @@ const Navbar = () => {
  
         </nav>
 
-       <div className=" justify-end md:hidden  flex relative  duration-200">
+       {/* <div className=" justify-end md:hidden  flex relative  duration-200">
        <button onClick={()=>setNav(!nav)} className='bg-white'> Menu</button>
         <nav
           className={` text-base text-gray-light absolute ${
@@ -51,7 +51,7 @@ const Navbar = () => {
        
       </ul>
         </nav>
-       </div>
+       </div> */}
 
 
 
