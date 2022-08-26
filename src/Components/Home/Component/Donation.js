@@ -5,6 +5,7 @@ import img1 from '../../../img/donation1.jpg'
 
 
 const Donation = () => {
+ 
   return (
     <div className='donation-background'>
 
@@ -13,7 +14,7 @@ const Donation = () => {
                 <div className="left-img">
                     <img className='w-full h-full' src={img1} alt="" />
                 </div>
-                <div className="right ml-10">
+                <div className="right ml-20 space-y-6">
                     <h2 className='text-xl font-semibold mt-8 text-primary'>Give Food & Shelter To Poor</h2>
                     <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                     <div className="btn-group space-x-2">
@@ -21,7 +22,33 @@ const Donation = () => {
                     <button className='donate-btn'>$200</button>
                     <button className='donate-btn'>$300</button>
                     <button className='donate-btn'>Other</button>
-                </div>
+                    </div>
+                    <form  className='w-full'>
+                    <div className="input-field flex flex-col md:flex-row w-full">
+                        <div className="flex flex-col w-full">
+                            <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Name' />
+                            <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Email' />
+                        </div>
+                        <div className="flex flex-col w-full">
+                            <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Phone' />
+                            <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Addrees' />
+                        </div>
+                    </div>
+                    
+                   <div className="space-y-4 mt-6">
+                   <div className="progressbar w-full">
+                        <h2 className="text-xl">Raise Funds For poor</h2>
+                        <input className='w-full text-primary' type="range"  />
+                    </div>
+                    <div className="flex space-x-8">
+                        <h2>Raised: <span className='font-semibold text-primary'>$400.00</span> </h2>
+                        <h2>Goal: <span className='font-semibold text-primary'>$400.00</span> </h2>
+                    </div>
+                   </div>
+                   <div className="mt-6">
+                    <button className='donate'>Donate Now</button>
+                   </div>
+                   </form>
                 </div>
               
                
