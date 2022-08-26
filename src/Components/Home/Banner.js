@@ -1,34 +1,43 @@
+
 import React from 'react'
-import banner from '../../img/download.jpg'
+import img1 from './../../img/banner2.jpg'
+import img2 from './../../img/banner3.jpg'
+import img3 from './../../img/banner1.jpg'
+import './Banner.css'
+
+
 
 const Banner = () => {
+
+
+
   return (
-    <div>
-       <h2 className='my-10'>This is banner</h2>
-        <div class="carousel w-full mt-[-1.5rem] mb-5">
-           
-  <div id="item1" class="carousel-item w-full h-80vh">
-  <img src={banner} class="w-full" />
-  </div> 
-  <div id="item2" class="carousel-item w-full">
-  <img src={banner} class="w-full" />
-  </div> 
-  <div id="item3" class="carousel-item w-full">
-  <img src={banner} class="w-full" />
-  </div> 
-  <div id="item4" class="carousel-item w-full">
-  <img src={banner} class="w-full" />
-  </div>
-
-  <div class="flex justify-center w-full py-2 gap-2">
-  <a href="#item1" class="btn btn-xs">1</a> 
-  <a href="#item2" class="btn btn-xs">2</a> 
-  <a href="#item3" class="btn btn-xs">3</a> 
-  <a href="#item4" class="btn btn-xs">4</a>
-</div>
-</div> 
-
+   
+      <div className="carousel w-full mb-20">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src={img1} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+      <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
+  </div> 
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src={img2} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src={img3} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+</div>
+    
+    
   )
 }
 

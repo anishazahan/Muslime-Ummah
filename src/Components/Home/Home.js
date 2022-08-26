@@ -1,11 +1,13 @@
 import React from 'react'
 import NewsLetter from '../Footer/NewsLetter'
 import Banner from './Banner'
+import PillerOfIslam from './Component/PillerOfIslam'
 
 const Home = () => {
   return (
-    <div><h2 className='text-primary'>This is home</h2>
+    <div>
         <Banner></Banner>
+        <PillerOfIslam></PillerOfIslam>
       
 
     </div>
