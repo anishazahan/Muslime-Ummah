@@ -22,7 +22,7 @@ const PillerOfIslam = () => {
         <div className=" mt-8 cards grid grid-cols-2 gap-x-4 gap-y-2 lg:grid-cols-5 mx-auto max-width px-20">
 
 
-            <div className="card  border-none text-center px-12 lg:px-16 shrink-0 rounded-none py-12 space-y-4 ">
+            <div className="card  border-none text-center px-12 lg:px-16 shrink-0 rounded-none py-12 space-y-4 hover:space-y-5 ease-in duration-300 ">
                 <img className='piller-img' src={img1} alt="" />
                 <h1 className="text-xl font-semibold">Shahada</h1>
                 <p className="text-primary text-xs font-medium">(faith)</p>
