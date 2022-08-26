@@ -11,7 +11,7 @@ const PillerOfIslam = () => {
     <section className='mb-20'>
 
         <div className="text-center space-y-6">
-            <p className='font-semibold text-[18px] text-primary'>Islamic Pillers</p>
+            <h2 className='font-semibold text-[18px] text-primary'>Islamic Pillers</h2>
             <h1 className='text-3xl font-semibold'>5 Islamic Pillers of Islam</h1>
             <p className=" px-6 md:w-1/2 text-[16px] mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
