@@ -7,7 +7,7 @@ const AdviseSection = () => {
   return (
     <>
 
-        <div className="max-width my-20">
+        <div className="max-width mx-auto my-28">
             <div className=" flex flex-col lg:flex-row px-16">
                 <div className="left flex flex-col w-full space-y-8">
 
@@ -59,7 +59,7 @@ const AdviseSection = () => {
 
 
                 <div className="right adviseImg ">
-                    <img className='w-full h-full' src={img} alt="" />
+                    <img className='w-full h-full mt-8 lg:mt-0 rounded lg:rounded-t-full' src={img} alt="" />
                 </div>
             </div>
         </div>
