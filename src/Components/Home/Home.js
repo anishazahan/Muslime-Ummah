@@ -4,6 +4,7 @@ import Banner from './Banner'
 import AdviseSection from './Component/AdviseSection'
 import Donation from './Component/Donation'
 import PillerOfIslam from './Component/PillerOfIslam'
+import PrayerRules from './Component/PrayerRules/PrayerRules'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <PillerOfIslam></PillerOfIslam>
         <AdviseSection></AdviseSection>
         <Donation></Donation>
+        <PrayerRules></PrayerRules>
       
 
     </div>

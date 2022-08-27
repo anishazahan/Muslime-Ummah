@@ -11,7 +11,7 @@ const Donation = () => {
 
         <section className="max-width mx-auto">
             <div className="flex flex-col lg:flex-row">
-                <div className="left-img w-full lg:w-1/2 mx-auto">
+                <div className="left-img w-full lg:w-1/2 mx-auto lg:mx-0">
                     <img className='w-full h-full' src={img1} alt="" />
                 </div>
                 <div className="right ml-20 space-y-6">
