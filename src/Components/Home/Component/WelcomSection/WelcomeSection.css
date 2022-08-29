@@ -1,0 +1,12 @@
+
+.welcome-heading::before{
+    content: " Islamic Center for Muslims ";
+    border-bottom: .16898rem solid #0E820E;
+    padding-bottom: 1.6000rem;
+  
+}
+.welcomeHr{
+    padding-right: 2rem;
+    width: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.244);
+}

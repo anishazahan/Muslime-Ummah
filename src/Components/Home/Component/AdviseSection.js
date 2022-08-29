@@ -15,7 +15,7 @@ const AdviseSection = () => {
                         <FaQuoteLeft className='text-primary font-bold text-5xl mr-3'></FaQuoteLeft>
                         <h1 className="text-3xl font-semibold">Take Good Advice From People Who Pronounce It Though He Does Not Practice</h1>
                     </div>
-                    <h1 className="quote italic leading-8">
+                    <h1 className="quote italic leading-8 text-gray-700">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod diti tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimsa veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat. 
                         </h1>
 
@@ -49,7 +49,7 @@ const AdviseSection = () => {
                             </div>
                         </div>
                         </div>
-                        <p className="">
+                        <p className="text-gray-700">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Duis aute irure.
                         </p>
                        <div className="">
