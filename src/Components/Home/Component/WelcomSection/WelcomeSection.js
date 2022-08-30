@@ -14,7 +14,7 @@ const WelcomeSection = () => {
    </div>
     <div className='basis-6/12 space-y-6'>
      <div className="">
-     <h1 class="text-4xl font-bold">Welcome to Muslime Ummah</h1>
+     <h1 class="text-4xl font-bold text-gray-700">Welcome to Muslime Ummah</h1>
       <p class="text-[18px] text-primary font-semibold mt-4 welcome-heading"> to Achieve Spiritual Goals
       </p>
      </div>

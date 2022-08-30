@@ -4,6 +4,7 @@ import BannerSlider from './BannerSlider'
 
 import AdviseSection from './Component/AdviseSection'
 import Donation from './Component/Donation'
+import Gallary from './Component/Gallary/Gallary'
 import PillerOfIslam from './Component/PillerOfIslam'
 import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
@@ -13,14 +14,15 @@ const Home = () => {
   return (
     <div>
       
-        <BannerSlider></BannerSlider>
-        {/* <WelcomeSection></WelcomeSection>
+        {/* <BannerSlider></BannerSlider> */}
+         <WelcomeSection></WelcomeSection>
+         <Gallary></Gallary>
         <PillerOfIslam></PillerOfIslam>
         <AdviseSection></AdviseSection>
         <Donation></Donation>
         <DonationCard></DonationCard>
-        <PrayerRules></PrayerRules> */}
-       
+        <PrayerRules></PrayerRules> 
+    
       
 
     </div>

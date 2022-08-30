@@ -64,7 +64,7 @@ const BannerSlider = () => {
         <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
     </Swiper>
-    <Swiper
+    {/* <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={4}
@@ -103,7 +103,7 @@ const BannerSlider = () => {
         <SwiperSlide>
         <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
-    </Swiper>
+    </Swiper> */}
 </div>
     );
 };
