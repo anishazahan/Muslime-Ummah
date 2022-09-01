@@ -16,9 +16,18 @@
 /* -------------------banner bottom-------------- */
 
 .right-img{
-    background: linear-gradient( to right,#179958d9,#179958e3) ,url("../../../../img/bannerBottom.jpg");
-    width: 70%;
+    background: linear-gradient( #022c439d,#022c439d) ,url("../../../../img/bannerBottom.jpg");
+
     height: auto;
     
 
+}
+.banner-contact-btn{
+    padding: 20px 40px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 2px;
 }

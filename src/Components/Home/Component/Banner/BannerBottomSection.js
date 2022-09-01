@@ -1,5 +1,6 @@
 import React from 'react'
 import './banner.css'
+import {Link} from 'react-router-dom'
 import img from '../../../../img/borderBottom.png'
 
 const BannerBottomSection = () => {
@@ -7,23 +8,26 @@ const BannerBottomSection = () => {
     <div className='bg-slate-50 mb-20'>
         <div className="max-width mx-auto">
             <div className="flex flex-col lg:flex-row px-20">
-                <div className="left w-full space-y-7 my-16">
+                <div className="left w-full space-y-7 my-16 px-3 md:px-5 lg:px-0 mx-auto">
                     <h1 className='text-primary font-extrabold text-2xl'>"JOIN THE ISLAMIC COMMUNITY"</h1>
                     <p className='text-gray-500 w-4/5'>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean itudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
                     <p className='text-sm'>~ by <span className='font-bold text-primary'>Akshay H.</span>  (Community Head)</p>
                 </div>
                
 
-                <div className="right-img ">
-                   <div className="">
-                   <h1>CONTACT US FOR A JOINING</h1>
-                    <img className='w-32' src={img} alt="" />
+                <div className="right-img sm:w-full mx-5 lg:mx-0 lg:w-3/4 flex flex-col space-y-5 items-center justify-center h-full">
+                   <div >
+                   <h1 className="font-extrabold text-white text-xl mb-3">CONTACT US FOR A JOINING</h1>
+                    <img className='w-32 mx-auto' src={img} alt="" />
                    </div>
-                   <div className="">
-                   <h1>+1 800 123 4567</h1>
-                   <h1 className="">
+                   <div className=" mx-auto text-white">
+                   <h1 className='mx-auto text-4xl font-extrabold'>+18001234567</h1>
+                   <h1 className="mb-6 mx-auto text-center">
                    Mosque@example.com
                    </h1>
+                   </div>
+                   <div className="banner-bootom-btn mb-5">
+                    <Link className='banner-contact-btn' to='/'>Contact</Link>
                    </div>
 
                 </div>
