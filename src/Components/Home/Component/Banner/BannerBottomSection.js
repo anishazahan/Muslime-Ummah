@@ -1,5 +1,6 @@
 import React from 'react'
 import './banner.css'
+import img from '../../../../img/borderBottom.png'
 
 const BannerBottomSection = () => {
   return (
@@ -14,7 +15,16 @@ const BannerBottomSection = () => {
                
 
                 <div className="right-img ">
-                    <h1>CONTACT US FOR A JOINING</h1>
+                   <div className="">
+                   <h1>CONTACT US FOR A JOINING</h1>
+                    <img className='w-32' src={img} alt="" />
+                   </div>
+                   <div className="">
+                   <h1>+1 800 123 4567</h1>
+                   <h1 className="">
+                   Mosque@example.com
+                   </h1>
+                   </div>
 
                 </div>
             </div>
