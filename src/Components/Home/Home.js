@@ -4,6 +4,7 @@ import React from 'react'
 
 import AdviseSection from './Component/AdviseSection'
 import Banner from './Component/Banner/Banner'
+import BannerBottomSection from './Component/Banner/BannerBottomSection'
 import Donation from './Component/Donation'
 import Gallary from './Component/Gallary/Gallary'
 import PillerOfIslam from './Component/PillerOfIslam'
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
+      <BannerBottomSection></BannerBottomSection>
         {/* <BannerSlider></BannerSlider> */}
          <WelcomeSection></WelcomeSection>
          <Gallary></Gallary>

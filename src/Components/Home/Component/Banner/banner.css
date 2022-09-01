@@ -12,3 +12,13 @@
 .banner-img{
     margin-top: 8%;
 }
+
+/* -------------------banner bottom-------------- */
+
+.right-img{
+    background: linear-gradient( to right,#179958d9,#179958e3) ,url("../../../../img/bannerBottom.jpg");
+    width: 70%;
+    height: auto;
+    
+
+}
