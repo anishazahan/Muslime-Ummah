@@ -7,12 +7,15 @@ import './WelcomeSection.css'
 
 const WelcomeSection = () => {
   return (
-    <div class="hero min-h-screen max-width px-8 lg:px-20 mx-auto">
-  <div class="hero-content flex-col w-full lg:flex-row">
+    <div class=" min-h-screen px-8 lg:px-20 mx-auto">
+  <div class=" hero-content flex-col w-full lg:flex-row">
+
    <div className="w-full h-auto basis-6/12">
-   <img src={img3} class="max-w-sm rounded-lg shadow-2xl  w-full" />
+   <img src={img3} class=" rounded-lg shadow-2xl  w-full" />
    </div>
-    <div className='basis-6/12 space-y-6'>
+
+
+    <div className=' space-y-6 basis-6/12'>
      <div className="">
      <h1 class="text-4xl font-bold text-gray-700">Welcome to Muslime Ummah</h1>
       <p class="text-[18px] text-primary font-semibold mt-4 welcome-heading"> to Achieve Spiritual Goals

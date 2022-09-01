@@ -23,8 +23,11 @@ const Donation = () => {
                     <button className='donate-btn'>$300</button>
                     <button className='donate-btn'>Other</button>
                     </div>
+
                     <form  className='w-full'>
+
                     <div className="input-field flex flex-col md:flex-row w-full">
+
                         <div className="flex flex-col w-3/5 lg:w-full">
                             <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Name' />
                             <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Email' />
@@ -36,10 +39,12 @@ const Donation = () => {
                     </div>
                     
                    <div className="space-y-4 mt-6">
+
                    <div className="progressbar w-full">
                         <h2 className="text-xl">Raise Funds For poor</h2>
                         <input className='w-3/5 lg:w-full text-primary' type="range"  />
                     </div>
+                    
                     <div className="flex space-x-8">
                         <h2>Raised: <span className='font-semibold text-primary'>$400.00</span> </h2>
                         <h2>Goal: <span className='font-semibold text-primary'>$400.00</span> </h2>

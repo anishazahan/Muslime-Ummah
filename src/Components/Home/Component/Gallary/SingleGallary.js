@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SingleGallary = ({img}) => {
-    console.log(img);
+    // console.log(img);
   return (
   
 

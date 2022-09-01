@@ -21,7 +21,7 @@ const Gallary = () => {
         <button className='outline-none px-8 text-xl py-4 bg-slate-200 text-gray-600'> Cateogory</button>
         </div>
         <div className="cateogory-btns space-x-4 mx-auto">
-        <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600'> All</button>
+        <button className='outline-none cateogory-btn hover:ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600'> All</button>
         <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600'> Helping People</button>
         <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600'> Voleuntier</button>
         <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600'> Ramdan</button>
