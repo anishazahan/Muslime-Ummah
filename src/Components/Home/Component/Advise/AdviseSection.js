@@ -1,7 +1,7 @@
 import React from 'react'
 import './AdviseSection'
 import {FaQuoteLeft,FaMosque} from 'react-icons/fa'
-import img from '../../../img/advise2.jpg'
+import img from '../../../../img/advise.jpg'
 
 const AdviseSection = () => {
   return (

@@ -26,9 +26,16 @@
     padding: 20px 40px;
     background-color: aliceblue;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     outline: none;
     border-radius: 2px;
+    transition: 1s;
+}
+
+.banner-contact-btn:hover{
+    outline: none;
+    background-color:#009146;
+    color: white;
 }
 

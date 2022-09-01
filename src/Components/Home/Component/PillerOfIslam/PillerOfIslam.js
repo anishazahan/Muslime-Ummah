@@ -1,10 +1,11 @@
 import React from 'react'
 import "./PillerOfIslam.css"
-import img1 from '.././../../img/pillerImg1.png'
-import img2 from '.././../../img/pillerIslam2.png'
-import img3 from '.././../../img/pillerIslam3.png'
-import img4 from '.././../../img/pillerIslam4.png'
-import img5 from '.././../../img/pillerislam5.png'
+import img1 from '../../../../img/pillerImg1.png'
+import img2 from '../../../../img/pillerIslam2.png'
+import img3 from '../../../../img/pillerIslam3.png'
+import img4 from '../../../../img/pillerIslam4.png'
+import img5 from '../../../../img/pillerislam5.png'
+
 
 const PillerOfIslam = () => {
   return (

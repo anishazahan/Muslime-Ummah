@@ -1,6 +1,6 @@
 .donation-background{
-    background-image: url("../../../img/donationBackground.jpg");
-    background-image: linear-gradient( to right,rgba(255, 255, 255, 0.768) 50%,rgba(255, 255, 255, 0.733)) ,url("../../../img/donationBackground.jpg");
+    /* background-image: url("../../../img/donationBackground.jpg"); */
+    background-image: linear-gradient( to right,rgba(255, 255, 255, 0.768) 50%,rgba(255, 255, 255, 0.733)) ,url("../../../../img/donationBackground.jpg");
    
 }
 .left-img{

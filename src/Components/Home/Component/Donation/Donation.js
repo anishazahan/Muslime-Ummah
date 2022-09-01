@@ -1,6 +1,6 @@
 import React from 'react'
 import './Donation.css'
-import img1 from '../../../img/donation1.jpg'
+import img1 from '../../../../img/donation1.jpg'
 
 
 
