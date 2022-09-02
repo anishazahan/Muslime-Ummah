@@ -6,23 +6,23 @@ import {BsPlayCircle,BsFillEyeFill,BsFlagFill} from 'react-icons/bs'
 
 const HomeTopVedioSection = () => {
   return (
-    <div className='max-width mx-auto mt-36 mb-40'>
-        <div className="px-20 flex flex-col lg:flex-row">
+    <div className='max-width mx-auto mt-30 lg:mt-36 mb-40'>
+        <div className="px-10 xl:px-20 flex flex-col lg:flex-row">
 
             <div className="left-vedio w-full  flex basis-5/12 relative mr-[-3rem]">
-               <div className="border-content absolute">
+               <div className="border-content absolute hidden lg:block">
                <h4 className='watch-vedio-text font-bold'>WATCH OUR VIDEO</h4>
                </div>
-               <div className="w-4/5 ml-auto">
+               <div className="w-full lg:w-4/5 mx-auto lg:mx-0 ml-auto">
                <img className='img-vedio relative' src={img} alt="" />
                 <BsPlayCircle className='absolute play-btn'></BsPlayCircle>
                </div>
             </div>
 
-            <div className="right-content basis-8/12 ml-24 space-y-9">
+            <div className="right-content basis-8/12 lg:ml-24 ml-0 space-y-9">
 
                 <div className="heading w-full font-extrabold text-2xl tracking-wide text-gray-700">
-                <h2 className='mb-1'>In The Name Of Allah </h2>
+                <h2 className='mb-1 mt-14 lg:mt-0'>In The Name Of Allah </h2>
                 <h1> The Beneficent The Merciful</h1>
                 </div>
                 <img className='w-38' src={borderImg} alt="" />
