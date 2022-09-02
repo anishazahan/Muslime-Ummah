@@ -1,8 +1,9 @@
 
+
 .border-content{
     position: absolute;
     left: -6rem;
-    top: 150px;
+    top: 160px;
     transform: rotate(-90deg);
     border: 8px solid rgb(245 245 245);
     z-index: 99;
@@ -30,7 +31,7 @@
 }
 .play-btn{
  margin-top: -12rem;
- margin-left: 10rem;
+ margin-left: 16rem;
    font-size: 3rem;
    z-index: 2000;
    color: white;
