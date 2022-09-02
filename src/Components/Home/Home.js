@@ -7,6 +7,7 @@ import Banner from './Component/Banner/Banner'
 import BannerBottomSection from './Component/Banner/BannerBottomSection'
 import Donation from './Component/Donation/Donation'
 import Gallary from './Component/Gallary/Gallary'
+import HomeTopVedioSection from './Component/HomeTopVedioSection/HomeTopVedioSection'
 import PillerOfIslam from './Component/PillerOfIslam/PillerOfIslam'
 import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
@@ -19,6 +20,7 @@ const Home = () => {
       <Banner></Banner>
       <BannerBottomSection></BannerBottomSection>
         {/* <BannerSlider></BannerSlider> */}
+        <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
          <Gallary></Gallary>
         <PillerOfIslam></PillerOfIslam>

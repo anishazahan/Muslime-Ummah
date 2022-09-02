@@ -1,0 +1,50 @@
+
+.border-content{
+    position: absolute;
+    left: -6rem;
+    top: 150px;
+    transform: rotate(-90deg);
+    border: 8px solid rgb(245 245 245);
+    z-index: 99;
+}
+.watch-vedio-text{
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px 110px 100px 65px;
+    color: rgb(201 201 201);
+   
+}
+.img-vedio{
+    z-index: 1000;
+    position: relative;
+}
+.img-vedio::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 50%);
+}
+.play-btn{
+ margin-top: -12rem;
+ margin-left: 10rem;
+   font-size: 3rem;
+   z-index: 2000;
+   color: white;
+
+}
+.visision-icon{
+    outline: none;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #009146;
+    color: white;
+    font-size: 2.8rem;
+    transition: .5s;
+}
+.visision-icon:hover{
+    background-color: #022C43;
+}
