@@ -28,6 +28,10 @@ const Navbar = () => {
         <li><NavLink className='menu' to="/contact">Contact</NavLink></li>
        
       </ul>
+        <div className="pr-5">
+        <NavLink className='px-3' to="/login">Login</NavLink>
+        <NavLink className='' to="/contact">User</NavLink>
+        </div>
  
         </nav>
 

@@ -11,11 +11,16 @@ const HomeTopVedioSection = () => {
 
            
         <div className="left-vedio w-full  flex basis-5/12 relative mr-[-6rem]">
+       
                <div className="border-content absolute hidden xl:block">
                <h4 className='watch-vedio-text font-bold'>WATCH OUR VIDEO</h4>
                </div>
                <div className="w-full xl:w-4/5 mx-auto xl:mx-0 ml-auto">
-               <img className='img-vedio relative mx-auto lg:mx-0 xl:ml-24' src={img} alt="" />
+               <div className="relative">
+               <div className="absolute img-vedio-layer w-full h-full inset-0 bg-slate-400"></div>
+               <img className='xl:ml-24' src={img} alt="" />
+               </div>
+               
                 <BsPlayCircle className='absolute play-btn'></BsPlayCircle>
                </div>
             </div>

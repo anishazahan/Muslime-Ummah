@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import './Home.css';
+import '../../Home.css';
 
 // import "./styles.css";
 
