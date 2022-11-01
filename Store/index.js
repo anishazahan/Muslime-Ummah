@@ -6,6 +6,7 @@ import roomSlice from './room/roomSlice'
 import userSlice from './user/userSlice'
 
 export const store = configureStore({
+	
 	reducer: {
 		auth: authSlice,
 		room: roomSlice,
@@ -14,3 +15,5 @@ export const store = configureStore({
 		booking: paymentSlice,
 	},
 })
+
+
