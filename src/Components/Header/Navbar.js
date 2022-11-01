@@ -13,7 +13,7 @@ const Navbar = () => {
 
    
 
-    <div className=' navbar-background bg-secondary  w-full '>
+    <div className=' navbar-background bg-secondary  w-full sticky '>
 <nav className=" text-white md:flex items-center h-full space-x-8 hidden mx-auto">
 
 <ul className="hidden md:flex justify-center items-center h-full mx-auto">

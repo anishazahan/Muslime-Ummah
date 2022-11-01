@@ -17,7 +17,7 @@ const HomeTopVedioSection = () => {
                </div>
                <div className="w-full xl:w-4/5 mx-auto xl:mx-0 ml-auto">
                <div className="relative">
-               <div className="absolute img-vedio-layer w-full h-full inset-0 bg-slate-400"></div>
+               {/* <div className="absolute img-vedio-layer w-full h-full inset-0 bg-slate-400"></div> */}
                <img className='xl:ml-24' src={img} alt="" />
                </div>
                

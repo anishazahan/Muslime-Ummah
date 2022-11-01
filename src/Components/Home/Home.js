@@ -17,9 +17,9 @@ import WelcomeSection from './Component/WelcomSection/WelcomeSection'
 const Home = () => {
   return (
     <div>
-      {/* <Banner></Banner>
-      <BannerBottomSection></BannerBottomSection> */}
-        <BannerSlider></BannerSlider>
+      <Banner></Banner>
+      <BannerBottomSection></BannerBottomSection>
+        {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
          <Gallary></Gallary>
