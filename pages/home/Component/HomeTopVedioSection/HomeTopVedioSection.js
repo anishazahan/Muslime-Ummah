@@ -3,8 +3,8 @@ import {BsPlayCircle,BsFillEyeFill,BsFlagFill} from 'react-icons/bs'
 
 const HomeTopVedioSection = () => {
   return (
-    <div className='max-width mx-auto my-32'>
-        <div className="px-10 xl:px-20 flex flex-col lg:flex-row">
+    <div className='max-width mx-auto my-20'>
+        <div className="px-7 xl:px-20 flex flex-col lg:flex-row">
 
            
         <div className="left-vedio w-full  flex basis-5/12 relative mr-[-6rem]">
@@ -18,7 +18,7 @@ const HomeTopVedioSection = () => {
                <img className='xl:ml-24' src={"https://i.ibb.co/qk6htrT/home-Vedio.jpg"} alt="" />
                </div>
                
-                <BsPlayCircle className='absolute play-btn'></BsPlayCircle>
+                <BsPlayCircle className='absolute play-btn hidden lg:block'></BsPlayCircle>
                </div>
             </div>
 
@@ -32,7 +32,7 @@ const HomeTopVedioSection = () => {
                <div className="">
                <p className='text-gray-500 mb-10'>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean itudin. This is Photoshop's sion of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is Photoshop's versionf Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</p>
                </div>
-                <div className="flex">
+                <div className="flex flex-col md:flex-row space-y-6 md:space-y-0">
                    <div className="vission space-y-5">
                    <div className="flex items-center space-x-4">
                         <BsFillEyeFill className='visision-icon'></BsFillEyeFill>
@@ -43,7 +43,7 @@ const HomeTopVedioSection = () => {
                    <div className="mission space-y-5">
                    <div className="flex space-x-4 items-center">
                         <BsFlagFill className='visision-icon'></BsFlagFill>
-                        <h1 className='text-xl font-bold'> Our Vision</h1>
+                        <h1 className='text-xl font-bold'> Our Mission</h1>
                     </div>
                     <p className='text-gray-500 w-10/12'>Nibh vel velit auctor aliquet. Aenean ituin. This is Photoshop's version of Phooshop's sion of Lorem.</p>
                    </div>
