@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  /* color: rgba(0, 0, 0, 0.856);
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3); */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.bg-primary {
+  background: rgb(0, 143, 69);
+
+}
+.text-primary{
+  color: rgb(0, 143, 69);
+}
+.bg-secondary {
+  background: rgb(2, 46, 69);
+}
+
+.text-secondary {
+  color: rgb(2, 46, 69);
+}
+
+.navbar-background {
+  height: 7vh;
+  width: 100%;
+  box-shadow: '0 35px 35px rgba(0, 0, 0, 0.25)',
+    '0 45px 65px rgba(0, 0, 0, 0.15)';
+}
+
+.active {
+  border-bottom: 2px solid #009146;
+}
+
+.menu {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 10px;
+
+}
+
+.top-header {
+  background-image: linear-gradient(#189a57ae, #189a57a7), url("https://cdn.wallpapersafari.com/84/41/txoalT.jpg");
+  width: 100%;
+  height: 6vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.right-border {
+  border-right: 1px solid rgba(221, 221, 221, 0.653);
+  font-size: 13px;
+}
+
+
+.middle-header {}
+
+.logo-font-size {
+  font-size: 14px;
+}
+
+.pray-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #009146;
+  border-radius: 100%;
+  color: #009146;
+  height: 80px;
+  width: 80px;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 30vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 551;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-background {
+
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ibb.co/D8Hhqt9/bannerbackground.jpg");
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.banner-img {
+  margin-top: 8%;
+}
+
+/* -------------------banner bottom-------------- */
+
+.right-img {
+  background: linear-gradient(#022c439d, #022c439d), url("https://i.ibb.co/wNN7bqT/banner-Bottom.jpg");
+
+  height: auto;
+
+
+}
+
+.banner-contact-btn {
+  padding: 20px 40px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 2px;
+  transition: 1s;
+}
+
+.banner-contact-btn:hover {
+  outline: none;
+  background-color: #009146;
+  color: white;
+}
+
+
+.donation-background {
+  /* background-image: url("../../../img/donationBackground.jpg"); */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.768) 50%, rgba(255, 255, 255, 0.733)), url("https://i.ibb.co/sF5mY4S/donation-Background.jpg");
+
+}
+
+.left-img {
+
+  height: 100%;
+  color: rgba(255, 255, 255, 0.811);
+}
+
+.donate-btn {
+  padding: 5px 30px;
+  border-radius: 30px;
+  border: 2px solid gray;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.donate-btn:hover {
+  background-color: #0E820E;
+  border: none;
+  color: white;
+
+}
+
+.donate {
+  padding: 10px 30px;
+  background-color: #0E820E;
+  color: white;
+  font-weight: 700;
+
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  height: 8px;
+  padding: 0 20px;
+  background: #0000ff;
+  background: -moz-linear-gradient(left, #0000ff 0%, #0000ff 50%, #000000 50%, #000000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0000ff), color-stop(50%, #0000ff), color-stop(50%, #000000), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(left, #0000ff 0%, #0000ff 50%, #000000 50%, #000000 100%);
+  background: -o-linear-gradient(left, #0000ff 0%, #0000ff 50%, #000000 50%, #000000 100%);
+  background: -ms-linear-gradient(left, #0000ff 0%, #0000ff 50%, #000000 50%, #000000 100%);
+  background: linear-gradient(to right, #0000ff 0%, #0000ff 50%, #000000 50%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000ff', endColorstr='#000000', GradientType=1);
+  border-radius: 2px;
+  margin-top: 25px
+}
+
+
+.cateogory-btn:hover {
+  background:#0E820E ;
+  color: white;
+
+}
+.cateogory-btn:active {
+  background:#0E820E ;
+  color: white;
+
+}
+
+
+
+
+.border-content{
+  position: absolute;
+  left: -6rem;
+  top: 160px;
+  transform: rotate(-90deg);
+  border: 8px solid rgb(245 245 245);
+  z-index: 99;
+}
+.watch-vedio-text{
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 110px 100px 65px;
+  color: rgb(201 201 201);
+ 
+}
+.img-vedio{
+  z-index: 1000;
+  position: relative;
+}
+.img-vedio::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(0 0 0 / 50%);
+  z-index: 1200;
+}
+/* .img-vedio-layer{
+  width: 100%;
+  height: 100%;
+
+} */
+.play-btn{
+margin-top: -12rem;
+margin-left: 16rem;
+ font-size: 3rem;
+ z-index: 2000;
+ color: white;
+
+}
+.visision-icon{
+  outline: none;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #009146;
+  color: white;
+  font-size: 2.8rem;
+  transition: .1s;
+}
+.visision-icon:hover{
+  background-color: #022C43;
+}
+
+.piller-img{
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+.card{
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.prayer-heading{
+  border-bottom: 2px solid #0E820E;
+  margin: auto;
+  display: inline-block;
+  padding: 0 10px 5px 10px;
+
+}
+
+.donation-background{
+  background: url('https://i.ibb.co/sF5mY4S/donation-Background.jpg');
+  width: 100%;
+  padding: 1rem;
+}
+
+
+.scholar-Background{
+  background: url('https://i.ibb.co/M8chqFc/scholar-Background.png');
+  width: 100%;
+  height: 100%;
+}
+
+
+.welcome-heading::before{
+  content: " Islamic Center for Muslims ";
+  border-bottom: .16898rem solid #0E820E;
+  padding-bottom: 1.6000rem;
+
+}
+.welcomeHr{
+  padding-right: 2rem;
+  width: 90%;
+  border: 1px solid rgba(128, 128, 128, 0.244);
+}
