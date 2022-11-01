@@ -3,8 +3,6 @@ const axios = require('axios');
 
 const URL = 'http://localhost:5001'
 
-
-
 let token = localStorage.getItem("token")
 let tokenClient
 if (token) {
