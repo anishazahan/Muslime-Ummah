@@ -49,15 +49,9 @@ function Navbar() {
                     <button onClick={() => setNav(!nav)} className='text-white'>
                          <VscThreeBars></VscThreeBars>
                     </button>
-                    
                     <nav
-
-                         className={`flex flex-col bg-[#00a6ff] text-center z-10 left-0 w-full  absolute  py-8 md:py-0 duration-500 ${nav ? "opacity-100  top-14" : " top-[-250px] opacity-0"}`}
-                         // className={`text-base text-gray-light absolute ${nav ? "right-0 top-12" : "-right-[500px] top-12"
-                         //      } bg-red-500 duration-200`}
-                    >
-                         <ul className={` p-4 `}>
-
+                         className={`flex flex-col bg-[#00a6ff] text-center z-10 left-0 w-full  absolute duration-500 ${nav ? "opacity-100  top-14 visible" : " top-[-270px] opacity-0 invisible"}`}>
+                         <ul className={` p-4 w-[50%] mx-auto uppercase`}>
                               <li className={router.pathname == "/" ? "active" : ""}>
                                    <Link className='menu' href="/">Home</Link>
                               </li>
@@ -82,7 +76,6 @@ function Navbar() {
                               <li className={router.pathname == "/contact" ? "active" : ""}>
                                    <Link className='menu' href="/contact">Contact</Link>
                               </li>
-
                          </ul>
                     </nav>
                     <div className="text-white">

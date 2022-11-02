@@ -5,7 +5,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GrLinkedinOption} from "react-icons/gr";
 
 const SingleScholars = (props) => {
-  console.log(props);
+  // console.log(props);
   const { img, name, tittle } = props.scholar;
   return (
     <div className=' relative group'>
