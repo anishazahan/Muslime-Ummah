@@ -44,12 +44,12 @@ function Navbar() {
 
                </nav>
 
-               <div className="justify-between px-[8%] h-full items-center md:hidden  flex relative  duration-200">
+               <div className="justify-between px-[2%] h-full items-center md:hidden  flex relative  duration-200">
                     <button onClick={() => setNav(!nav)} className='text-white'>
                          <VscThreeBars></VscThreeBars>
                     </button>
                     <nav
-                         className={`text-base text-gray-light absolute ${nav ? "right-0 top-12" : "-right-[500px] top-12"
+                         className={`text-base text-gray-light absolute ${nav ? "left-0 top-12" : "hidden"
                               } bg-red-500 duration-200`}
                     >
                          <ul className={` p-4 `}>
