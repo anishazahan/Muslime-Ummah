@@ -3,9 +3,6 @@ import WelcomeSlider from "./WelcomeSlider"
 
 
 const WelcomeSection = () => {
-
-
-
   return (
 
     <div className=" px-5 lg:px-20 mx-auto xl:container">
