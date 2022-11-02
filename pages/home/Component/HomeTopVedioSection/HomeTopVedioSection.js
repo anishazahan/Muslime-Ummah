@@ -3,7 +3,7 @@ import {BsPlayCircle,BsFillEyeFill,BsFlagFill} from 'react-icons/bs'
 
 const HomeTopVedioSection = () => {
   return (
-    <div className='max-width mx-auto my-20'>
+    <div className='max-width mx-auto my-14 lg:my-28 xl:container'>
         <div className="px-7 xl:px-20 flex flex-col lg:flex-row">
 
            
@@ -25,7 +25,7 @@ const HomeTopVedioSection = () => {
             <div className="right-content basis-8/12 lg:ml-36 ml-0 space-y-7 lg:space-y-6 xl:space-y-9">
 
                 <div className="heading w-full font-extrabold text-2xl tracking-wide text-gray-700">
-                <h2 className='mb-1 mt-14 lg:mt-0'>In The Name Of Allah </h2>
+                <h2 className='mb-1 mt-10 lg:mt-0'>In The Name Of Allah </h2>
                 <h1> The Beneficent The Merciful</h1>
                 </div>
                 <img className='w-38' src={"https://i.ibb.co/cXkRvhb/3.png"} alt="" />
