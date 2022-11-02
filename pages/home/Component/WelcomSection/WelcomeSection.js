@@ -2,16 +2,16 @@ import React from 'react'
 
 const WelcomeSection = () => {
   return (
-    <div className=" min-h-screen px-8 lg:px-20 mx-auto">
-      <div className="hero-content flex flex-col md:flex-row w-full ">
+    <div className=" min-h-screen px-5 lg:px-20 mx-auto">
+      <div className="hero-content flex flex-col lg:flex-row w-full ">
 
         <div className="w-full h-auto basis-6/12 mr-5">
-          <img src={"https://i.ibb.co/2YpKphS/welcome-Img3.webp"} className=" rounded-lg shadow-2xl  w-full" />
+          <img src={"https://i.ibb.co/2YpKphS/welcome-Img3.webp"} className=" rounded-lg shadow-2xl w-full  md:w-9/12" />
         </div>
 
         <div className=' space-y-6 basis-6/12'>
           <div className="">
-            <h1 className="text-4xl font-bold text-gray-700">Welcome to Muslime Ummah</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mt-10 md:mt-14 lg:mt-0">Welcome to Muslime Ummah</h1>
             <p className="text-[18px] text-primary font-semibold mt-4 welcome-heading"> to Achieve Spiritual Goals
             </p>
           </div>
