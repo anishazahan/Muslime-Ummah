@@ -44,7 +44,7 @@ a {
 
   body {
     color: white;
-    background: black;
+    background: #0578b6;
   }
 }
 
@@ -77,7 +77,7 @@ a {
 .menu {
   font-size: 15px;
   font-weight: 300;
-  padding: 0 10px;
+  padding: 10px 10px;
 
 }
 
@@ -402,3 +402,16 @@ margin-left: 16rem;
   width: 90%;
   border: 1px solid rgba(128, 128, 128, 0.244);
 }
+
+
+
+
+/* ----------------------------------
+          Responsive layout 
+  -----------------------------------*/
+
+  @media screen and (max-width: 600px){
+    .active {
+      border-bottom: 2px solid white;
+    }
+  }
