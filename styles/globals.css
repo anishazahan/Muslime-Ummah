@@ -115,7 +115,7 @@ a {
   width: 80px;
 }
 
-
+/* 
 
 .swiper {
   width: 100%;
@@ -127,7 +127,6 @@ a {
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -189,7 +188,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .banner-background {
 
@@ -413,5 +412,12 @@ margin-left: 16rem;
   @media screen and (max-width: 600px){
     .active {
       border-bottom: 2px solid white;
+    }
+    .menu {
+      font-weight: 400;
+      padding: 3px 10px;
+      display: inline-block;
+      color: white;
+      font-family: 'Merriweather', serif;
     }
   }

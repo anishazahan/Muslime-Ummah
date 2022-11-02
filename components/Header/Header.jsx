@@ -25,8 +25,8 @@ function Header() {
                          </div>
                     </div>
                </section>
-               <section className="middle-header">
-                    <div className="middle-content max-width flex-col mx-auto flex lg:flex-row justify-between px-2 sm:px-10 text-white h-full items-center">
+               <section className="middle-header ">
+                    <div className="middle-content max-width flex-col mx-auto flex lg:flex-row justify-between px-2 sm:px-10 text-white h-full items-center ">
                          <div className="left-content flex flex-row ">
                               <img className='h-[100px] w-[97px]' src={"https://i.ibb.co/0mKdg3j/retina-logo3-1.jpg"} alt="" />
                               <div className="flex flex-col mt-7">
