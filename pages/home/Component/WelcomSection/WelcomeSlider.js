@@ -28,7 +28,7 @@ const WelcomeSlider = () => {
             loop={true}
             spaceBetween={10}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper }}
+            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
           >
@@ -63,6 +63,8 @@ const WelcomeSlider = () => {
               <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
             </SwiperSlide>
           </Swiper>
+          
+          <>
           <Swiper
             onSwiper={setThumbsSwiper}
             loop={true}
@@ -104,6 +106,7 @@ const WelcomeSlider = () => {
               <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
             </SwiperSlide>
           </Swiper>
+          </>
         </>
    
     

@@ -6,12 +6,15 @@ const Donation = () => {
   return (
     <div className='mt-20 lg:mt-40'>
         <section className="max-width mx-auto">
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row items-stretch">
+
                 <div className="left-img w-full lg:w-1/2 mx-auto lg:mx-0">
-                    <img className='w-full h-full' src={"https://i.ibb.co/FHxvRPj/donation1.jpg"} alt="" />
+                    <img className='w-full h-full object-cover' src={"https://i.ibb.co/FHxvRPj/donation1.jpg"} alt="" />
                 </div>
+
                 <div className="right ml-20 space-y-4">
                     <h2 className='text-xl font-semibold text-primary'>Give Food & Shelter To Poor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda porro eligendi quod voluptatum voluptatem vitae, quasi repellat illo ullam hic?</p>
                     <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                     <div className="input flex  space-x-2">
                     <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={200} />
