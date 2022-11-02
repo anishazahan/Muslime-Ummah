@@ -3,23 +3,24 @@ import React from 'react'
 
 
 const Donation = () => {
- 
   return (
-    <div className='donation-background mb-20'>
-
+    <div className='mt-20 lg:mt-40'>
         <section className="max-width mx-auto">
             <div className="flex flex-col lg:flex-row">
                 <div className="left-img w-full lg:w-1/2 mx-auto lg:mx-0">
                     <img className='w-full h-full' src={"https://i.ibb.co/FHxvRPj/donation1.jpg"} alt="" />
                 </div>
-                <div className="right ml-20 space-y-6">
-                    <h2 className='text-xl font-semibold mt-8 text-primary'>Give Food & Shelter To Poor</h2>
+                <div className="right ml-20 space-y-4">
+                    <h2 className='text-xl font-semibold text-primary'>Give Food & Shelter To Poor</h2>
                     <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
-                    <div className="btn-group space-x-2">
-                    <button className='donate-btn'>$100</button>
-                    <button className='donate-btn'>$200</button>
+                    <div className="input flex  space-x-2">
+                    <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={200} />
+                    <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={300} />
+                    <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={400} />
+                    <input className='border w-28 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='Other'  />
+                    {/* <button className='donate-btn'>$200</button>
                     <button className='donate-btn'>$300</button>
-                    <button className='donate-btn'>Other</button>
+                    <button className='donate-btn'>Other</button> */}
                     </div>
 
                     <form  className='w-full'>

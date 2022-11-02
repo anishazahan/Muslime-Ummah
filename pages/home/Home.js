@@ -27,7 +27,7 @@ const Home = () => {
        <AdviseSection></AdviseSection>
         <Scholars></Scholars>
         <Donation></Donation>
-        <DonationCard></DonationCard>
+        {/* <DonationCard></DonationCard> */}
         <PrayerRules></PrayerRules> 
     
       
