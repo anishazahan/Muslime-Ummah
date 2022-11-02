@@ -3,7 +3,7 @@ import {BsPlayCircle,BsFillEyeFill,BsFlagFill} from 'react-icons/bs'
 
 const HomeTopVedioSection = () => {
   return (
-    <div className='max-width mx-auto my-14 lg:my-20'>
+    <div className='max-width mx-auto my-14 lg:my-28 xl:container'>
         <div className="px-7 xl:px-20 flex flex-col lg:flex-row">
 
            

@@ -4,7 +4,7 @@ import React from 'react'
 const BannerBottomSection = () => {
   return (
     <div className='bg-slate-50 mb-10'>
-        <div className="max-width mx-auto">
+        <div className="xl:container mx-auto">
             <div className="flex flex-col lg:flex-row text-center lg:text-left px-4 md:px-5 lg:px-20 mx-auto">
                 <div className="left w-full space-y-7 my-16 ">
                     <h1 className='text-primary font-extrabold text-2xl'>"JOIN THE ISLAMIC COMMUNITY"</h1>
