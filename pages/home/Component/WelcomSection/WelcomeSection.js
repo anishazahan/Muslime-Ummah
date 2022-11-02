@@ -10,6 +10,7 @@ const WelcomeSection = () => {
     <div className="  px-5 lg:px-20 mx-auto xl:container">
       <div className="hero-content flex flex-col lg:flex-row w-full xl:space-x-4 ">
 
+
         <div className=' space-y-6 basis-6/12'>
           <div className="">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mt-10 md:mt-14 lg:mt-0 2xl:mt-10">Welcome to Muslime Ummah</h1>

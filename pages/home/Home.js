@@ -23,7 +23,7 @@ const Home = () => {
         {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
-         <WelcomeSlider></WelcomeSlider>
+         {/* <WelcomeSlider></WelcomeSlider> */}
          <Gallary></Gallary>
         <PillerOfIslam></PillerOfIslam>
        <AdviseSection></AdviseSection>
