@@ -13,6 +13,7 @@ import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
 import Scholars from './Component/Schoolars/Scholars'
 import WelcomeSection from './Component/WelcomSection/WelcomeSection'
+import WelcomeSlider from './Component/WelcomSection/WelcomeSlider'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
+         <WelcomeSlider></WelcomeSlider>
          <Gallary></Gallary>
         <PillerOfIslam></PillerOfIslam>
        <AdviseSection></AdviseSection>

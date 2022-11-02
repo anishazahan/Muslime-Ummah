@@ -1,13 +1,14 @@
-import React from 'react'
+
+
 
 const WelcomeSection = () => {
+ 
+
+
   return (
+
     <div className="  px-5 lg:px-20 mx-auto xl:container">
       <div className="hero-content flex flex-col lg:flex-row w-full xl:space-x-4 ">
-
-        <div className="w-full h-auto basis-6/12 mr-5">
-          <img src={"https://i.ibb.co/2YpKphS/welcome-Img3.webp"} className=" rounded-lg shadow-2xl w-full " />
-        </div>
 
         <div className=' space-y-6 basis-6/12'>
           <div className="">
