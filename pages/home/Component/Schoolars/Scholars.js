@@ -10,7 +10,7 @@ const Scholars = () => {
         .then(data=>setScholars(data));
     },[])
   return (
-    <div className='max-width mx-auto mb-20'>
+    <div className='lg:container mx-auto mx-auto mb-20'>
 
             <div className="text-center space-y-3">
                 <h1 className='text-xl font-semibold text-primary'>Our Expert</h1>
