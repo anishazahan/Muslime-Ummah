@@ -44,13 +44,17 @@ function Navbar() {
 
                </nav>
 
+
                <div className="justify-between px-[8%] h-full items-center md:hidden  flex relative  duration-200">
                     <button onClick={() => setNav(!nav)} className='text-white'>
                          <VscThreeBars></VscThreeBars>
                     </button>
+                    
                     <nav
-                         className={`text-base text-gray-light absolute ${nav ? "right-0 top-12" : "-right-[500px] top-12"
-                              } bg-red-500 duration-200`}
+
+                         className={`flex flex-col bg-[#00a6ff] text-center z-10 left-0 w-full  absolute  py-4 md:py-0 duration-500 ${nav ? "opacity-100  top-14" : " top-[-250px] opacity-0"}`}
+                         // className={`text-base text-gray-light absolute ${nav ? "right-0 top-12" : "-right-[500px] top-12"
+                         //      } bg-red-500 duration-200`}
                     >
                          <ul className={` p-4 `}>
 
