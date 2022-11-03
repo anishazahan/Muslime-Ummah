@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Donation = () => {
     return (
-        <div className='mt-20 lg:mt-28 2xl:container mx-auto'>
+        <div className='mt-20 lg:mt-28 2xl:container mx-auto donate-section'>
             <section className="max-width mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-stretch">
                     <div className=" relative left-img w-full lg:w-6/12 lg:pr-3 mx-auto md:mx-0">

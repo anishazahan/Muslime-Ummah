@@ -418,7 +418,6 @@ input[type="range"] {
   color: green;
 }
 
-
 .gellery-shadow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -439,5 +438,13 @@ input[type="range"] {
     display: inline-block;
     color: white;
     font-family: 'Merriweather', serif;
+  }
+  .welcome-heading::before {
+    content: " Islamic Center for Muslims ";
+    border-bottom: none;
+  
+  }
+  .welcomeHr {
+    display: none;
   }
 }
