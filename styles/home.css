@@ -13,3 +13,12 @@
 .mySwiper{
     height: 100% !important;
 }
+
+/* .............. for Donation section style  ................. */
+.remember-background{
+    background: linear-gradient( to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://png.pngtree.com/thumb_back/fw800/background/20220127/pngtree-background-islamic-green-image_985124.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
