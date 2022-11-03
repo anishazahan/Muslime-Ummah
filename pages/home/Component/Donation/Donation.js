@@ -18,7 +18,7 @@ const Donation = () => {
             <section className="max-width mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-stretch">
 
-                    <div className=" relative left-img w-full md:w-6/12 pr-3 mx-auto md:mx-0">
+                    <div className=" relative left-img w-full lg:w-6/12 lg:pr-3 mx-auto md:mx-0">
                     <Swiper
                         centeredSlides={true}
                         autoplay={{
@@ -37,40 +37,42 @@ const Donation = () => {
                     </div>
 
                     <div className="right space-y-4 w-full md:w-6/12 pl-3 mx-auto md:mx-0">
-                        <h2 className='text-xl font-semibold text-primary'>Give Food & Shelter To Poor</h2>
-                        <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
+                        <h2 className='text-xl font-semibold text-primary mt-5 lg:mt-0'>Give Food & Shelter To Poor</h2>
+                        <h2 className='text-3xl md:text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                         <div className="input flex  space-x-2">
-                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={200} />
-                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={400} />
-                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={500} />
-                            <input className='border 4/6 p-2 m-1 text-gray-500 placeholder-black' type="number" placeholder=' Other Amount $'  />
-                            {/* <button className='donate-btn'>$200</button>
-                    <button className='donate-btn'>$300</button>
-                    <button className='donate-btn'>Other</button> */}
+                            <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={200} />
+                            <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={400} />
+                            <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={500} />
+                            <input className='border p-2 m-1 text-gray-500 placeholder-black' type="number" placeholder=' Other Amount $'  />
+                            
                         </div>
                         <h2 className='text-[18px] text-gray-600 font-medium tracking-wide'>Billing Information</h2>
                         <form className='w-full'>
 
-                            <div className="input-field flex flex-col w-full pl-3 pr-7">
+                            <div className="input-field flex flex-col w-full pl-3 lg:pr-7">
 
-                                <div className="flex flex-row w-10/12 lg:w-full">
-                                    <input className='border placeholder-slate-700 text-gray-600 p-2 w-5/12 m-1 outline-primary' type="text" placeholder='Your Name' />
+                            <div className="flex  lg:w-full">
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your Name' />
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="email" placeholder='Your Email' />
                                 </div>
-                                <div className="flex w-3/5  lg:w-full">
+                                <div className="flex  lg:w-full">
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="number" placeholder='Your Phone' />
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your Addrees' />
                                 </div>
-                                <div className="flex w-3/5  lg:w-full">
+                                <div className="flex  lg:w-full">
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your Country' />
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your City' />
                                 </div>
                             </div>
+                            <div className="">
+                            <h2 className='text-[17px] text-gray-700 font-medium tracking-wide mt-4'>Chose Your Payment Method</h2>
 
-                            <div className="space-y-4 mt-6">
+                            </div>
 
-                                <div className="progressbar w-full">
-                                    <h2 className="text-xl">Raise Funds For poor</h2>
+                            <div className="space-y-2 mt-6">
+
+                                <div className="progressbar w-10/12">
+                                    <h2 className="text-xl text-gray-700">Raise Funds For poor</h2>
                                     <input className='w-3/5 lg:w-full text-primary' type="range" />
                                 </div>
 
