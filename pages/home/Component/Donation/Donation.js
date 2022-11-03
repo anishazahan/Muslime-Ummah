@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Donation = () => {
     return (
-        <div className='mt-20 lg:mt-40'>
+        <div className='mt-20 lg:mt-40 2xl:container mx-auto'>
             <section className="max-width mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-stretch">
 
@@ -48,18 +48,22 @@ const Donation = () => {
                     <button className='donate-btn'>$300</button>
                     <button className='donate-btn'>Other</button> */}
                         </div>
-
+                        <h2 className='text-[18px] text-gray-600 font-medium tracking-wide'>Billing Information</h2>
                         <form className='w-full'>
 
-                            <div className="input-field flex flex-col md:flex-row w-full">
+                            <div className="input-field flex flex-col w-full pl-3 pr-7">
 
-                                <div className="flex flex-col w-3/5 lg:w-full">
-                                    <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Name' />
-                                    <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Email' />
+                                <div className="flex flex-row w-10/12 lg:w-full">
+                                    <input className='border placeholder-slate-700 text-gray-600 p-2 w-5/12 m-1 outline-primary' type="text" placeholder='Your Name' />
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="email" placeholder='Your Email' />
                                 </div>
-                                <div className="flex flex-col w-3/5  lg:w-full">
-                                    <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Phone' />
-                                    <input className='border p-2 m-1 outline-primary' type="text" placeholder='Your Addrees' />
+                                <div className="flex w-3/5  lg:w-full">
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="number" placeholder='Your Phone' />
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your Addrees' />
+                                </div>
+                                <div className="flex w-3/5  lg:w-full">
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your Country' />
+                                    <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your City' />
                                 </div>
                             </div>
 
