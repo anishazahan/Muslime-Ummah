@@ -52,9 +52,11 @@ a {
   background: #0E820E;
 
 }
-.text-primary{
+
+.text-primary {
   color: #0E820E;
 }
+
 .bg-secondary {
   background: rgb(2, 46, 69);
 }
@@ -285,12 +287,13 @@ input[type="range"] {
 
 
 .cateogory-btn:hover {
-  background:#0E820E ;
+  background: #0E820E;
   color: white;
 
 }
+
 .cateogory-btn:active {
-  background:#0E820E ;
+  background: #0E820E;
   color: white;
 
 }
@@ -298,7 +301,7 @@ input[type="range"] {
 
 
 
-.border-content{
+.border-content {
   position: absolute;
   left: -6rem;
   top: 160px;
@@ -306,19 +309,22 @@ input[type="range"] {
   border: 8px solid rgb(245 245 245);
   z-index: 99;
 }
-.watch-vedio-text{
+
+.watch-vedio-text {
   margin: 0;
   font-size: 20px;
   text-transform: uppercase;
   padding: 20px 110px 100px 65px;
   color: rgb(201 201 201);
- 
+
 }
-.img-vedio{
+
+.img-vedio {
   z-index: 1000;
   position: relative;
 }
-.img-vedio::after{
+
+.img-vedio::after {
   content: '';
   position: absolute;
   left: 0;
@@ -328,20 +334,22 @@ input[type="range"] {
   background: rgb(0 0 0 / 50%);
   z-index: 1200;
 }
+
 /* .img-vedio-layer{
   width: 100%;
   height: 100%;
 
 } */
-.play-btn{
-margin-top: -12rem;
-margin-left: 16rem;
- font-size: 3rem;
- z-index: 2000;
- color: white;
+.play-btn {
+  margin-top: -12rem;
+  margin-left: 16rem;
+  font-size: 3rem;
+  z-index: 2000;
+  color: white;
 
 }
-.visision-icon{
+
+.visision-icon {
   outline: none;
   padding: 12px;
   border-radius: 50%;
@@ -350,20 +358,22 @@ margin-left: 16rem;
   font-size: 2.8rem;
   transition: .1s;
 }
-.visision-icon:hover{
+
+.visision-icon:hover {
   background-color: #022C43;
 }
 
-.piller-img{
+.piller-img {
   width: 70px;
   height: 70px;
   margin: auto;
 }
-.card{
-  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+
+.card {
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
 }
 
-.prayer-heading{
+.prayer-heading {
   border-bottom: 2px solid #0E820E;
   margin: auto;
   display: inline-block;
@@ -371,56 +381,70 @@ margin-left: 16rem;
 
 }
 
-.donation-background{
+.donation-background {
   background: url('https://i.ibb.co/sF5mY4S/donation-Background.jpg');
   width: 100%;
   padding: 1rem;
 }
 
 
-.scholar-Background{
+.scholar-Background {
   background: url('https://i.ibb.co/M8chqFc/scholar-Background.png');
   width: 100%;
   height: 100%;
 }
 
 
-.welcome-heading::before{
+.welcome-heading::before {
   content: " Islamic Center for Muslims ";
   border-bottom: .16898rem solid #0E820E;
   padding-bottom: 1.6000rem;
 
 }
-.welcomeHr{
+
+.welcomeHr {
   padding-right: 2rem;
   width: 90%;
   border: 1px solid rgba(128, 128, 128, 0.244);
 }
 
-.mySwiper .swiper-slide{
+.mySwiper .swiper-slide {
   opacity: 1 !important;
 }
-.swiper-button-next::after, .swiper-button-prev::after {
-	font-size: 35px !important;
-	color: green;
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 35px !important;
+  color: green;
 }
 
-
+.gellery-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
 
 /* ----------------------------------
           Responsive layout 
   -----------------------------------*/
 
-  @media screen and (max-width: 600px){
-    .active {
-      border-bottom: 2px solid white;
-    }
-    .menu {
-      font-weight: 400;
-      padding: 3px 10px;
-      display: inline-block;
-      color: white;
-      font-family: 'Merriweather', serif;
-    }
+@media screen and (max-width: 600px) {
+  .active {
+    border-bottom: 2px solid white;
   }
+
+  .menu {
+    font-weight: 400;
+    padding: 3px 10px;
+    display: inline-block;
+    color: white;
+    font-family: 'Merriweather', serif;
+  }
+  .welcome-heading::before {
+    content: " Islamic Center for Muslims ";
+    border-bottom: none;
+  
+  }
+  .welcomeHr {
+    display: none;
+  }
+}
