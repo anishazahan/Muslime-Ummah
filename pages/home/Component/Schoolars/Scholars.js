@@ -80,11 +80,6 @@ const Scholars = () => {
           }
         </Swiper>
       </div>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 lg:px-28 gap-7 mt-10 "> 
-               
-            </div> */}
-
-
 
     </section>
   )
