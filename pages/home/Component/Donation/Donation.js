@@ -12,7 +12,7 @@ const Donation = () => {
                     <img className='w-full h-full object-cover' src={"https://i.ibb.co/FHxvRPj/donation1.jpg"} alt="" />
                 </div>
 
-                <div className="right ml-20 space-y-4">
+                <div className="right space-y-4">
                     <h2 className='text-xl font-semibold text-primary'>Give Food & Shelter To Poor</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda porro eligendi quod voluptatum voluptatem vitae, quasi repellat illo ullam hic?</p>
                     <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>

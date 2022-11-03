@@ -22,18 +22,34 @@ const Scholars = () => {
     },[])
   return (
     <section className='container mx-auto mb-20'>
-
             <div className="text-center space-y-3">
                 <h1 className='text-xl font-semibold text-primary'>Our Expert</h1>
                 <h1 className='text-4xl text-gray-700 font-semibold'>Islamic Scholars</h1>
             </div>
-
             <div className='px-20 mx-auto mt-10 bg-transparent'>
             <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={5}
         loop={true}
-       
+        autoplay={true}
+        breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -54,7 +70,8 @@ const Scholars = () => {
               </div>
             </div>
             <div className="bg-black/0 group-hover:bg-black/50 absolute z-20 h-full w-full inset-0 duration-500"></div>
-      
+
+    
           </div></SwiperSlide>
         })
       }
