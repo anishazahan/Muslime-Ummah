@@ -1,0 +1,8 @@
+
+
+/* .............. for schollars section style  ................. */
+
+.scholar_img:hover .scholar_info{
+    background-color: #0E820E;
+    color: antiquewhite;
+}

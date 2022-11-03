@@ -5,10 +5,10 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GrLinkedinOption} from "react-icons/gr";
 
 const SingleScholars = (props) => {
-  console.log(props);
+  // console.log(props);
   const { img, name, tittle } = props.scholar;
   return (
-    <div className=' relative scholar_img duration-150 group'>
+    <div className=' relative scholar_img duration-150 group mb-14 '>
       <div className=" duration-100">
         <img className='w-full rounded-0' src={img} alt="" />
       </div>
