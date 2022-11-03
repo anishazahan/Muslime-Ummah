@@ -2,8 +2,8 @@
 
 const Remember = () => {
   return (
-    <section className="remember-background px-10 lg:px-20 text-gray-100 pt-[6%] 2xl:container mx-auto">
-        <div className="flex container">
+    <section className="remember-background px-10 lg:px-20 text-gray-100 py-[6%] lg:py-0 lg:pt-[6%] mx-auto">
+        <div className="flex container mx-auto">
         <div className="remember-left text-center lg:text-left lg:w-6/12">
         <h2 className='text-2xl md:text-3xl font-semibold tracking-wide'>Make Your Donation</h2>
         <p className="mt-2">WEEKELY PROGRAMS FOR TAFSEER UL QURAN</p>
