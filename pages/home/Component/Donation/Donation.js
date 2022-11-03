@@ -35,7 +35,7 @@ const Donation = () => {
                         
                     </div>
 
-                    <div className="right space-y-4 w-full lg:w-6/12 pl-3 mx-auto md:mx-0">
+                    <div className="right space-y-4 w-full lg:w-6/12 lg:pl-3 pl-10 md:pl-16 pr-3 mx-auto md:mx-0">
                         <h2 className='text-xl font-semibold text-primary mt-5 lg:mt-0'>Give Food & Shelter To Poor</h2>
                         <h2 className='text-3xl md:text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                         <div className="input flex  space-x-2">
@@ -62,7 +62,7 @@ const Donation = () => {
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your City' />
                                 </div>
                             </div>
-                            <h2 className='text-[17px] text-gray-900 font-medium tracking-wide mt-4'>Chose Your Payment Method</h2>
+                            <h2 className='text-[17px] text-gray-900 font-medium tracking-wide mt-10 lg:mt-4'>Chose Your Payment Method</h2>
                             <div className="flex mb-[-1rem] my-3 space-x-6">
 
                             <div className="">
@@ -85,7 +85,7 @@ const Donation = () => {
                             </div>
                             </div>
 
-                            <div className=" mt-6">
+                            <div className="mt-12 lg:mt-6">
                                 <div className="progressbar w-10/12 mt-8">
                                     <h2 className="text-[18px] mb-[-1rem] text-gray-700">Raise Funds For poor</h2>
                                     <input className='w-3/5 lg:w-full text-primary' type="range" />
@@ -96,7 +96,7 @@ const Donation = () => {
                                     <h2>Goal: <span className='font-semibold text-primary text-xl'>$400.00</span> </h2>
                                 </div>
                             </div>
-                            <div className="mt-4">
+                            <div className=" mt-8 lg:mt-4">
                                 <button className='donate'>Donate Now</button>
                             </div>
                         </form>
