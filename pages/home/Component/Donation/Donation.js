@@ -18,7 +18,7 @@ const Donation = () => {
             <section className="max-width mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-stretch">
 
-                    <div className="left-img w-full md:w-6/12 pr-3 mx-auto md:mx-0">
+                    <div className=" relative left-img w-full md:w-6/12 pr-3 mx-auto md:mx-0">
                     <Swiper
                         centeredSlides={true}
                         autoplay={{
@@ -31,6 +31,7 @@ const Donation = () => {
                         <SwiperSlide><img className='w-full object-cover' src={"https://i.ibb.co/FHxvRPj/donation1.jpg"} alt="" /></SwiperSlide>
                         <SwiperSlide><img className='w-full object-cover' src={"https://i.ibb.co/jWCX8z7/donatio2.jpg"} alt="" /></SwiperSlide>
                         <SwiperSlide><img className='w-full object-cover' src={"https://i.ibb.co/vh7PmWt/donation3.jpg"} alt="" /></SwiperSlide>
+                        <div className="bg-black/50 group-hover:bg-black/50 absolute z-20 h-full w-full inset-0 duration-500"></div>
                     </Swiper>
                         
                     </div>
