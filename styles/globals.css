@@ -400,6 +400,10 @@ margin-left: 16rem;
 .mySwiper .swiper-slide{
   opacity: 1 !important;
 }
+.swiper-button-next::after, .swiper-button-prev::after {
+	font-size: 35px !important;
+	color: green;
+}
 
 
 
