@@ -49,11 +49,11 @@ a {
 }
 
 .bg-primary {
-  background: rgb(0, 143, 69);
+  background: #0E820E;
 
 }
 .text-primary{
-  color: rgb(0, 143, 69);
+  color: #0E820E;
 }
 .bg-secondary {
   background: rgb(2, 46, 69);
@@ -240,11 +240,6 @@ a {
 
 }
 
-.left-img {
-
-  height: 100%;
-  color: rgba(255, 255, 255, 0.811);
-}
 
 .donate-btn {
   padding: 5px 30px;
