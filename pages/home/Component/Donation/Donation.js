@@ -38,13 +38,12 @@ const Donation = () => {
 
                     <div className="right space-y-4 w-full md:w-6/12 pl-3 mx-auto md:mx-0">
                         <h2 className='text-xl font-semibold text-primary'>Give Food & Shelter To Poor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda porro eligendi quod voluptatum voluptatem vitae, quasi repellat illo ullam hic?</p>
                         <h2 className='text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                         <div className="input flex  space-x-2">
-                            <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={200} />
-                            <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={300} />
-                            <input className='border w-20 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='' value={400} />
-                            <input className='border w-28 p-2 m-1 outline-primary rounded rounded-full' type="text" placeholder='Other' />
+                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={200} />
+                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={400} />
+                            <input className='border w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={500} />
+                            <input className='border 4/6 p-2 m-1 text-gray-500 placeholder-black' type="number" placeholder=' Other Amount $'  />
                             {/* <button className='donate-btn'>$200</button>
                     <button className='donate-btn'>$300</button>
                     <button className='donate-btn'>Other</button> */}
