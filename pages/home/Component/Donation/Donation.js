@@ -64,19 +64,38 @@ const Donation = () => {
                                     <input className='border placeholder-slate-700 w-5/12 p-2 m-1 outline-primary' type="text" placeholder='Your City' />
                                 </div>
                             </div>
+                            <h2 className='text-[17px] text-gray-900 font-medium tracking-wide mt-4'>Chose Your Payment Method</h2>
+                            <div className="flex mb-[-1rem] my-3 space-x-6">
+
                             <div className="">
-                            <h2 className='text-[17px] text-gray-700 font-medium tracking-wide mt-4'>Chose Your Payment Method</h2>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+                              <label className="text-slate-500 font-semibold" for="html">Paypal</label>
+                            </div>
+
+                            <div className="">
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+                              <label className="text-slate-500 font-semibold" for="html">Strip</label>
+                            </div>
+
+                            <div className="">
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+                              <label className="text-slate-500 font-semibold" for="html">Credit Card</label>
+                            </div>
+                            <div className="">
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+                              <label className="text-slate-500 font-semibold" for="html">Other Sourch</label>
+                            </div>
 
                             </div>
 
-                            <div className="space-y-2 mt-6">
+                            <div className=" mt-6">
 
-                                <div className="progressbar w-10/12">
-                                    <h2 className="text-xl text-gray-700">Raise Funds For poor</h2>
+                                <div className="progressbar w-10/12 mt-8">
+                                    <h2 className="text-[18px] mb-[-1rem] text-gray-700">Raise Funds For poor</h2>
                                     <input className='w-3/5 lg:w-full text-primary' type="range" />
                                 </div>
 
-                                <div className="flex space-x-8">
+                                <div className="flex space-x-8 my-4">
                                     <h2>Raised: <span className='font-semibold text-primary'>$400.00</span> </h2>
                                     <h2>Goal: <span className='font-semibold text-primary'>$400.00</span> </h2>
                                 </div>
