@@ -17,7 +17,6 @@ const Donation = () => {
         <div className='mt-20 lg:mt-40 2xl:container mx-auto'>
             <section className="max-width mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-stretch">
-
                     <div className=" relative left-img w-full lg:w-6/12 lg:pr-3 mx-auto md:mx-0">
                     <Swiper
                         centeredSlides={true}
@@ -36,15 +35,14 @@ const Donation = () => {
                         
                     </div>
 
-                    <div className="right space-y-4 w-full md:w-6/12 pl-3 mx-auto md:mx-0">
+                    <div className="right space-y-4 w-full lg:w-6/12 pl-3 mx-auto md:mx-0">
                         <h2 className='text-xl font-semibold text-primary mt-5 lg:mt-0'>Give Food & Shelter To Poor</h2>
                         <h2 className='text-3xl md:text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
                         <div className="input flex  space-x-2">
                             <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={200} />
                             <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={400} />
                             <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black' type="text" placeholder='$' value={500} />
-                            <input className='border p-2 m-1 text-gray-500 placeholder-black' type="number" placeholder=' Other Amount $'  />
-                            
+                            <input className='border p-2 m-1 text-gray-500 placeholder-black' type="number" placeholder=' Other Amount $'/>
                         </div>
                         <h2 className='text-[18px] text-gray-600 font-medium tracking-wide'>Billing Information</h2>
                         <form className='w-full'>
@@ -85,19 +83,17 @@ const Donation = () => {
                             <input type="radio" id="html" name="fav_language" value="HTML"/>
                               <label className="text-slate-500 font-semibold" for="html">Other Sourch</label>
                             </div>
-
                             </div>
 
                             <div className=" mt-6">
-
                                 <div className="progressbar w-10/12 mt-8">
                                     <h2 className="text-[18px] mb-[-1rem] text-gray-700">Raise Funds For poor</h2>
                                     <input className='w-3/5 lg:w-full text-primary' type="range" />
                                 </div>
 
-                                <div className="flex space-x-8 my-4">
-                                    <h2>Raised: <span className='font-semibold text-primary'>$400.00</span> </h2>
-                                    <h2>Goal: <span className='font-semibold text-primary'>$400.00</span> </h2>
+                                <div className="flex space-x-8 my-4 mb-5">
+                                    <h2>Raised: <span className='font-semibold text-primary text-xl'>$400.00</span> </h2>
+                                    <h2>Goal: <span className='font-semibold text-primary text-xl'>$400.00</span> </h2>
                                 </div>
                             </div>
                             <div className="mt-4">
