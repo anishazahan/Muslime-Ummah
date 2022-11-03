@@ -52,18 +52,18 @@ const Gallary = () => {
                 <div className="">
                     <button className='outline-none px-8 text-xl py-4 bg-slate-200 text-gray-600'> Cateogory</button>
                 </div>
-                <div onClick={handleImg} className="cateogory-btns space-x-4 mx-auto">
-                    <button className='outline-none cateogory-btn hover:ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>All</button>
-                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>Masjid</button>
-                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>Namaz</button>
-                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>Ramadan</button>
-                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>Eid</button>
-                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase'>Helping People</button>
+                <div onClick={handleImg} className="flex justify-center flex-wrap mx-auto">
+                    <button className='outline-none cateogory-btn hover:ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>All</button>
+                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>Masjid</button>
+                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>Namaz</button>
+                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>Ramadan</button>
+                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>Eid</button>
+                    <button className='outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 bg-slate-100 text-primary text-gray-600 uppercase mx-2 my-2 md:my-0'>Helping People</button>
                 </div>
 
                 <div className="gallary max-width mx-auto px-20">
 
-                    <div className="flex justify-evenly flex-wrap">
+                    <div className="flex justify-center flex-wrap">
                         {
                             gallery.map(images => <SingleGallary key={images.id} imgInfo={images}></SingleGallary>)
                         }
