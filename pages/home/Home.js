@@ -20,7 +20,6 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <BannerBottomSection></BannerBottomSection>
-        {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
          <Gallary></Gallary>
@@ -28,7 +27,6 @@ const Home = () => {
        <AdviseSection></AdviseSection>
         <Scholars></Scholars>
         <Donation></Donation>
-        {/* <DonationCard></DonationCard> */}
         <PrayerRules></PrayerRules>
         <Remember></Remember> 
     
