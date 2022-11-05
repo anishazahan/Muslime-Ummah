@@ -5,8 +5,8 @@ import WelcomeSlider from "./WelcomeSlider"
 const WelcomeSection = () => {
   return (
 
-    <div className=" px-5 lg:px-20 mx-auto xl:container md:text-left text-center">
-      <div className="hero-content flex flex-col lg:flex-row w-full h-auto md:h-[400px] xl:space-x-4 ">
+    <div className=" px-5 lg:px-20 mx-auto xl:container lg:text-left text-center">
+      <div className="hero-content flex flex-col lg:flex-row w-full h-auto lg:h-[400px] xl:space-x-4 ">
         <div className="basis-6/12 mr-5 slider-container">
           <WelcomeSlider />
         </div>

@@ -427,6 +427,17 @@ input[type="range"] {
           Responsive layout 
   -----------------------------------*/
 
+@media screen and (max-width: 1024px) {
+  .welcome-heading::before {
+    content: " Islamic Center for Muslims ";
+    border-bottom: none;
+  
+  }
+  .welcomeHr {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .active {
     border-bottom: 2px solid white;
