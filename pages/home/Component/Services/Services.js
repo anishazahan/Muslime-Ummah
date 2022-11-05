@@ -20,8 +20,9 @@ const Services = () => {
                     return <div className="service-card">
                        <div className="">
                        <img src={service.img} alt="" />
-                       <div className="">
-                       <h2>{service.name}</h2>
+                       <div className="pl-8 py-3 service-content">
+                       <h2 className="font-semibold text-[19px] tracking-wide my-3">{service.name}</h2>
+                       <p className="text-gray-500 text-sm mb-5">{service.time}</p>
                        </div>
                        </div>
                             
