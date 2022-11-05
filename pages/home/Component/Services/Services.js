@@ -19,11 +19,11 @@ const Services = () => {
             {
                 services?.map(service=>{
                     return <div className="service-card">
-                       <div className="">
-                       <img src={service.img} alt="" />
-                       <p><FaQuran></FaQuran></p>
-                       <div className="pl-8 py-3 service-content">
-                       <h2 className="font-semibold text-[19px] tracking-wide my-3">{service.name}</h2>
+                       <div className="relative z-10">
+                       <img src={service.img} alt="absolute" />
+                       <div className="pl-8 py-3 service-content duration-500">
+                       <p><FaQuran className="p-4 service-icon duration-500 rounded-full absolute z-20 bg-white text-primary mt-[-2.5rem] text-7xl border"></FaQuran></p>
+                       <h2 className="font-semibold text-[19px] tracking-wide mt-[3rem] my-3">{service.name}</h2>
                        <p className="text-gray-500 text-sm mb-5">{service.time}</p>
                        </div>
                        </div>
