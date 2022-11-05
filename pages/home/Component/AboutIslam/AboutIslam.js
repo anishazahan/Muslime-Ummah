@@ -6,7 +6,7 @@ const AboutIslam = () => {
 
       <div className="about-content w-full lg:w-6/12">
         <div className="flex flex-col pr-4">
-          <img className="w-52 mx-auto" src={"http://kodeforest.net/html/islamic/images/hdg-img.png"} alt="" />
+          <img className="w-52 mx-auto lg:mx-0" src={"http://kodeforest.net/html/islamic/images/hdg-img.png"} alt="" />
           <h2 className="text-2xl font-semibold uppercase text-gray-700 my-3 tracking-wide">About Us</h2>
           <p className="text-gray-400">here are many variations of passages of Lorem Ipsum available, but have suffered alteration in some form, by injected humour, or randomised words of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
           <div className="flex justify-center lg:justify-start my-10 lg:space-x-6  flex-wrap">
