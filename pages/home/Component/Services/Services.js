@@ -21,7 +21,7 @@ const Services = () => {
                 services?.map(service=>{
                     return <div className="service-card mx-auto">
                        <div className="relative z-10">
-                       <img src={service.img} alt="absolute" />
+                       <img className="service-img" src={service.img} alt="absolute" />
                        <div className="px-8 py-3 service-content duration-500">
                        <p><FaQuran className="p-4 service-icon duration-500 rounded-full absolute z-20 bg-white text-primary mt-[-2.5rem] text-7xl border"></FaQuran></p>
                        <h2 className="font-semibold text-[19px] tracking-wide mt-[3rem] my-3">{service.name}</h2>

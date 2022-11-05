@@ -96,7 +96,12 @@
     /* box-shadow: 1px 2px 10px rgba(35,35,35,0.5); */
     box-shadow: 0px 0px 7px 0px;
   }
+  .service-card:hover .service-img{
+    transition: all 0.3s ease-in-out;
+
+  }
   
+ 
   .service-card:hover .arrow-btn{
     display: block;
   }
