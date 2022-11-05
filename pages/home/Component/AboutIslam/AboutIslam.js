@@ -2,7 +2,7 @@
 
 const AboutIslam = () => {
   return (
-    <section className="mx-auto container px-20 flex flex-col lg:flex-row my-28 items-stretch">
+    <section className="mx-auto container text-center lg:text-left px-10 lg:px-20 flex flex-col lg:flex-row my-28 items-stretch">
 
       <div className="about-content lg:w-6/12">
         <div className="flex flex-col pr-4">
@@ -36,7 +36,7 @@ const AboutIslam = () => {
 
       </div>
 
-      <div className="about-img lg:w-6/12 flex space-x-3">
+      <div className="about-img lg:w-6/12 flex space-x-3 ">
 
         <div className="flex flex-col space-y-3">
 
@@ -50,7 +50,7 @@ const AboutIslam = () => {
          <div className="relative img-container">
          <img className="images duration-500" src={'http://kodeforest.net/html/islamic/extra-images/mosque1.jpg'} alt="" />
          <div className="img-info">
-            <h2 className="text-secondary font-semibold text-xl">Madrasa in Istanbul</h2>
+            <h2 className="text-secondary font-bold text-xl">Madrasa in Istanbul</h2>
           </div>
          </div>
         </div>

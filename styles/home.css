@@ -43,10 +43,10 @@
     padding:0 10px;
     margin: auto;
     text-align: center;
-    background-color: #0E820E;
+    /* background-color: #0E820E; */
     height: 16%;
     padding-top: 15px;
-    color: antiquewhite;
+    color: #0E820E;
    }
    
    /*Image*/
@@ -66,7 +66,7 @@
    
    .card:hover .card-img {
     transform: translateY(-15%);
-    background-color: #0E820E;
+    /* background-color: #0E820E; */
     overflow-y: hidden;
    }
    
