@@ -13,7 +13,6 @@ const Gallary = () => {
                 setGallery(data)
             });
     }, [])
-    console.log(activeBtn)
 
     function handleImg(e) {
         const target = e.target.innerHTML;
@@ -55,12 +54,12 @@ const Gallary = () => {
                     <button className='outline-none px-8 text-xl py-4 bg-slate-200 text-gray-600'> Cateogory</button>
                 </div>
                 <div onClick={handleImg} className="flex justify-center flex-wrap mx-auto">
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "All"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>All</button>
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Masjid"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>Masjid</button>
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Namaz"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>Namaz</button>
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Ramadan"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>Ramadan</button>
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Eid"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>Eid</button>
-                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Helping People"? "bg-primary text-white" : "text-primary bg-slate-100"} uppercase mx-2 my-2 md:my-0`}>Helping People</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "All"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>All</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Masjid"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>Masjid</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Namaz"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>Namaz</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Ramadan"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>Ramadan</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Eid"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>Eid</button>
+                    <button className={`outline-none cateogory-btn ease-out px-8 text-[16px] font-semibold py-3 ${activeBtn == "Helping People"? "bg-primary text-white" : "text-primary bg-slate-100"} duration-500 uppercase mx-2 my-2 md:my-0`}>Helping People</button>
                 </div>
 
                 <div className="gallary max-width mx-auto px-20">
