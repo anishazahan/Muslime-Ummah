@@ -13,7 +13,6 @@ const Gallary = () => {
                 setGallery(data)
             });
     }, [])
-
     function handleImg(e) {
         const target = e.target.innerHTML;
         setActiveBtn(target)
