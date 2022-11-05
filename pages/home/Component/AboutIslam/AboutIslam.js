@@ -2,7 +2,7 @@
 
 const AboutIslam = () => {
   return (
-    <section className="mx-auto container px-20 flex flex-col lg:flex-row my-28">
+    <section className="mx-auto container px-20 flex flex-col lg:flex-row my-28 items-stretch">
 
       <div className="about-content lg:w-6/12">
         <div className="flex flex-col pr-4">
@@ -15,22 +15,18 @@ const AboutIslam = () => {
                 <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">10</h2>
                 <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">MADRASAS</h2>
               </div>
-
               <div className="flex flex-col">
                 <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">20</h2>
                 <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">Mosquie</h2>
               </div>
-
               <div className="flex flex-col">
                 <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">500</h2>
                 <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">Students</h2>
               </div>
-
               <div className="flex flex-col">
                 <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">50</h2>
                 <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">Imams</h2>
               </div>
-
             </div>
             <div className="flex space-x-4">
                 <button className="px-4 py-2 bg-white border border-2 font-semibold underline text-gray-600">Read More</button>
