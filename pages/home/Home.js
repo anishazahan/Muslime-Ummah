@@ -1,5 +1,6 @@
 import React from 'react'
 import BannerSlider from '../Home/Component/Banner/BannerSlider'
+import AboutIslam from './Component/AboutIslam/AboutIslam'
 // import NewsLetter from '../Footer/NewsLetter'
 
 import AdviseSection from './Component/Advise/AdviseSection'
@@ -20,15 +21,14 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <BannerBottomSection></BannerBottomSection>
-        {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
+         <AboutIslam></AboutIslam>
          <Gallary></Gallary>
         <PillerOfIslam></PillerOfIslam>
        <AdviseSection></AdviseSection>
         <Scholars></Scholars>
         <Donation></Donation>
-        {/* <DonationCard></DonationCard> */}
         <PrayerRules></PrayerRules>
         <Remember></Remember> 
     

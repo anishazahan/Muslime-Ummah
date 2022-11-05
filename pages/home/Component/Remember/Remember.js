@@ -17,8 +17,6 @@ const Remember = () => {
             <img className=" mt-[-5rem] lg:mt-[-8rem]" src={'http://kodeforest.net/html/islamic/images/pray.png'} alt="" />
         </div>
         </div>
-
-
     </section>
   )
 }

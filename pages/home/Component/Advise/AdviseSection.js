@@ -58,7 +58,7 @@ const AdviseSection = () => {
 
 
                     <div className="right adviseImg ">
-                        <img className='w-full h-full mt-8 lg:mt-0 rounded lg:rounded-t-full w-9/12 lg:w-full' src={"https://i.ibb.co/Mchkhqb/advise.jpg"} alt="" />
+                        <img className=' h-full mt-8 lg:mt-0 rounded lg:rounded-t-full w-4/6  lg:w-full mx-auto lg:mx-0' src={"https://i.ibb.co/Mchkhqb/advise.jpg"} alt="" />
                     </div>
                 </div>
             </div>
