@@ -14,6 +14,7 @@ import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
 import Remember from './Component/Remember/Remember'
 import Scholars from './Component/Schoolars/Scholars'
+import Services from './Component/Services/Services'
 import WelcomeSection from './Component/WelcomSection/WelcomeSection'
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
          <WelcomeSection></WelcomeSection>
          <AboutIslam></AboutIslam>
          <Gallary></Gallary>
+         <Services></Services>
         <PillerOfIslam></PillerOfIslam>
        <AdviseSection></AdviseSection>
         <Scholars></Scholars>

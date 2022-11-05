@@ -88,3 +88,25 @@
   .img-container:hover .images {
     opacity: 0.3;
   }
+
+
+  /* .............. for services section style  ................. */
+
+  .service-card:hover .service-content{
+    /* box-shadow: 1px 2px 10px rgba(35,35,35,0.5); */
+    box-shadow: 0px 0px 7px 0px;
+  }
+  .service-card:hover .service-img{
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+ 
+  .service-card:hover .arrow-btn{
+    display: block;
+  }
+
+  .service-card:hover .service-icon{
+    background-color: #0E820E;
+    color: white;
+  }

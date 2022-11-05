@@ -14,7 +14,6 @@ const Gallary = () => {
                 setGallery(helpingPeopleGellary)
             });
     }, [])
-
     function handleImg(e) {
         const target = e.target.innerHTML;
         setActiveBtn(target)
