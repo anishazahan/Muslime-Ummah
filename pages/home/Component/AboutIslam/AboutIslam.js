@@ -9,10 +9,26 @@ const AboutIslam = () => {
             <img className="w-52" src={"http://kodeforest.net/html/islamic/images/hdg-img.png"} alt="" />
             <h2 className="text-2xl font-semibold uppercase text-gray-700 my-3 tracking-wide">About Us</h2>
             <p className="text-gray-400">here are many variations of passages of Lorem Ipsum available, but have suffered alteration in some form, by injected humour, or randomised words of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
-            <div className="flex">
+            <div className="flex my-10">
+
               <div className="flex flex-col">
-                <h2 className="p-8 font-semibold text-4xl border border-gray-400 border-2 text-primary rounded-full">10</h2>
-                <h2>MADRASAS</h2>
+                <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">10</h2>
+                <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">MADRASAS</h2>
+              </div>
+
+              <div className="flex flex-col">
+                <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">10</h2>
+                <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">MADRASAS</h2>
+              </div>
+
+              <div className="flex flex-col">
+                <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">10</h2>
+                <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">MADRASAS</h2>
+              </div>
+              
+              <div className="flex flex-col">
+                <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">10</h2>
+                <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">MADRASAS</h2>
               </div>
             </div>
         </div>
