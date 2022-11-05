@@ -4,13 +4,14 @@ import SingleGallary from './SingleGallary';
 const Gallary = () => {
     const [allGallery, setAllGallery] = useState([]);
     const [gallery, setGallery] = useState([]);
-    const [activeBtn, setActiveBtn] = useState("All");
+    const [activeBtn, setActiveBtn] = useState("Helping People");
     useEffect(() => {
         fetch('gallery.json')
             .then(res => res.json())
             .then(data => {
                 setAllGallery(data)
-                setGallery(data)
+                const helpingPeopleGellary = data.filter(gellary => gellary.category == "helpingPeople")
+                setGallery(helpingPeopleGellary)
             });
     }, [])
 
