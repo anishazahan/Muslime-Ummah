@@ -6,9 +6,9 @@ const AdviseSection = () => {
     return (
         <>
 
-            <div className="max-width mx-auto my-28">
-                <div className=" flex flex-col lg:flex-row px-16">
-                    <div className="left flex flex-col w-full space-y-8">
+            <div className="xl:container mx-auto my-28">
+                <div className=" flex flex-col lg:flex-row px-10">
+                    <div className="left flex flex-col w-full space-y-8 xl:mt-16 2xl:space-x-3">
 
                         <div className="quote flex">
                             <FaQuoteLeft className='text-primary font-bold text-5xl mr-3'></FaQuoteLeft>
@@ -52,13 +52,13 @@ const AdviseSection = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Duis aute irure.
                         </p>
                         <div className="">
-                            <button className="btn btn-secondary">Learn More</button>
+                            <button className="btn btn-secondary bg-secondary py-3 px-6 text-white ">Learn More</button>
                         </div>
                     </div>
 
 
                     <div className="right adviseImg ">
-                        <img className='w-full h-full mt-8 lg:mt-0 rounded lg:rounded-t-full' src={"https://i.ibb.co/Mchkhqb/advise.jpg"} alt="" />
+                        <img className=' h-full mt-8 lg:mt-0 rounded lg:rounded-t-full w-4/6  lg:w-full mx-auto lg:mx-0' src={"https://i.ibb.co/Mchkhqb/advise.jpg"} alt="" />
                     </div>
                 </div>
             </div>

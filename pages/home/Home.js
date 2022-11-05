@@ -1,5 +1,6 @@
 import React from 'react'
 import BannerSlider from '../Home/Component/Banner/BannerSlider'
+import AboutIslam from './Component/AboutIslam/AboutIslam'
 // import NewsLetter from '../Footer/NewsLetter'
 
 import AdviseSection from './Component/Advise/AdviseSection'
@@ -11,7 +12,9 @@ import HomeTopVedioSection from './Component/HomeTopVedioSection/HomeTopVedioSec
 import PillerOfIslam from './Component/PillerOfIslam/PillerOfIslam'
 import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
+import Remember from './Component/Remember/Remember'
 import Scholars from './Component/Schoolars/Scholars'
+import Services from './Component/Services/Services'
 import WelcomeSection from './Component/WelcomSection/WelcomeSection'
 
 const Home = () => {
@@ -19,16 +22,17 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <BannerBottomSection></BannerBottomSection>
-        {/* <BannerSlider></BannerSlider> */}
         <HomeTopVedioSection></HomeTopVedioSection>
          <WelcomeSection></WelcomeSection>
+         <AboutIslam></AboutIslam>
          <Gallary></Gallary>
+         <Services></Services>
         <PillerOfIslam></PillerOfIslam>
        <AdviseSection></AdviseSection>
         <Scholars></Scholars>
         <Donation></Donation>
-        <DonationCard></DonationCard>
-        <PrayerRules></PrayerRules> 
+        <PrayerRules></PrayerRules>
+        <Remember></Remember> 
     
       
 

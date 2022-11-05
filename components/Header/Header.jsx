@@ -20,13 +20,13 @@ function Header() {
                          <div className="right-content  flex flex-row">
 
                               <div className="relative">
-                                   <FaSearch className='mr-[-12px] pt-2 text-2xl text-gray-400 text-black font-normal absolute search-border'></FaSearch> <input className='p-1 outline-none border-none rounded-sm' type="text" />
+                                   <FaSearch className='mr-[-12px] pt-2 text-2xl  text-black font-normal absolute search-border'></FaSearch> <input className='p-1 outline-none border-none rounded-sm' type="text" />
                               </div>
                          </div>
                     </div>
                </section>
-               <section className="middle-header">
-                    <div className="middle-content max-width flex-col mx-auto flex lg:flex-row justify-between px-10 text-white h-full items-center">
+               <section className="middle-header ">
+                    <div className="middle-content max-width flex-col mx-auto flex lg:flex-row justify-between px-2 sm:px-10 text-white h-full items-center ">
                          <div className="left-content flex flex-row ">
                               <img className='h-[100px] w-[97px]' src={"https://i.ibb.co/0mKdg3j/retina-logo3-1.jpg"} alt="" />
                               <div className="flex flex-col mt-7">
@@ -34,7 +34,7 @@ function Header() {
                                    <span className='text-2xl text-black logo-font-size font-semibold mt-0'>The popular Islamic Center</span>
                               </div>
                          </div>
-                         <div className="right-content  flex flex-row ">
+                         <div className="right-content  flex flex-row justify-center flex-wrap">
                               <div className="pray-time m-1 sm:m-3">
                                    <h2>Fazor</h2>
                                    <h2>5:30</h2>
