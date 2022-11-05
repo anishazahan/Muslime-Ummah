@@ -88,3 +88,11 @@
   .img-container:hover .images {
     opacity: 0.3;
   }
+
+
+  /* .............. for services section style  ................. */
+
+  .service-card{
+    /* box-shadow: 1px 2px 10px rgba(35,35,35,0.5); */
+    box-shadow: 0px 0px 7px 0px;
+  }
