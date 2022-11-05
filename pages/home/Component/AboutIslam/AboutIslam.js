@@ -30,7 +30,12 @@ const AboutIslam = () => {
                 <h2 className="p-5 font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">50</h2>
                 <h2 className=" font-semibold uppercase text-gray-600 my-3 tracking-wide">Imams</h2>
               </div>
+
             </div>
+            <div className="flex space-x-4">
+                <button className="px-4 py-2 bg-white border border-2 font-semibold underline text-gray-600">Read More</button>
+                <button className="px-4 py-2 bg-primary text-amber-100  font-semibold  text-gray-600">Join Our Activity</button>
+              </div>
         </div>
 
       </div>
