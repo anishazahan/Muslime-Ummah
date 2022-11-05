@@ -17,8 +17,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Merriweather', serif;
+h6,
+p,
+button {
+  font-family: 'Merriweather', serif !important;
   /* color: rgba(0, 0, 0, 0.856);
   text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
   0px -4px 10px rgba(255,255,255,0.3); */
@@ -431,8 +433,9 @@ input[type="range"] {
   .welcome-heading::before {
     content: " Islamic Center for Muslims ";
     border-bottom: none;
-  
+
   }
+
   .welcomeHr {
     display: none;
   }
@@ -450,11 +453,13 @@ input[type="range"] {
     color: white;
     font-family: 'Merriweather', serif;
   }
+
   .welcome-heading::before {
     content: " Islamic Center for Muslims ";
     border-bottom: none;
-  
+
   }
+
   .welcomeHr {
     display: none;
   }
