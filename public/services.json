@@ -33,19 +33,19 @@
     {
         "id":"6",
         "name":"OUR CACADEMIES",
-        "img":"http://kodeforest.net/html/islamic/extra-images/service4.jpg",
+        "img":"http://kodeforest.net/html/islamic/extra-images/service5.jpg",
         "time":"Timing : 08:00 A.M - 03:00 P.M"
     },
     {
         "id":"7",
         "name":"Mosque Development",
-        "img":"http://kodeforest.net/html/islamic/extra-images/service4.jpg",
+        "img":"https://ihsan.templines.org/wp-content/uploads/2019/08/Service-Box-Image-1-360x250.jpg",
         "time":"Timing : Whole Year"
     },
     {
         "id":"8",
         "name":"Helps Poor",
-        "img":"http://kodeforest.net/html/islamic/extra-images/service4.jpg",
+        "img":"https://ihsan.templines.org/wp-content/uploads/2019/08/Service-Box-Image-3-1-360x250.jpg",
         "time":"Timing : Any Time"
     }
 ]
