@@ -5,6 +5,11 @@ const AboutIslam = () => {
     <section className="mx-auto container px-20 flex flex-col lg:flex-row my-28">
 
       <div className="about-content lg:w-6/12">
+        <div className="flex flex-col">
+            <img className="w-52" src={"http://kodeforest.net/html/islamic/images/hdg-img.png"} alt="" />
+            <h2 className="text-2xl font-semibold tracking-wide">About Us</h2>
+        </div>
+
       </div>
 
       <div className="about-img lg:w-6/12 flex space-x-3">
