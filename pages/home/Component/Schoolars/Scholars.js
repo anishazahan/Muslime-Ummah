@@ -1,7 +1,6 @@
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
-import SingleScholars from './SingleScholars';
 import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
