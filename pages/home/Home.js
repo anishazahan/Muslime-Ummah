@@ -36,8 +36,6 @@ const Home = () => {
       <PrayerRules />
       <Remember />
 
-
-
     </div>
   )
 }
