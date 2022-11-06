@@ -199,9 +199,19 @@
   box-shadow: 0px 0px 7px 0px;
 }
 
-.service-card:hover .service-img {
-  transition: all 0.3s ease-in-out;
+.service-img{
+  height: 236px;
+  width: 354px;
+  overflow: hidden;
+}
+.service-card:hover img {
+  transform: scale(1.2);
 
+}
+.service-img img{
+  height: 100%;
+  width: 100%;
+  transition: .5s;
 }
 
 
