@@ -12,7 +12,14 @@ const ServiceDetails = () => {
 
         <div className="flex">
          <div className="left-service w-2/3">
-            <img className="w-full h-[70%] object-cover" src={'http://kodeforest.net/html/islamic/extra-images/service2.jpg'} alt="" />
+            <div className="h-[70%] overflow-hidden">
+                <img className="w-full h-full hover:scale-[1.2] duration-500 object-cover" src={'http://kodeforest.net/html/islamic/extra-images/service2.jpg'} alt="" />
+            </div>
+            <h2 className="font-semibold text-[20px] tracking-wide mt-[1.5rem] text-center my-3">
+                    Quran Clases
+                  </h2>
+                  <p className="text-gray-500 text-center text-sm mb-5">Timing : 09:00 A.M - 03:00 P.M</p>
+                    <p/>
         </div>
 
 
