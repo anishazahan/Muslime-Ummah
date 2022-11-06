@@ -1,26 +1,24 @@
-
-
 /* .............. for schollars section style  ................. */
 
-.scholar_img:hover .scholar_info{
-    background-color: #0E820E;
-    color: antiquewhite;
+.scholar_img:hover .scholar_info {
+  background-color: #0E820E;
+  color: antiquewhite;
 }
 
 
 /* .............. for Donation section style  ................. */
 
-.donate-section .mySwiper{
-    height: 100% !important;
+.donate-section .mySwiper {
+  height: 100% !important;
 }
 
 /* .............. for remember section style  ................. */
-.remember-background{
-    background: linear-gradient( to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://png.pngtree.com/thumb_back/fw800/background/20220127/pngtree-background-islamic-green-image_985124.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+.remember-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://png.pngtree.com/thumb_back/fw800/background/20220127/pngtree-background-islamic-green-image_985124.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
 }
 
 
@@ -29,84 +27,189 @@
 
 /*Card */
 .card {
-    width: 272px;
-    height: 397px;
-    position: relative;
-    box-shadow: 0px 2px 5px rgba(35,35,35,0.3);
-    transition: box-shadow .3s ease-in-out;
-   }
-   
-   .card-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding:0 10px;
-    margin: auto;
-    text-align: center;
-    /* background-color: #0E820E; */
-    height: 16%;
-    padding-top: 15px;
-    color: #0E820E;
-   }
-   
-   /*Image*/
-   .card-img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: transform .3s ease-in-out;
-    z-index: 2;
-   }
-  
-   
-   /* Hover */
-   .card:hover {
-    box-shadow: 1px 2px 10px rgba(35,35,35,0.5);
-   }
-   
-   .card:hover .card-img {
-    transform: translateY(-15%);
-    /* background-color: #0E820E; */
-    overflow-y: hidden;
-   }
-   
+  width: 272px;
+  height: 397px;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+  transition: box-shadow .3s ease-in-out;
+}
 
-   .img-info {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .img-container:hover .img-info {
-    opacity: 1;
-  }
-  .img-container:hover .images {
-    opacity: 0.3;
-  }
+.card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10px;
+  margin: auto;
+  text-align: center;
+  /* background-color: #0E820E; */
+  height: 16%;
+  padding-top: 15px;
+  color: #0E820E;
+}
+
+/*Image*/
+.card-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: transform .3s ease-in-out;
+  z-index: 2;
+}
 
 
-  /* .............. for services section style  ................. */
+/* Hover */
+.card:hover {
+  box-shadow: 1px 2px 10px rgba(35, 35, 35, 0.5);
+}
 
-  .service-card:hover .service-content{
-    /* box-shadow: 1px 2px 10px rgba(35,35,35,0.5); */
-    box-shadow: 0px 0px 7px 0px;
-  }
-  .service-card:hover .service-img{
-    transition: all 0.3s ease-in-out;
+.card:hover .card-img {
+  transform: translateY(-15%);
+  /* background-color: #0E820E; */
+  overflow-y: hidden;
+}
 
-  }
-  
- 
-  .service-card:hover .arrow-btn{
-    display: block;
-  }
 
-  .service-card:hover .service-icon{
-    background-color: #0E820E;
-    color: white;
-  }
+.img-info {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-container:hover .img-info {
+  opacity: 1;
+}
+
+.img-container:hover .images {
+  opacity: 0.3;
+  /* color: #d6d6d6; */
+}
+
+/* ---------------------------------
+        Home Blog and Event CSS 
+  -----------------------------------*/
+
+.homeBlog {
+  height: 216px;
+}
+
+.homeBlog:hover img {
+  opacity: .7;
+  transform: scale(1.2);
+}
+
+.homeBlogImg {
+  overflow: hidden;
+  width: 350px;
+  height: 100% !important;
+}
+
+.homeBlogImg img {
+  height: 100%;
+  transition: .4s;
+}
+
+
+.homeEvent {
+  background: white;
+  transition: all .8s linear;
+  position: relative;
+}
+
+.homeEvent::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background-image: url("https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+
+}
+
+.homeEvent::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background: black;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: .4s;
+
+}
+
+.homeEvent:hover::before {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.homeEvent:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.homeEvent h2,
+.homeEvent h3,
+.homeEvent p,
+.homeEvent button {
+  position: relative;
+  z-index: 100 !important;
+  transition: .2s;
+}
+
+.homeEvent:hover h2,
+.homeEvent:hover svg {
+  color: rgb(12, 216, 12);
+}
+
+.homeEvent:hover p,
+.homeEvent:hover h3,
+.homeEvent:hover button {
+  color: white;
+}
+
+.homeEvent h3:hover,
+.homeEvent button:hover {
+  color: rgb(12, 216, 12);
+  cursor: pointer;
+}
+
+
+
+/* .............. for services section style  ................. */
+
+.service-card:hover .service-content {
+  /* box-shadow: 1px 2px 10px rgba(35,35,35,0.5); */
+  box-shadow: 0px 0px 7px 0px;
+}
+
+.service-card:hover .service-img {
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.service-card:hover .arrow-btn {
+  display: block;
+}
+
+.service-card:hover .service-icon {
+  background-color: #0E820E;
+  color: white;
+}
