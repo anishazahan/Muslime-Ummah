@@ -1,5 +1,6 @@
 // import { useEffect, useState } from "react"
 import { BsCheckLg } from "react-icons/bs";
+import Cateogory from "./Cateogory";
 
 const ServiceDetails = () => {
   // const [services, setAllServices] = useState();
@@ -9,9 +10,9 @@ const ServiceDetails = () => {
   //     .then((data) => setAllServices(data));
   // }, [services]);
   return (
-    <div className="my-56 container px-20">
-      <div className="flex">
-        <div className="left-service w-3/4">
+    <div className="my-56 container px-16 mx-auto">
+      <div className="flex space-x-5 mx-auto">
+        <div className="left-service w-[68%]">
           <div className="h-[20%] overflow-hidden">
             <img
               className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
@@ -28,14 +29,14 @@ const ServiceDetails = () => {
             Timing : 09:00 A.M - 03:00 P.M
           </p>
           <p />
-          <p className="text-gray-700 mb-8">
+          <p className="text-gray-700 mb-6">
             service-detail-img1.jpg Provide rehab facility dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate.
           </p>
-          <div className="flex justify-between mb-8">
+          <div className="flex justify-between mb-6">
             <div className=" w-[40%]">
               <img
                 className="w-full h-full object-cover rounded-md"
@@ -49,16 +50,13 @@ const ServiceDetails = () => {
               <p className="text-gray-700">
                 Doctors and medical officers sit amet, consectetur adipisicing
                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                aliqua. Ut enim ad minim veniam
               </p>
-              <p className="text-gray-700 mt-4">
+              <p className="text-gray-700 mt-3">
                 Duis aute irure dolor in reprehenderit in voluptate.exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure dolor in reprehenderit in voluptate.Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id estsunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                occaecat cupidatat non proident.
               </p>
             </div>
           </div>
@@ -166,7 +164,9 @@ const ServiceDetails = () => {
           </div>
         </div>
 
-        <div className="right-service w-1/5"></div>
+        <div className="right-service w-[32%] ">
+            <Cateogory></Cateogory>
+        </div>
       </div>
     </div>
   );
