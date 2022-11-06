@@ -26,6 +26,13 @@ button {
   0px -4px 10px rgba(255,255,255,0.3); */
 }
 
+/* i, a, img, input, button, textarea, ::before, ::after, nav ul ul, label, .logo, .logo > a img, nav > div > ul ul, nav > div > ul li, .testi-nav-thmb, td, .srv-inf, .serv-bx > i, .team-bx, .team-inf, .team-inf > span, .serv-inf2, .pagination > li, .rspn-cnt > li, .rspn-mnu-btn, .rspn-mnu-cls {
+	-webkit-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,12 +58,12 @@ a {
 }
 
 .bg-primary {
-  background: #0E820E;
+  background: rgb(14, 130, 14);
 
 }
 
 .text-primary {
-  color: #0E820E;
+  color: rgb(14, 130, 14);
 }
 
 .bg-secondary {

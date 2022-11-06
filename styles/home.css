@@ -87,10 +87,90 @@
   }
   .img-container:hover .images {
     opacity: 0.3;
-    /* color: ; */
+    /* color: #d6d6d6; */
   }
 
   /* ---------------------------------
         Home Blog and Event CSS 
   -----------------------------------*/
 
+  .homeBlog{
+    height: 216px;
+  }
+  .homeBlog:hover img {
+    opacity: .7; 
+    transform: scale(1.2);
+  }
+  .homeBlogImg{
+    overflow: hidden;
+    width: 350px;
+    height: 100% !important;
+  }
+  .homeBlogImg img{
+    height: 100%;
+    transition: .4s;
+  }
+
+
+  .homeEvent{
+    background: white;
+    /* transition: all .8s linear; */
+    position: relative;
+  }
+  .homeEvent::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-image: url("https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ;
+
+  }
+  .homeEvent::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background: black;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    transition: .4s;
+
+  }
+  .homeEvent:hover::before {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  .homeEvent:hover::after{
+    opacity: 1;
+    visibility: visible;
+
+  }
+  
+
+
+
+
+  .homeEvent h2, .homeEvent h3, .homeEvent p, .homeEvent button{
+    position: relative;
+    z-index: 100 !important;
+  }
+  .homeEvent:hover h2{
+    color: rgb(133, 241, 133);
+  }
+  .homeEvent:hover p, .homeEvent:hover h3, .homeEvent:hover button{
+    color: white;
+    
+  }
