@@ -45,7 +45,11 @@ const Services = () => {
               </div>
             </div>
           );
-        })}
+        }).slice(0,6)}
+      </div>
+
+      <div className="text-center mb-16 container mt-10">
+        <button className=" text-secondary underline font-medium">Learn More</button>
       </div>
     </div>
   );
