@@ -34,7 +34,7 @@ const ServiceDetails = () => {
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate.
           </p>
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-8">
             <div className=" w-[40%]">
                 <img className="w-full h-full object-cover rounded-md" src={'https://nauthemes.net/html/bismillah/assets/images/resources/service-detail-img2.jpg'} alt="" />
             </div>
@@ -43,7 +43,15 @@ const ServiceDetails = () => {
             <p className="text-gray-700 mt-4">Duis aute irure dolor in reprehenderit in voluptate.exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estsunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
+          <hr />
+          <h2 className="tracking-wide text-[18px] font-semibold my-5">HOW CAN WE HELP ?</h2>
+          <p className="text-gray-700">Maecenas cursus mauris libero, a imperdiet enim pellentesque id. Aliquam erat volutpat. Suspendisse sit amet sapien at risus efficitur sagittis Pellentesque.</p>
+
+
         </div>
+
+
+
 
         <div className="right-service w-1/5"></div>
       </div>
