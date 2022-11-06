@@ -223,3 +223,13 @@
   background-color: #0E820E;
   color: white;
 }
+
+
+.servicesBreadcam{
+  background: url('https://ihsan.templines.org/wp-content/uploads/2019/10/services-head-1.png');
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
