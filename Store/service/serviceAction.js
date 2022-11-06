@@ -1,14 +1,13 @@
 // import tokenClient from '../../Helper/axios'
 import axios from 'axios'
-import { userActions } from './userSlice'
+import { serviceActions } from './serviceslice';
 
-const getUsers = () => {
+const getServices = () => {
 	return async dispatch => {
 		try {
-			const { data } = await axios.get('data.json')
-			// console.log(data,"dispatch");
+			const { data } = await axios.get('services.json')
 			if (data) {
-				dispatch(userActions.getUsers(data))
+				dispatch(serviceActions.getServices(data))
 			}
 		} catch (error) {
 			console.log(error)
@@ -16,15 +15,15 @@ const getUsers = () => {
 	}
 }
 
-// export const updateUser = ({ id, ...rest }) => {
+// export const updateService = ({ id, ...rest }) => {
 // 	return async dispatch => {
 // 		try {
-// 			const { data } = await tokenClient.patch(`/api/user/updateUser/${id}`, rest)
+// 			const { data } = await tokenClient.patch(`/api/user/updateService/${id}`, rest)
 // 			console.log({id, rest});
 // 			console.log(data);
 // 			if (data) {
-// 				dispatch(userActions.updateUser())
-// 				dispatch(getUsers())
+// 				dispatch(userActions.updateService())
+// 				dispatch(getServices())
 // 			}
 // 		} catch (error) {
 // 			console.log(error)
@@ -87,5 +86,5 @@ const getUsers = () => {
 // 	}
 // }
 
-export default getUsers
+export default getServices
 // export { getFavourites }
