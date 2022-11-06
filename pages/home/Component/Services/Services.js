@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaQuran } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Services = () => {
   const [services, setAllServices] = useState();
@@ -16,8 +17,11 @@ const Services = () => {
         src={"http://kodeforest.net/html/islamic/images/hdg-img.png"}
         alt=""
       />
-      <h1 className="text-3xl text-gray-800 my-5 text-center font-semibold mb-10">
+      <h1 className="text-3xl text-gray-800 my-5 text-center font-semibold mb-5">
         OUR SERVICES
+      </h1>
+      <h1 className=" text-gray-600 tracking-wide text-center font-semibold mb-16">
+      Ethical & Moral Beliefs That Guides To The Straight Path!
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 lg:gap-y-6 mx-auto">
         {services?.map((service) => {
@@ -49,7 +53,7 @@ const Services = () => {
       </div>
 
       <div className="text-center mb-16 container mt-10">
-        <button className=" text-secondary underline font-medium">Learn More</button>
+        <Link href={`/services`} className=" text-secondary underline font-medium">Learn More</Link>
       </div>
     </div>
   );
