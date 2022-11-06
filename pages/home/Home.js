@@ -8,6 +8,7 @@ import Banner from './Component/Banner/Banner'
 import BannerBottomSection from './Component/Banner/BannerBottomSection'
 import Donation from './Component/Donation/Donation'
 import Gallary from './Component/Gallary/Gallary'
+import HomeBlogEvent from './Component/HomeBlogEvent/HomeBlogEvent'
 import HomeTopVedioSection from './Component/HomeTopVedioSection/HomeTopVedioSection'
 import PillerOfIslam from './Component/PillerOfIslam/PillerOfIslam'
 import DonationCard from './Component/PrayerRules/Donate/DonationCard'
@@ -20,21 +21,22 @@ import WelcomeSection from './Component/WelcomSection/WelcomeSection'
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
-      <BannerBottomSection></BannerBottomSection>
-        <HomeTopVedioSection></HomeTopVedioSection>
-         <WelcomeSection></WelcomeSection>
-         <AboutIslam></AboutIslam>
-         <Gallary></Gallary>
-         <Services></Services>
-        <PillerOfIslam></PillerOfIslam>
-       <AdviseSection></AdviseSection>
-        <Scholars></Scholars>
-        <Donation></Donation>
-        <PrayerRules></PrayerRules>
-        <Remember></Remember> 
-    
-      
+      <Banner />
+      <BannerBottomSection />
+      <HomeTopVedioSection />
+      <WelcomeSection />
+      <AboutIslam />
+      <Gallary />
+      <Services />
+      <PillerOfIslam />
+      <AdviseSection />
+      <Scholars />
+      <HomeBlogEvent />
+      <Donation />
+      <PrayerRules />
+      <Remember />
+
+
 
     </div>
   )
