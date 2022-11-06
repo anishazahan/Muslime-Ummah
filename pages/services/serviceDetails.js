@@ -72,10 +72,52 @@ const ServiceDetails = () => {
             efficitur sagittis Pellentesque.
           </p>
 
-          <div className="flex justify-between mb-8">
-            <div className="w-[57%]">
-              <ul>
+          <div className="flex justify-between mb-5">
+            <div className=" pt-5">
+              <ul className="flex flex-col space-y-4 ">
                 {" "}
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <BsCheckLg className="text-primary"></BsCheckLg>
+                  <li className="text-[18px] tracking-wider">
+                    {" "}
+                    Helping for Quran Classes
+                  </li>
+                </div>
                 <div className="flex items-center space-x-3">
                   <BsCheckLg className="text-primary"></BsCheckLg>
                   <li className="text-[18px] tracking-wider">
@@ -85,11 +127,11 @@ const ServiceDetails = () => {
                 </div>
               </ul>
             </div>
-            <div className=" w-[40%]">
+            <div className=" w-[60%]">
               <img
-                className="w-full h-full object-cover rounded-md"
+                className="w-full object-cover rounded-md"
                 src={
-                  "https://nauthemes.net/html/bismillah/assets/images/resources/service-detail-img2.jpg"
+                  "https://cdn.greatnonprofits.org/images/uploads/organizations/2021_Newsletter_May_MealPack_Article_3.jpg"
                 }
                 alt=""
               />
