@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaQuran } from "react-icons/fa";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import Link from "next/link";
+import SingleService from "../../../services/SingleService";
 
 const Services = () => {
   const [services, setAllServices] = useState();
@@ -24,32 +23,7 @@ const Services = () => {
       Ethical & Moral Beliefs That Guides To The Straight Path!
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 lg:gap-y-6 mx-auto">
-        {services?.map((service) => {
-          return (
-            <div className="service-card mx-auto">
-              <div className="relative z-10">
-              <div className="service-img">
-              <img className="duration-500" src={service.img} alt="absolute" />
-              </div>
-
-                <div className="px-8 py-3 service-content duration-500">
-                  <p>
-                    <FaQuran className="p-4 service-icon duration-500 rounded-full absolute z-20 bg-white text-primary mt-[-2.5rem] text-7xl border"></FaQuran>
-                  </p>
-                  <h2 className="font-semibold text-[19px] tracking-wide mt-[3rem] my-3">
-                    {service.name}
-                  </h2>
-                  <div className="flex justify-between">
-                    <p className="text-gray-500 text-sm mb-5">{service.time}</p>
-                    <p>
-                      <BsArrowRightCircleFill className="text-2xl text-secondary hidden arrow-btn duration-700"></BsArrowRightCircleFill>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        }).slice(0,6)}
+        {services?.map((service) => <SingleService key={service.id} service={service}></SingleService>).slice(0,6)}
       </div>
 
       <div className="text-center mb-16 container mt-10">
