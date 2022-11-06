@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { FaQuran } from "react-icons/fa";
 import { BsArrowRightCircleFill} from "react-icons/bs";
 
-
 const Services = () => {
     const [services,setAllServices] = useState();
     useEffect(()=>{
