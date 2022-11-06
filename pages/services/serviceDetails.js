@@ -12,7 +12,7 @@ const ServiceDetails = () => {
     <div className="my-56 container px-20">
       <div className="flex">
         <div className="left-service w-3/4">
-          <div className="h-[35%] overflow-hidden">
+          <div className="h-[20%] overflow-hidden">
             <img
               className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
               src={
@@ -136,6 +136,33 @@ const ServiceDetails = () => {
                 alt=""
               />
             </div>
+          </div>
+          <hr />
+          <h2 className="tracking-wide text-[18px] font-semibold my-5">
+          WE GIVE BEST SOLUTION !
+          </h2>
+          <div className="bg-slate-100 flex flex-col">
+            <div className="flex justify-between px-10">
+            <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                We give best solution?
+                </h2>
+                <button className="text-2xl font-bold">+</button>
+            </div>
+            <hr />
+            <div className="flex justify-between px-10">
+            <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                We give best solution?
+                </h2>
+                <button className="text-2xl font-bold">+</button>
+            </div>
+            <hr />
+            <div className="flex justify-between px-10 ">
+            <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                We give best solution?
+                </h2>
+                <button className="text-2xl font-bold">+</button>
+            </div>
+
           </div>
         </div>
 
