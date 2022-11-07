@@ -12,7 +12,7 @@ const ServiceDetails = () => {
   return (
     <div className="my-56 container px-16 mx-auto">
       <div className="flex space-x-5 mx-auto">
-        <div className="left-service w-[68%]">
+        <div className="left-service w-[72%]">
           <div className="h-[20%] overflow-hidden">
             <img
               className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
@@ -163,7 +163,7 @@ const ServiceDetails = () => {
           </div>
         </div>
 
-        <div className="right-service w-[32%] ">
+        <div className="right-service w-[28%] ">
             <Cateogory></Cateogory>
         </div>
       </div>
