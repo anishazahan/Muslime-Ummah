@@ -6,19 +6,19 @@ const SidebarBlog = () => {
              newsName: "OUR FUNERAL SERVICES",
             condition:"Free",
              name: "MUFTI ABDUL",
-             blogImg: "http://kodeforest.net/html/islamic/extra-images/feature.jpg"
+             img: "http://kodeforest.net/html/islamic/extra-images/feature.jpg"
         },
         {
              newsName: "OUR FUNERAL SERVICES",
             condition:"Free",
              name: "MUFTI ABDUL",
-             blogImg: "http://kodeforest.net/html/islamic/extra-images/feature1.jpg"
+             img: "http://kodeforest.net/html/islamic/extra-images/feature1.jpg"
         },
         {
              newsName: "OUR FUNERAL SERVICES",
             condition:"Free",
              name: "MUFTI ABDUL",
-             blogImg: "http://kodeforest.net/html/islamic/extra-images/feature2.jpg"
+             img: "http://kodeforest.net/html/islamic/extra-images/feature2.jpg"
         }
        
    ]
@@ -29,25 +29,36 @@ const SidebarBlog = () => {
         Recent News
           </h2>
         </div>
-        <div className="flex pl-8 pr-3 space-x-3 items-stretch">
-            <div className="news-left">
-                <img className="h-full object-cover" src={'http://kodeforest.net/html/islamic/extra-images/feature.jpg'} alt="" />
-            </div>
-            <div className="news-right">
-             <h2 className="text-[14px] font-semibold">OUR FUNERAL SERVICES</h2>
-             <div className="flex items-center justify-between my-2 ">
-                <p className="text-white px-3 rounded py-1 bg-primary text-sm">Free</p>
-                <div className="star-icon flex text-pink-500">
-                    <AiFillStar></AiFillStar>
-                    <AiFillStar></AiFillStar>
-                    <AiFillStar></AiFillStar>
-                    <AiFillStar></AiFillStar>
-                    <AiFillStar></AiFillStar>
+        <div className="flex flex-col space-y-6">
+            {
+                news.map(singleNews=>{
+                    return  <div className="flex pl-6 pr-3 space-x-3 items-stretch">
+                    <div className="news-left">
+                        <img className="h-full object-cover" src={singleNews.img} alt="" />
+                    </div>
+                    <div className="news-right">
+                     <h2 className="text-[14px] font-semibold">{singleNews.newsName}</h2>
+                     <div className="flex items-center justify-between my-2 ">
+                        <p className="text-white px-3 rounded py-1 bg-primary text-sm">Free</p>
+                        <div className="star-icon flex text-pink-500">
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                            <AiFillStar></AiFillStar>
+                        </div>
+                     </div>
+                     <h2 className="text-[14px] text-gray-700">{singleNews.name}</h2>
+                    </div>
+                    
                 </div>
-             </div>
-             <h2 className="text-[14px]">MUFTI ABDUL</h2>
-            </div>
+
+                })
+            }
+
         </div>
+       
+       
           
     
           </div>
