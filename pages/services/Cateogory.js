@@ -3,8 +3,8 @@ import React from 'react'
 const Cateogory = () => {
   return (
     <div className="bg-slate-100 flex flex-col">
-        <div className="">
-          <h2 className="font-semibold text-[17px] tracking-wide mt-[1.5rem] uppercase my-2 px-10">
+        <div className="inline">
+          <h2 className="font-semibold border-b-2 border-green-900 inline-block text-[17px] tracking-wide mt-[1.5rem] uppercase my-2 mx-10">
         CATEGORIES
           </h2>
         </div>
