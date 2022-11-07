@@ -1,17 +1,14 @@
 // import { useEffect, useState } from "react"
 import { BsCheckLg } from "react-icons/bs";
+import SidebarBlog from "../blogs/SidebarBlog";
 import Cateogory from "./Cateogory";
 
+
 const ServiceDetails = () => {
-  // const [services, setAllServices] = useState();
-  // useEffect(() => {
-  //   fetch("services.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setAllServices(data));
-  // }, [services]);
+  // let services = useSelector(state => state.service.services)
   return (
     <div className="my-56 container px-16 mx-auto">
-      <div className="flex space-x-5 mx-auto">
+      <div className="flex space-x-5 mx-auto ">
         <div className="left-service w-[72%]">
           <div className="h-[20%] overflow-hidden">
             <img
@@ -163,8 +160,9 @@ const ServiceDetails = () => {
           </div>
         </div>
 
-        <div className="right-service w-[28%] ">
+        <div className="right-service w-[28%] space-y-10 ">
             <Cateogory></Cateogory>
+            <SidebarBlog></SidebarBlog>
         </div>
       </div>
     </div>
