@@ -33,8 +33,7 @@ const ServiceDetails = () => {
             service-detail-img1.jpg Provide rehab facility dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate.
+            exercitation ullamco.
           </p>
           <div className="flex justify-between mb-6">
             <div className=" w-[40%]">
