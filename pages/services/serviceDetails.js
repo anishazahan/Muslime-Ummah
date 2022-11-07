@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react"
+import { useState } from "react";
 import { BsCheckLg } from "react-icons/bs";
 import SidebarBlog from "../blogs/SidebarBlog";
 import SidebarContact from "../contact/SidebarContact";
@@ -6,11 +7,12 @@ import Cateogory from "./Cateogory";
 
 
 const ServiceDetails = () => {
+  const [toggle,setToggle]= useState(false);
   // let services = useSelector(state => state.service.services)
   return (
-    <div className="my-56 container px-16 mx-auto">
-      <div className="flex space-x-5 mx-auto ">
-        <div className="left-service w-[72%]">
+    <div className="my-56 container px-10 lg:px-16 mx-auto">
+      <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
+        <div className="left-service w-full lg:w-[72%]">
           <div className="h-[20%] overflow-hidden">
             <img
               className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
@@ -33,8 +35,8 @@ const ServiceDetails = () => {
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco.
           </p>
-          <div className="flex justify-between mb-4">
-            <div className=" w-[40%]">
+          <div className="flex flex-col md:flex-row justify-between mb-4">
+            <div className="w-full my-3 md:my-0 md:w-[40%]">
               <img
                 className="w-full h-full object-cover rounded-md"
                 src={
@@ -43,7 +45,7 @@ const ServiceDetails = () => {
                 alt=""
               />
             </div>
-            <div className="w-[57%]">
+            <div className=" w-full md:w-[57%]">
               <p className="text-gray-700">
                 Doctors and medical officers sit amet, consectetur adipisicing
                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -71,9 +73,9 @@ const ServiceDetails = () => {
             efficitur sagittis Pellentesque.
           </p>
 
-          <div className="flex justify-between mb-5">
+          <div className="flex flex-col md:flex-row justify-between mb-5">
             <div className=" pt-2">
-              <ul className="flex flex-col space-y-4 ">
+              <ul className="flex flex-col lg:space-y-4 space-y-2 ">
                 {" "}
                 <div className="flex items-center space-x-3">
                   <BsCheckLg className="text-primary"></BsCheckLg>
@@ -126,7 +128,7 @@ const ServiceDetails = () => {
                 </div>
               </ul>
             </div>
-            <div className=" w-[60%]">
+            <div className="w-full my-5 md:my-0 md:w-[60%]">
               <img
                 className="w-full object-cover rounded-md"
                 src={
@@ -140,13 +142,26 @@ const ServiceDetails = () => {
           <h2 className="tracking-wide text-[18px] font-semibold my-3">
           WE GIVE BEST SOLUTION !
           </h2>
-          <div className="bg-slate-100 flex flex-col">
-            <div className="flex justify-between px-10">
-            <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                We give best solution?
-                </h2>
-                <button className="text-2xl font-bold">+</button>
+
+          <div className="bg-slate-100 flex flex-col ">
+
+            <div className="flex flex-col px-10 ">
+            <div onClick={()=> setToggle(!toggle)} className="flex justify-between duration-500">
+            {
+              toggle? <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+              We give best solution?
+              </h2>
+              <button className="text-2xl font-bold">+</button></> : <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+              We give best solution?
+              </h2>
+              <button className="text-2xl font-bold">-</button></>
+            }
             </div>
+            {
+              toggle && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores voluptate, officiis animi beatae veritatis quae magnam officia corporis blanditiis.</p>
+            }
+            </div>
+
             <hr />
             <div className="flex justify-between px-10">
             <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
@@ -165,7 +180,7 @@ const ServiceDetails = () => {
           </div>
         </div>
 
-        <div className="right-service w-[28%] space-y-8 ">
+        <div className="right-service w-full lg:w-[28%] space-y-8 ">
             <Cateogory></Cateogory>
             <SidebarBlog></SidebarBlog>
             <SidebarContact></SidebarContact>
