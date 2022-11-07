@@ -1,4 +1,4 @@
-
+import { AiFillStar } from "react-icons/ai";
 
 const SidebarBlog = () => {
     const news = [
@@ -24,10 +24,29 @@ const SidebarBlog = () => {
    ]
   return (
     <div className="bg-slate-100 flex flex-col pb-10">
-        <div className="inline">
+        <div className="inline mb-2">
           <h2 className="font-semibold border-b-2 border-green-900 inline-block text-[17px] tracking-wide mt-[1.5rem] my-2 mx-8 px-2 mb-4">
         Recent News
           </h2>
+        </div>
+        <div className="flex pl-8 pr-3 space-x-3 items-stretch">
+            <div className="news-left">
+                <img className="h-full object-cover" src={'http://kodeforest.net/html/islamic/extra-images/feature.jpg'} alt="" />
+            </div>
+            <div className="news-right">
+             <h2 className="text-[14px] font-semibold">OUR FUNERAL SERVICES</h2>
+             <div className="flex items-center justify-between my-2 ">
+                <p className="text-white px-3 rounded py-1 bg-primary text-sm">Free</p>
+                <div className="star-icon flex text-pink-500">
+                    <AiFillStar></AiFillStar>
+                    <AiFillStar></AiFillStar>
+                    <AiFillStar></AiFillStar>
+                    <AiFillStar></AiFillStar>
+                    <AiFillStar></AiFillStar>
+                </div>
+             </div>
+             <h2 className="text-[14px]">MUFTI ABDUL</h2>
+            </div>
         </div>
           
     
