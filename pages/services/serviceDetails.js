@@ -23,17 +23,17 @@ const ServiceDetails = () => {
           <h2 className="font-semibold text-[20px] tracking-wide mt-[1.5rem] text-center my-3">
             Quran Clases
           </h2>
-          <p className="text-gray-500 text-center text-sm mb-5">
+          <p className="text-gray-500 text-center text-sm mb-4">
             Timing : 09:00 A.M - 03:00 P.M
           </p>
           <p />
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-2">
             service-detail-img1.jpg Provide rehab facility dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco.
           </p>
-          <div className="flex justify-between mb-6">
+          <div className="flex justify-between mb-4">
             <div className=" w-[40%]">
               <img
                 className="w-full h-full object-cover rounded-md"
@@ -52,23 +52,27 @@ const ServiceDetails = () => {
               <p className="text-gray-700 mt-3">
                 Duis aute irure dolor in reprehenderit in voluptate.exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate.Excepteur sint
-                occaecat cupidatat non proident.
+                aute irure dolor in 
               </p>
+              <p className="text-gray-700 mt-3">
+                Duis aute irure dolor in reprehenderit in voluptate.exercitation
+                ullamco laboris nisi ut dolor in reprehenderit in voluptate.exercitation
+                ullamco laboris nisi ut 
+                </p>
             </div>
           </div>
           <hr />
-          <h2 className="tracking-wide text-[18px] font-semibold my-5">
+          <h2 className="tracking-wide text-[18px] font-semibold my-2">
             HOW CAN WE HELP ?
           </h2>
-          <p className="text-gray-700 mb-5">
+          <p className="text-gray-700 mb-3">
             Maecenas cursus mauris libero, a imperdiet enim pellentesque id.
             Aliquam erat volutpat. Suspendisse sit amet sapien at risus
             efficitur sagittis Pellentesque.
           </p>
 
           <div className="flex justify-between mb-5">
-            <div className=" pt-5">
+            <div className=" pt-2">
               <ul className="flex flex-col space-y-4 ">
                 {" "}
                 <div className="flex items-center space-x-3">
@@ -133,7 +137,7 @@ const ServiceDetails = () => {
             </div>
           </div>
           <hr />
-          <h2 className="tracking-wide text-[18px] font-semibold my-5">
+          <h2 className="tracking-wide text-[18px] font-semibold my-3">
           WE GIVE BEST SOLUTION !
           </h2>
           <div className="bg-slate-100 flex flex-col">
