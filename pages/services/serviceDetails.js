@@ -1,6 +1,7 @@
 // import { useEffect, useState } from "react"
 import { BsCheckLg } from "react-icons/bs";
 import SidebarBlog from "../blogs/SidebarBlog";
+import SidebarContact from "../contact/SidebarContact";
 import Cateogory from "./Cateogory";
 
 
@@ -163,6 +164,7 @@ const ServiceDetails = () => {
         <div className="right-service w-[28%] space-y-8 ">
             <Cateogory></Cateogory>
             <SidebarBlog></SidebarBlog>
+            <SidebarContact></SidebarContact>
         </div>
       </div>
     </div>
