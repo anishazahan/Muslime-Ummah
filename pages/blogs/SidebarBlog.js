@@ -38,7 +38,7 @@ const SidebarBlog = () => {
                     </div>
                     <div className="news-right">
                      <h2 className="text-[14px] font-semibold">{singleNews.newsName}</h2>
-                     <div className="flex items-center justify-between my-2 ">
+                     <div className="flex items-center justify-between my-1">
                         <p className="text-white px-3 rounded py-1 bg-primary text-sm">Free</p>
                         <div className="star-icon flex text-pink-500">
                             <AiFillStar></AiFillStar>

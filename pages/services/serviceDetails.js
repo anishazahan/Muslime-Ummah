@@ -160,7 +160,7 @@ const ServiceDetails = () => {
           </div>
         </div>
 
-        <div className="right-service w-[28%] space-y-10 ">
+        <div className="right-service w-[28%] space-y-8 ">
             <Cateogory></Cateogory>
             <SidebarBlog></SidebarBlog>
         </div>
