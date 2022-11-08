@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+
 import Link from "next/link";
 import SingleService from "../../../services/SingleService";
+import { useSelector } from 'react-redux';
 
 const Services = () => {
-  const [services, setAllServices] = useState();
-  useEffect(() => {
-    fetch("services.json")
-      .then((res) => res.json())
-      .then((data) => setAllServices(data));
-  }, [services]);
+  let services = useSelector(state => state.service.services)
+
+  // console.log(services);
   return (
     <div className="my-20 mx-auto px-10 lg:px-20 container">
       <img
