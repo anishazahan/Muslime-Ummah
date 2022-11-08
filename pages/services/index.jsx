@@ -6,7 +6,7 @@ import ServicesBreadcam from './ServicesBreadcam';
 const services = () => {
      return (
           <div>
-              <ServicesBreadcam></ServicesBreadcam>
+              <ServicesBreadcam  logoText={"OUR SERVICES"}></ServicesBreadcam>
               <MainServices></MainServices>
             
           </div>

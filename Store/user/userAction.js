@@ -6,7 +6,7 @@ const getUsers = () => {
 	return async dispatch => {
 		try {
 			const { data } = await axios.get('data.json')
-			// console.log(data,"dispatch");
+			// console.log("dispatch :",data);
 			if (data) {
 				dispatch(userActions.getUsers(data))
 			}

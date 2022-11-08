@@ -1,11 +1,20 @@
+import { useSelector } from "react-redux"
+import SingleBlog from "./SingleBlog";
+import ServicesBreadcam from "../services/ServicesBreadcam"
 
-
-const index = () => {
+const Blogs = () => {
+  const blogs = useSelector(state => state.blog.blogs)
+  console.log(blogs);
   return (
     <div>
-        <h2>This is blog page</h2>
+      <ServicesBreadcam logoText={"Blog List"} />
+      <div className='flex flex-wrap justify-center mx-auto'>
+        {
+          blogs.map(blog => <SingleBlog blog={blog} />)
+        }
+      </div>
     </div>
   )
 }
 
-export default index
+export default Blogs

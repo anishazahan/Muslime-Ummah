@@ -9,7 +9,7 @@ import '../styles/home.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    
+
     <Provider store={store}>
       <Layout>
         <Component {...pageProps} />
