@@ -88,7 +88,7 @@ const BlogDetails = () => {
        comment section for blog
   ----------------------------------- */}
         
-        <h2 className="text-3xl tracking-wide font-semibold my-10 text-center md:text-left">Comments(1)</h2>
+        <h2 className="text-xl lg:text-2xl tracking-wide font-semibold my-10 text-center md:text-left">Comments(1)</h2>
         <div className="flex flex-col md:flex-row space-x-4">
             <div className="comment-img md:w-[20%] md:h-[20%] w-[25%] mx-auto md:mx-o">
                 <img className="w-full h-full rounded-full" src={'https://ihsan.templines.org/wp-content/uploads/2020/02/435543535.jpg'} alt="" />
@@ -113,8 +113,18 @@ const BlogDetails = () => {
   ----------------------------------- */}
 
 
-  <div className="comment-form">
-  <h2 className="text-3xl tracking-wide font-semibold my-10 text-center md:text-left">Comments(1)</h2>
+  <div className="comment-form mt-5">
+  <h2 className="text-xl lg:text-2xl tracking-wide font-semibold my-10 text-center md:text-left">Leave a Reply</h2>
+  <form>
+    <div className="flex w-[100%] space-x-5">
+        <div className="w-full">
+            <input className="border border-2 px-5 w-full py-3 border-gray-300 placeholder-black outline-none" type="text" placeholder="Your Name*" required/>
+        </div>
+        <div className="w-full">
+            <input className="border w-full border-2 px-5 py-3 border-gray-300 placeholder-black outline-none" type="text" placeholder="Your Name*" required/>
+        </div>
+    </div>
+  </form>
   </div>
 
 
