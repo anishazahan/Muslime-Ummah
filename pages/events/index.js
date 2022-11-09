@@ -4,7 +4,7 @@ import ServicesBreadcam from "../services/ServicesBreadcam"
 
 const Events = () => {
   const events = useSelector(state => state.event.events)
-  console.log(events);
+  // console.log(events);
   return (
     <div>
       <ServicesBreadcam logoText={"Events"} />

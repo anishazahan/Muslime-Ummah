@@ -6,37 +6,41 @@ import moment from 'moment';
 const SingleEvent = ({ event }) => {
      let today = moment().format();
      var now = moment(today);//now
-     // var date = moment().month("2022-12-10T12:22:51+06:00");
-     // var date = "2022-12-10T12:22:51+06:00";
      var month = moment(event.date, 'YYY-MM-DD').format('MMMM')
      var day = moment(event.date, 'YYY-MM-DD').format('DD')
-     console.log(month);
-     let time_ago = "0 Minute Ago";
+     const minutes = now.diff(event.date, 'minutes')
 
-     // const minutes = now.diff(date, 'minutes')
-     // const hours = now.diff(date, 'hours')
-     const days = now.diff(today, 'days')
-     // const weeks = now.diff(date, 'weeks')
-     // if (minutes <= 60) {
-     //      time_ago = `${minutes} Minutes Ago`;
-     // }
-     // else if (hours <= 24) {
-     //      time_ago = `${hours} Hours Ago`;
-     // }
-     // else if (days <= 7) {
-     //      time_ago = `${days} Days Ago`;
-     // }
-     // else {
-     //      time_ago = `${weeks} Weeks Ago`;
-     // }
+     const eventRemaining = moment
+          .utc().startOf('year').add({ minutes: Math.abs(minutes) })
+          .format('D [Days,]HH[ Hours,]mm [Minutes]')
+          .split(",");
+
+     // console.log(eventRemaining);
+
      return (
           <div className='w-[370px] flex flex-col m-5 pb-2 justify-between items-center  rounded-md'>
                <div className='relative'>
                     <img className='rounded-t-md rounded-b-sm w-full' src={event.eventImg} alt="" />
-                    <div className='bg-green-500 text-center absolute w-[60px] top-0 left-0 text-white py-2 rounded-tl-md'>
+                    <div className='bg-green-500 bg-opacity-90 text-center absolute w-[65px] top-0 left-0 text-white py-2 rounded-tl-md'>
                          <h2 className='leading-none text-2xl'>{day}</h2>
                          <h3>{month.slice(0, 3)}</h3>
                     </div>
+                    {
+                         minutes < 0 ?
+                              <div className='bg-green-500 bg-opacity-90 text-center absolute w-full bottom-0 left-0 text-white py-2 rounded text-[19px] flex justify-center'>
+                                   {
+                                        eventRemaining.map(eventTime => <h3
+                                             className='w-3/12 border-r last:border-r-0 text-lg text-center px-4'
+                                        >{eventTime}</h3>)
+                                   }
+                              </div>
+                              :
+                              <div className='bg-red-500 bg-opacity-90 text-center absolute w-full bottom-0 left-0 text-white py-4 rounded text-[19px] flex justify-center'>
+                                   <h3 className='text-lg'
+                                        >This Event is Over</h3>
+                              </div>
+                    }
+
                </div>
                <div className='text-[#555555] p-3'>
                     <h3 className='text-xl text-black'>{event.eventName}</h3>
