@@ -62,13 +62,21 @@ const BlogDetails = () => {
         <div className="flex mx-auto space-x-3 justify-center my-16 text-center">
         <button className="text-xs rounded text-white px-3 py-2 bg-primary">Donation and Charity</button>
         <button className="text-xs rounded text-white px-3 py-2 bg-primary">Islamic Center</button>
-        <button className="text-xs rounded text-white px-3 py-2 bg-primary">Learning</button>
+        <div className="flex items-center btn-group">
+        {/* <HiShare></HiShare> */}
+        <button className="text-xs rounded text-white px-3 py-2 bg-primary">Share</button>
         </div>
-        <div className="flex">
-            <div className=""><hr /></div>
-            <p><HiShare></HiShare></p>
         </div>
 
+         {/* ---------------------------------
+       comment section for blog
+  ----------------------------------- */}
+        
+        <h2 className="text-3xl tracking-wide font-semibold my-10">Comments(1)</h2>
+        <div className="flex flex-col md:flex-row">
+            <div className="comment-img"></div>
+            <div className="comment"></div>
+        </div>
 
 
     </div>
