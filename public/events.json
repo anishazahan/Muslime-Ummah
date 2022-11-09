@@ -1,44 +1,56 @@
 [
      {
+          "id":1,
           "eventName": "Importance Of Prayer In Islam",
           "date": "17 May 2020",
           "location": "Dehli, Jamia Mosque",
           "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      },
      {
-          "eventName": "Importance Of Prayer In Islam",
-          "date": "17 May 2020",
-          "location": "Dehli, Jamia Mosque",
+          "id":2,
+          "eventName": "Prayer Importance",
+          "date": "22 Sep 2020",
+          "location": "Florida, Islam Center",
           "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img2.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      },
      {
-          "eventName": "Importance Of Prayer In Islam",
-          "date": "17 May 2020",
-          "location": "Dehli, Jamia Mosque",
+          "id":3,
+          "eventName": "Islamic Teachings",
+          "date": "01 Oct 2020",
+          "location": "Berlin, Jamia Mosque",
           "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img3.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      },
      {
-          "eventName": "Importance Of Prayer In Islam",
-          "date": "17 May 2020",
-          "location": "Dehli, Jamia Mosque",
-          "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "id":4,
+          "eventName": "Importance of Eid",
+          "date": "20 Nov 2020",
+          "location": "Lahore, Mosque",
+          "time": "03:00PM - 0:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img4.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      },
      {
-          "eventName": "Importance Of Prayer In Islam",
-          "date": "17 May 2020",
-          "location": "Dehli, Jamia Mosque",
+          "id":5,
+          "eventName": "Books & Islam",
+          "date": "25 Nov 2020",
+          "location": "Park Lane, Mosque",
           "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img5.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      },
      {
+          "id":6,
           "eventName": "Importance Of Prayer In Islam",
-          "date": "17 May 2020",
-          "location": "Dehli, Jamia Mosque",
-          "time": "04:00PM - 08:00PM",
-          "eventBgImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1-1.jpg"
+          "date": "22 Dec 2020",
+          "location": "Dhaka, Kakrail",
+          "time": "1:00PM - 04:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img6.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
      }
 ]
