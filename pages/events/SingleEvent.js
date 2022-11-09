@@ -4,10 +4,10 @@ import { AiOutlineUser } from 'react-icons/ai';
 import moment from 'moment';
 
 const SingleEvent = ({ event }) => {
-     let today = moment().format();
-     var now = moment(today);//now
-     var month = moment(event.date, 'YYY-MM-DD').format('MMMM')
-     var day = moment(event.date, 'YYY-MM-DD').format('DD')
+     const today = moment().format();
+     const now = moment(today);
+     const month = moment(event.date, 'YYY-MM-DD').format('MMMM')
+     const day = moment(event.date, 'YYY-MM-DD').format('DD')
      const minutes = now.diff(event.date, 'minutes')
 
      const eventRemaining = moment
