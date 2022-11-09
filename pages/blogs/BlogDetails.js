@@ -124,6 +124,16 @@ const BlogDetails = () => {
             <input className="border w-full border-2 px-5 py-3 border-gray-300 placeholder-black outline-none" type="text" placeholder="Your Name*" required/>
         </div>
     </div>
+    <div className="my-10 flex space-x-3">
+        <input type="checkbox" />
+        <p className="text-sm text-gray-700">Save my name, email, and website in this browser for the next time I comment.</p>
+    </div>
+    <div className="w-full">
+           <textarea className="border w-full border-2 px-5 py-3 border-gray-300 placeholder-black outline-none" name="" id="" cols="30" rows="10" placeholder="Your Comment*" required></textarea>
+        </div>
+        <div className=" my-8">
+            <input className="text-white px-4 py-3 bg-primary text-medium hover:bg-secondary duration-500 cursor-pointer" type="submit" value="Post Comment" />
+        </div>
   </form>
   </div>
 
