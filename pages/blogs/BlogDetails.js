@@ -28,6 +28,12 @@ const BlogDetails = () => {
                 <h2 className="text-xs text-gray-500"> 1 comments </h2>
             </div>
         </div>
+        <div className="">
+            <p className="text-sm text-gray-600">Moveth the seed you waters is replenish light one meat. Under divide image likeness their may, form Earth evening moving. Heaven was have upon god place dry one creepeth one days divided. For fruitful blessed void days seasons wherein dry She’d light creeping that grass, is rule rule. Waters midst i him lesser.</p>
+        </div>
+        <div className="">
+            
+        </div>
 
 
 
