@@ -167,6 +167,7 @@
 .homeEvent h2,
 .homeEvent h3,
 .homeEvent p,
+.homeEvent h4,
 .homeEvent button {
   position: relative;
   z-index: 100 !important;
@@ -174,6 +175,7 @@
 }
 
 .homeEvent:hover h2,
+.homeEvent:hover h4,
 .homeEvent:hover svg {
   color: rgb(12, 216, 12);
 }

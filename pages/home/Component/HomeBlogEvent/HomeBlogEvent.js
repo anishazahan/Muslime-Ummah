@@ -2,6 +2,7 @@ import React from 'react';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import { AiOutlineUser } from 'react-icons/ai';
 import { useSelector } from 'react-redux';
+import moment from 'moment';
 
 const HomeBlogEvent = () => {
      let blogs = useSelector(state => state.blog.blogs).slice(0, 2)
@@ -46,9 +47,15 @@ const HomeBlogEvent = () => {
                     <div className='w-[40%] flex flex-col justify-between'>
                          {
                               events.map(event => {
+                                   var month = moment(event.date, 'YYY-MM-DD').format('MMMM')
+                                   var day = moment(event.date, 'YYY-MM-DD').format('DD')
                                    return (
                                         <div className={`homeEvent flex py-5 px-7  shadow-[0px_0px_20px_0px_#d6d6d6]`}>
-                                             <h2 className='mr-8 text-center text-2xl text-primary w-10'>{event.date.slice(0, 6)}</h2>
+                                             {/* <h2 className='mr-8 text-center text-2xl text-primary w-10'>{event.date.slice(0, 6)}</h2> */}
+                                             <div className='mr-8 text-center text-primary font-bold'>
+                                                  <h4 className='leading-none text-5xl'>{day}</h4>
+                                                  <h4 className='text-center'>{month.slice(0, 3)}</h4>
+                                             </div>
                                              <div className='text-[#555555]'>
                                                   <h3 className='text-lg'>{event.eventName}</h3>
                                                   <div className='flex text-xs space-x-5 py-3'>

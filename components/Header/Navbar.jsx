@@ -26,6 +26,9 @@ function Navbar() {
                          <li className={router.pathname == "/blogs" ? "active" : ""}>
                               <Link className='menu' href="/blogs">Blogs</Link>
                          </li>
+                         <li className={router.pathname == "/events" ? "active" : ""}>
+                              <Link className='menu' href="/events">Events</Link>
+                         </li>
                          <li className={router.pathname == "/portfolio" ? "active" : ""}>
                               <Link className='menu' href="/portfolio">Portfolios</Link>
                          </li>
@@ -66,6 +69,9 @@ function Navbar() {
                               </li>
                               <li className={router.pathname == "/blogs" ? "active" : ""}>
                                    <Link className='menu' href="/blogs">Blogs</Link>
+                              </li>
+                              <li className={router.pathname == "/events" ? "active" : ""}>
+                                   <Link className='menu' href="/events">Events</Link>
                               </li>
                               <li className={router.pathname == "/portfolio" ? "active" : ""}>
                                    <Link className='menu' href="/portfolio">Portfolios</Link>
