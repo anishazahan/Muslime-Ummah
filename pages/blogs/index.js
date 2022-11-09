@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import SingleBlog from "./SingleBlog";
 import ServicesBreadcam from "../services/ServicesBreadcam"
+import BlogDetails from "./BlogDetails";
 
 const Blogs = () => {
   const blogs = useSelector(state => state.blog.blogs)
@@ -8,11 +9,12 @@ const Blogs = () => {
   return (
     <div>
       <ServicesBreadcam logoText={"Blog List"} />
-      <div className='flex flex-wrap justify-center mx-auto'>
+      <BlogDetails></BlogDetails>
+      {/* <div className='flex flex-wrap justify-center mx-auto my-20'>
         {
           blogs.map(blog => <SingleBlog blog={blog} />)
         }
-      </div>
+      </div> */}
     </div>
   )
 }

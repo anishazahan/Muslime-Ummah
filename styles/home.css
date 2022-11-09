@@ -238,3 +238,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.quate-background{
+  background: url('https://t4.ftcdn.net/jpg/02/31/18/91/360_F_231189154_cpYlmPMEgXZuj304lHsyRWAuTjLavwLO.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
