@@ -3,6 +3,7 @@ import {FiUser } from "react-icons/fi";
 import {MdOutlineUpdate } from "react-icons/md";
 import {FaComment,FaQuoteLeft} from "react-icons/fa";
 import {HiShare} from "react-icons/hi";
+import {FaShare} from "react-icons/fa";
 const BlogDetails = () => {
   return (
     <div className="container px-10 lg:px-20 mx-auto my-28">
@@ -73,9 +74,21 @@ const BlogDetails = () => {
   ----------------------------------- */}
         
         <h2 className="text-3xl tracking-wide font-semibold my-10">Comments(1)</h2>
-        <div className="flex flex-col md:flex-row">
-            <div className="comment-img"></div>
-            <div className="comment"></div>
+        <div className="flex flex-col md:flex-row space-x-4">
+            <div className="comment-img w-[20%] h-[20%]">
+                <img className="w-full h-full rounded-full" src={'https://ihsan.templines.org/wp-content/uploads/2020/02/435543535.jpg'} alt="" />
+            </div>
+            <div className="comment">
+                <div className="flex space-x-4 items-center">
+                    <h1 className="text-[18px] font-semibold">Zaymund Alex</h1>
+                    <p className="text-gray-500 text-sm">August 25, 2019, 10:40 a</p>
+                    <div className="flex items-center link cursor-pointer">
+                        <FaShare></FaShare>
+                        <p className="text-sm text-gray-700">Reply</p>
+                    </div>
+                </div>
+                <p className="text-sm text-gray-600 my-2 leading-6 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
         </div>
 
 
