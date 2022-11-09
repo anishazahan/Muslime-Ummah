@@ -1,9 +1,12 @@
+import ServicesBreadcam from "../services/ServicesBreadcam"
+import ContactInfo from "./ContactInfo"
 
 
 const index = () => {
   return (
     <div>
-        <h1>Contact Us</h1>
+      <ServicesBreadcam></ServicesBreadcam>
+        <ContactInfo></ContactInfo>
     </div>
   )
 }
