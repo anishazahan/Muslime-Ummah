@@ -111,8 +111,6 @@ const BlogDetails = () => {
          {/* ---------------------------------
        reply comment section for blog
   ----------------------------------- */}
-
-
   <div className="comment-form mt-5">
   <h2 className="text-xl lg:text-2xl tracking-wide font-semibold my-10 text-center md:text-left">Leave a Reply</h2>
   <form>
