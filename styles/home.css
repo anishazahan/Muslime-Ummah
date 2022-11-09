@@ -231,7 +231,11 @@
 .servicesBreadcam{
   background: url('https://ihsan.templines.org/wp-content/uploads/2019/10/services-head-1.png');
   width: 100%;
+<<<<<<< HEAD
   height: 400px;
+=======
+  height: 350px;
+>>>>>>> 54225747f4bb2c86a390235317e9b48a6c541d9d
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
