@@ -4,7 +4,7 @@ const initialState = {
 	loading: false,
 	success: false,
 	message: '',
-	team: [],
+	teams: [],
 }
 
 const teamSlice = createSlice({
