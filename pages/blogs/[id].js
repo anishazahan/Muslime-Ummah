@@ -3,15 +3,19 @@ import { MdOutlineUpdate } from "react-icons/md";
 import { FaComment, FaQuoteLeft } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
 import { FaShare } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 const BlogDetails = () => {
+  const id = useRouter().query.id;
+  let blogs = useSelector(state => state.blog.blogs)
+  const currentBlog = blogs.find(blog => blog.id == id);
+  // console.log(currentBlog)
   return (
     <div className="container px-6 lg:px-20 mx-auto my-12 lg:my-28">
       <div className="blogDetails-img w-full lg:w-[70%] relative overflow-hidden">
         <img
           className="w-full h-full hover:scale-[1.2] duration-700"
-          src={
-            "https://ihsan.templines.org/wp-content/uploads/2019/07/post004.jpg"
-          }
+          src={currentBlog.blogImg}
           alt=""
         />
         <div className="flex absolute left-4 right-0 bottom-7 space-x-2">
@@ -28,13 +32,13 @@ const BlogDetails = () => {
           <p>
             <FiUser className=" text-primary font-semibold"></FiUser>
           </p>
-          <h2 className="text-xs text-gray-500"> By Zaymund Alex </h2>
+          <h2 className="text-xs text-gray-500"> By {currentBlog.writer} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
             <MdOutlineUpdate className=" text-primary font-semibold"></MdOutlineUpdate>
           </p>
-          <h2 className="text-xs text-gray-500"> July 30, 2019 </h2>
+          <h2 className="text-xs text-gray-500"> {currentBlog.date} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
@@ -45,11 +49,7 @@ const BlogDetails = () => {
       </div>
       <div className="">
         <p className="text-sm text-gray-600 mb-3">
-          Moveth the seed you waters is replenish light one meat. Under divide
-          image likeness their may, form Earth evening moving. Heaven was have
-          upon god place dry one creepeth one days divided. For fruitful blessed
-          void days seasons wherein dry She’d light creeping that grass, is rule
-          rule. Waters midst i him lesser.
+          {currentBlog.blogText}
         </p>
       </div>
 

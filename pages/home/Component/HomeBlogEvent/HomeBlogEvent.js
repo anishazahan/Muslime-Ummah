@@ -23,10 +23,10 @@ const HomeBlogEvent = () => {
                               blogs.map(blog => {
                                    return (
                                         <div className='homeBlog flex justify-between items-center shadow-[0px_0px_20px_0px_#d6d6d6] rounded-md'>
-                                             <div className='homeBlogImg mr-5'>
-                                                  <img className='' src={blog.blogImg} alt="" />
+                                             <div className='homeBlogImg mr-5 rounded-l'>
+                                                  <img className='rounded-l' src={blog.blogImg} alt="" />
                                              </div>
-                                             <div className='text-[#555555]'>
+                                             <div className='text-[#555555] mr-2.5'>
                                                   <h3 className='text-xl text-[#3c3022]'>{blog.blogName}</h3>
                                                   <div className='flex text-xs space-x-5 py-3.5'>
                                                        <p className='flex'>
