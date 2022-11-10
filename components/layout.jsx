@@ -7,6 +7,7 @@ import getUsers from '../store/user/userAction'
 import getServices from "../store/service/serviceAction";
 import getBlogs from "../store/blog/blogAction";
 import getEvents from "../store/event/eventAction";
+import getTeam from "../store/team/teamAction";
 
 export default function Layout({ children }) {
      const dispatch = useDispatch()
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
           dispatch(getServices())
           dispatch(getBlogs())
           dispatch(getEvents())
+          dispatch(getTeam())
      }, [dispatch])
      // console.log(store)
      return (
