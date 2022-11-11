@@ -23,12 +23,12 @@ const ServiceDetails = () => {
   return (
     <>
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
-      <div className="my-56 container px-10 lg:px-16 mx-auto">
+      <div className=" my-10 md:my-20 container px-10 lg:px-16 mx-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
           <div className="left-service w-full lg:w-[72%]">
             <div className="h-[20%] overflow-hidden">
               <img
-                className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
+                className="w-full h-full bg-center hover:scale-[1.2] duration-500 object-cover"
                 src={currentService?.img}
                 alt=""
               />
@@ -194,21 +194,6 @@ const ServiceDetails = () => {
                 }
               </div>
               <hr />
-
-              {/*             
-            <div className="flex justify-between px-10">
-              <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                We give best solution?
-              </h2>
-              <button className="text-2xl font-bold">+</button>
-            </div>
-            <hr />
-            <div className="flex justify-between px-10 ">
-              <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                We give best solution?
-              </h2>
-              <button className="text-2xl font-bold">+</button>
-            </div> */}
 
             </div>
           </div>
