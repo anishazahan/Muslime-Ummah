@@ -6,7 +6,6 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Team = () => {
   const teams = useSelector(state => state.team.team)
   const [allTeam,setAllTeam]=useState(false);
-
   return (
     <section className="container mx-auto mb-10 lg:mb-20">
         <h2 className="flex justify-center text-xl font-semibold my-20 lg:text-3xl">Our Amazing Team</h2>
@@ -16,8 +15,7 @@ const Team = () => {
          teams?.slice(0,8).map(team=><SingleTeam key={team.id} team={team}></SingleTeam>) 
         }
        </div>
-       
-       <div className="mr-auto px-10 text-right flex justify-end text-secondary font-medium lg:px-20 flex items-center ">
+       <div className="mr-auto px-10 text-right justify-end text-secondary font-medium lg:px-20 flex items-center ">
         <button className='link underline' onClick={()=>{setAllTeam(!allTeam)}}>{allTeam? 'see less':'See More'}</button>
         <AiOutlineArrowRight></AiOutlineArrowRight>
     </div>
