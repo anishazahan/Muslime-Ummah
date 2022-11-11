@@ -8,7 +8,6 @@ const about = () => {
      
      return (
           <div>
-               
               <AboutIslam></AboutIslam>
                <Team></Team>
           </div>
