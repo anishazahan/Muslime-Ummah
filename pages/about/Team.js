@@ -7,14 +7,14 @@ const Team = () => {
     //  console.log(team);
 
   return (
-    <div className="container mx-auto">
+    <section className="container mx-auto">
         <h2 className="flex justify-center text-xl font-semibold my-20 lg:text-3xl">Our Amazing Team</h2>
-       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-10 lg:px-20 ">
+       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-10 lg:px-20  my-8">
        {
           teams?.map(team=>{
-            return <div className="text-center">
-                <div className="  w-[85%] mx-auto  ">
-                  <img className="w-full rounded-full rounded-bl-lg rounded-br-lg" src={team.img} alt="" />
+            return <div className="text-center my-6">
+                <div className="  w-[85%] mx-auto hover:translate-y-[-20px] cursor-pointer duration-500  ">
+                  <img className="w-full rounded-full rounded-bl-lg rounded-br-lg " src={team.img} alt="" />
                 </div>
                 <h2 className="text-secondary font-semibold text-xl mt-6">{team.name}</h2>
                 <h2 className="text-secondary">{team.situation}</h2>
@@ -29,7 +29,7 @@ const Team = () => {
         }
        </div>
       
-    </div>
+    </section>
   )
 }
 
