@@ -5,7 +5,7 @@ import ContactInfo from "./ContactInfo"
 const index = () => {
   return (
     <div>
-      <ServicesBreadcam></ServicesBreadcam>
+      <ServicesBreadcam  logoText={'Contact Us'} ></ServicesBreadcam>
         <ContactInfo></ContactInfo>
     </div>
   )

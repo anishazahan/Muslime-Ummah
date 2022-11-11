@@ -23,7 +23,7 @@ const ServiceDetails = () => {
   return (
     <>
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
-      <div className=" my-10 md:my-20 container px-10 lg:px-16 mx-auto">
+      <div className=" my-10 md:mt-20 container px-10 lg:px-16 mx-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
           <div className="left-service w-full lg:w-[72%]">
             <div className="h-[20%] overflow-hidden">
