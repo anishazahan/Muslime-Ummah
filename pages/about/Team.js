@@ -11,11 +11,11 @@ const Team = () => {
        {
           teams?.map(team=>{
             return <div className="text-center">
-                <div className="  w-[85%] mx-auto">
-                  <img className="w-full" src={team.img} alt="" />
+                <div className="  w-[85%] mx-auto  ">
+                  <img className="w-full rounded-full rounded-bl-lg rounded-br-lg" src={team.img} alt="" />
                 </div>
-                <h2>{team.name}</h2>
-                <h2>{team.situation}</h2>
+                <h2 className="text-secondary font-semibold text-xl mt-6">{team.name}</h2>
+                <h2 className="text-secondary">{team.situation}</h2>
             </div>
 
           })
