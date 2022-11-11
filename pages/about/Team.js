@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux"
+import { BsFacebook } from "react-icons/bs";
+import { AiFillTwitterCircle,AiFillYoutube } from "react-icons/ai";
 
 const Team = () => {
   const teams = useSelector(state => state.team.team)
@@ -16,6 +18,11 @@ const Team = () => {
                 </div>
                 <h2 className="text-secondary font-semibold text-xl mt-6">{team.name}</h2>
                 <h2 className="text-secondary">{team.situation}</h2>
+                <div className="flex space-x-3 text-secondary text-xl justify-center my-3 items-center">
+                  <p><BsFacebook></BsFacebook></p>
+                  <p className="text-2xl"><AiFillTwitterCircle></AiFillTwitterCircle></p>
+                  <p className="text-2xl"><AiFillYoutube></AiFillYoutube></p>
+                </div>
             </div>
 
           })

@@ -14,9 +14,7 @@ const teamSlice = createSlice({
 		getTeam: (state, actions) => {
 			state.team = actions.payload
 		},
-		// updateUser: state => {
-		// 	state.message = 'user Details updated Successfully'
-		// },
+		
 
 	},
 })

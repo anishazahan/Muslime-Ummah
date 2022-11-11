@@ -15,21 +15,6 @@ const getTeam = () => {
 	}
 }
 
-// export const updateEvent = ({ id, ...rest }) => {
-// 	return async dispatch => {
-// 		try {
-// 			const { data } = await tokenClient.patch(`/api/user/updateEvent/${id}`, rest)
-// 			console.log({id, rest});
-// 			console.log(data);
-// 			if (data) {
-// 				dispatch(userActions.updateEvent())
-// 				dispatch(getEvents())
-// 			}
-// 		} catch (error) {
-// 			console.log(error)
-// 		}
-// 	}
-// }
 
 
 export default getTeam
