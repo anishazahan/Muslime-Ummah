@@ -16,12 +16,11 @@ const Team = () => {
          teams?.slice(0,8).map(team=><SingleTeam key={team.id} team={team}></SingleTeam>) 
         }
        </div>
-
+       
        <div className="mr-auto px-10 text-right flex justify-end text-secondary font-medium lg:px-20 flex items-center ">
         <button className='link underline' onClick={()=>{setAllTeam(!allTeam)}}>{allTeam? 'see less':'See More'}</button>
         <AiOutlineArrowRight></AiOutlineArrowRight>
     </div>
-      
     </section>
   )
 }
