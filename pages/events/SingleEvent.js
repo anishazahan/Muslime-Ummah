@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaRegCalendarAlt } from 'react-icons/fa';
-import { AiOutlineUser } from 'react-icons/ai';
+import { IoMdTime } from 'react-icons/io';
+import { GoLocation } from 'react-icons/go';
 import moment from 'moment';
 
 const SingleEvent = ({ event }) => {
@@ -46,10 +46,10 @@ const SingleEvent = ({ event }) => {
                     <h3 className='text-xl text-black'>{event.eventName}</h3>
                     <div className='flex text-xs space-x-5 py-3.5'>
                          <p className='flex'>
-                              <FaRegCalendarAlt className='mr-2 text-primary'></FaRegCalendarAlt> {event.location}
+                              <GoLocation className='mr-2 text-primary'></GoLocation> {event.location}
                          </p>
                          <p className='flex'>
-                              <AiOutlineUser className='mr-2 text-primary text-sm'></AiOutlineUser> {event.time}
+                              <IoMdTime className='mr-2 text-primary text-sm'></IoMdTime> {event.time}
                          </p>
                     </div>
                     <p className='text-sm'>{event.eventDescription}</p>
