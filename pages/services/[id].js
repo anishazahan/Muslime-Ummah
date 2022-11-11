@@ -12,12 +12,23 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
+  const [service, setService] = useState({})
+  const router = useRouter()
   const id = useRouter().query.id;
   let services = useSelector(state => state.service.services)
-  const currentService = services.find(service => service.id == id);
   // console.log(services)
-
-  if (services?.length == 0) {
+  useEffect(() => {
+    const currentService = services.find(service => service.id == id)
+    if (currentService !== undefined) {
+      setService(currentService)
+    }
+    else {
+      router.push("/services")
+      location.reload(); 
+    }
+  }, [])
+  console.log(service)
+  if (Object.keys(service).length === 0) {
     return <NormalLoader />
   }
   return (
@@ -29,7 +40,7 @@ const ServiceDetails = () => {
             <div className="h-[20%] overflow-hidden">
               <img
                 className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
-                src={currentService?.img}
+                src={service?.img}
                 alt=""
               />
             </div>
