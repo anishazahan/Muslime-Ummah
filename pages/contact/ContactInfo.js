@@ -24,12 +24,25 @@ const ContactInfo = () => {
         Phone/////// */}
             <div className="contactInfo-box py-12 hover:bg-slate-200 duration-500 cursor-pointer">
             <div className="flex items-center border-green-800 mx-12 border-dashed border-b-2 justify-center">
-                <p><BsFillTelephoneInboundFill className='text-4xl text-primary'></BsFillTelephoneInboundFill></p>
+                <p><BsFillTelephoneInboundFill className='text-2xl text-primary'></BsFillTelephoneInboundFill></p>
                 <h2 className="text-2xl font-semibold">Phone Us</h2>
             </div>
             <div className="text-center mt-8">
               <h2 className="text-[16px] text-gray-700">+789576453</h2>
               <h2 className="text-[16px] text-gray-700">+786534445</h2>
+            </div>
+            </div>
+
+            {/* ///////------
+                      Email us/////// */}
+            <div className="contactInfo-box py-12 hover:bg-slate-200 duration-500 cursor-pointer">
+            <div className="flex items-center border-green-800 mx-12 border-dashed border-b-2 justify-center">
+                <p><BsFillTelephoneInboundFill className='text-2xl text-primary'></BsFillTelephoneInboundFill></p>
+                <h2 className="text-2xl font-semibold">Email Us</h2>
+            </div>
+            <div className="text-center mt-8">
+              <h2 className="text-[16px] text-gray-700">anishazahan@gmail.com</h2>
+              <h2 className="text-[16px] text-gray-700">rakib@gmail.com</h2>
             </div>
             </div>
           
