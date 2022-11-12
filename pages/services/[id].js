@@ -12,17 +12,28 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
+  const [service,setService] = useState({})
+  // const [state,setState] = useState()
   const id = useRouter().query.id;
-  let services = useSelector(state => state.service.services)
-  const currentService = services.find(service => service.id == id);
-  // console.log(services)
+  let services = useSelector(state => state)
+ console.log(services)
 
-  if (services?.length == 0) {
+  if(services.length > 0 ){
+    console.log('after');
+    console.log(services);
+        // setService(services?.find(service => service.id == id))
+        
+  }
+  
+  console.log(service)
+
+  if (services?.length < 1) {
     return <NormalLoader />
   }
   return (
     <>
-      <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
+    <h1>hsdfi</h1>
+      {/* <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
       <div className=" my-10 md:mt-20 container px-10 lg:px-16 mx-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
           <div className="left-service w-full lg:w-[72%]">
@@ -204,7 +215,7 @@ const ServiceDetails = () => {
             <SidebarContact></SidebarContact>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
