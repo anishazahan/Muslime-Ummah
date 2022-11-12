@@ -15,11 +15,25 @@ const ContactMessage = () => {
                 required
               />
             </div>
+                <div className="w-full">
+              <input
+                className="border border-2 my-8 px-5 w-full py-3 border-gray-300 placeholder-black outline-none"
+                type="email"
+                placeholder="Your Email*"
+                required
+              />
+            </div>
+                <div className="w-full">
+             <textarea  className="border border-2 mb-8 px-5 w-full py-3 border-gray-300 placeholder-black outline-none" name="" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
+            </div>
+            <div className="">
+              <input className="py-2 px-10 bg-primary text-white" type="button" value="Submit" />
+            </div>
 
                 </form>
               </div>
               <div className="right w-612">
-
+                <img className="w-full" src={''} alt="" />
               </div>
             </div>
 
