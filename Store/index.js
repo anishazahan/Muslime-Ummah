@@ -4,6 +4,7 @@ import eventSlice from './event/eventSlice'
 import serviceslice from './service/serviceslice'
 import userSlice from './user/userSlice'
 import teamSlice from './team/teamSlice'
+import donationSlice from './donation/donationSlice'
 
 export const store = configureStore({
 	reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
 		blog: blogSlice,
 		event: eventSlice,
 		team:teamSlice,
+		donation:donationSlice,
 	},
 })
 
