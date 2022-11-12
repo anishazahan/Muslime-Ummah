@@ -29,7 +29,6 @@ const ContactMessage = () => {
             <div className="lg:w-full">
               <input className="py-2 px-10 bg-primary w-full text-white" type="button" value="Submit" />
             </div>
-
                 </form>
               </div>
               <div className="right w-full lg:w-6/12 mt-8 lg:mt-0">

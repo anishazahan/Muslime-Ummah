@@ -19,8 +19,6 @@ const ContactInfo = () => {
               <h2 className="text-[16px] text-gray-700">Dhaka ,Bangladesh</h2>
             </div>
             </div>
-
-
             {/* ///////------
         Phone/////// */}
             <div className="md:w-[30%] w-[80%] contactInfo-box py-12 hover:bg-slate-200 duration-500 cursor-pointer">
