@@ -5,18 +5,34 @@ import { HiShare } from "react-icons/hi";
 import { FaShare } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import StyleBtn from "../../components/StyleButton/StyleBtn";
+import { useEffect, useState } from "react";
+import NormalLoader from "../../components/Loader/NormalLoader";
 const BlogDetails = () => {
+  const [blog, setBlog] = useState({})
+  const router = useRouter()
   const id = useRouter().query.id;
-  let blogs = useSelector(state => state.blog.blogs)
-  const currentBlog = blogs.find(blog => blog.id == id);
-  // console.log(currentBlog)
+  let blogs = useSelector(state => state.blog?.blogs)
+
+  useEffect(() => {
+        const currentBlog = blogs.find(blog => blog.id == id);
+        if (currentBlog !== undefined) {
+          setBlog(currentBlog)
+        }
+        else{
+          router.push("/blogs")
+          location.reload(); 
+        }
+  }, [])
+  console.log(blog)
+  if (Object.keys(blog).length === 0 ) {
+    return <NormalLoader />
+  }
   return (
     <div className="container px-6 lg:px-20 mx-auto my-12 lg:my-28">
       <div className="blogDetails-img w-full lg:w-[70%] relative overflow-hidden">
         <img
           className="w-full h-full hover:scale-[1.2] duration-700"
-          src={currentBlog.blogImg}
+          src={blog.blogImg}
           alt=""
         />
         <div className="flex absolute left-4 right-0 bottom-7 space-x-2">
@@ -33,13 +49,13 @@ const BlogDetails = () => {
           <p>
             <FiUser className=" text-primary font-semibold"></FiUser>
           </p>
-          <h2 className="text-xs text-gray-500"> By {currentBlog.writer} </h2>
+          <h2 className="text-xs text-gray-500"> By {blog.writer} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
             <MdOutlineUpdate className=" text-primary font-semibold"></MdOutlineUpdate>
           </p>
-          <h2 className="text-xs text-gray-500"> {currentBlog.date} </h2>
+          <h2 className="text-xs text-gray-500"> {blog.date} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
@@ -50,7 +66,7 @@ const BlogDetails = () => {
       </div>
       <div className="">
         <p className="text-sm text-gray-600 mb-3">
-          {currentBlog.blogText}
+          {blog.blogText}
         </p>
       </div>
 

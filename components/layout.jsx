@@ -9,6 +9,7 @@ import getBlogs from "../store/blog/blogAction";
 import getEvents from "../store/event/eventAction";
 import getTeam from "../store/team/teamAction";
 import Head from 'next/head'
+import getDonations from '../store/donation/donationAction';
 
 export default function Layout({ children }) {
      const dispatch = useDispatch()
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
           dispatch(getBlogs())
           dispatch(getEvents())
           dispatch(getTeam())
+          dispatch(getDonations())
      }, [dispatch])
      // console.log(store)
      return (
