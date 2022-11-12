@@ -17,9 +17,9 @@ function Navbar() {
                          <li className={router.pathname == "/services" ? "active" : ""}>
                               <Link className='menu' href="/services">Services</Link>
                          </li>
-                         <li className={router.pathname == "/projects" ? "active" : ""}>
+                         {/* <li className={router.pathname == "/projects" ? "active" : ""}>
                               <Link className='menu' href="/projects">Projects</Link>
-                         </li>
+                         </li> */}
                          <li className={router.pathname == "/about" ? "active" : ""}>
                               <Link className='menu' href="/about">About Us</Link>
                          </li>
@@ -29,12 +29,12 @@ function Navbar() {
                          <li className={router.pathname == "/events" ? "active" : ""}>
                               <Link className='menu' href="/events">Events</Link>
                          </li>
-                         <li className={router.pathname == "/portfolio" ? "active" : ""}>
-                              <Link className='menu' href="/portfolio">Portfolios</Link>
+                         <li className={router.pathname == "/donation" ? "active" : ""}>
+                              <Link className='menu' href="/donation">Donation</Link>
                          </li>
-                         <li className={router.pathname == "/pages" ? "active" : ""}>
+                         {/* <li className={router.pathname == "/pages" ? "active" : ""}>
                               <Link className='menu' href="/pages">Pages</Link>
-                         </li>
+                         </li> */}
                          <li className={router.pathname == "/contact" ? "active" : ""}>
                               <Link className='menu' href="/contact">Contact</Link>
                          </li>
