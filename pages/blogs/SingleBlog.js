@@ -18,9 +18,15 @@ const SingleBlog = ({ blog }) => {
                                    <AiOutlineUser className='mr-2 text-primary text-sm'></AiOutlineUser> {blog.writer}
                               </p>
                          </div>
-                         <p className='text-sm'>{blog.blogText}</p>
-                         <Link href={`/blogs/${blog.id}`} passHref>
-                              <button className='mt-4 px-3 py-1.5 rounded-md text-sm border border-green-600 bg-green-600 text-white  hover:text-green-600 hover:bg-white duration-300'>View Details</button>
+                         <p className='text-sm mb-5'>{blog.blogText}</p>
+                         <Link href={`/blogs/${blog.id}`} passHref class=" mt-5 relative px-5 py-3 overflow-hidden font-medium text-white hover:bg-gray-100 bg-primary border border-gray-100 rounded-0  shadow-inner group">
+                              <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                              <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                              <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                              <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                              <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-secondary opacity-0 group-hover:opacity-100"></span>
+                              <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">View details</span>
+           
                          </Link>
                     </div>
                </div>

@@ -261,12 +261,13 @@ const BlogDetails = () => {
               required
             ></textarea>
           </div>
-          <div className=" my-8">
-            <input
+          <div className=" my-8 overflow-hidden py-4">
+            {/* <input
               className="text-white px-4 py-3 bg-primary text-medium hover:bg-secondary duration-500 cursor-pointer"
               type="submit"
               value="Post Comment"
-            />
+            /> */}
+            <button><StyleBtn btnText={'Submit'}></StyleBtn></button>
           </div>
         </form>
       </div>

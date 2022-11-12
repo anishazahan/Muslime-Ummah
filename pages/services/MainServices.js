@@ -4,6 +4,7 @@ import SingleService from "./SingleService";
 
 const MainServices = () => {
   let services = useSelector(state => state.service.services)
+  console.log(services);
  
     return (
       <div className="my-20 mx-auto px-10 lg:px-20 container">

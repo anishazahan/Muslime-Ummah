@@ -8,11 +8,11 @@ const initialState = {
 }
 
 const serviceSlice = createSlice({
-	name: 'service',
+	name: 'services',
 	initialState,
 	reducers: {
-		getServices: (state, actions) => {
-			state.services = actions.payload
+		getServices: (state, action) => {
+			state.services = action.payload
 		},
 		// updateUser: state => {
 		// 	state.message = 'user Details updated Successfully'

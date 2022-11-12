@@ -12,6 +12,24 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
+<<<<<<< HEAD
+  const [service,setService] = useState({})
+  // const [state,setState] = useState()
+  const id = useRouter().query.id;
+  let services = useSelector(state => state)
+ console.log(services)
+
+  if(services.length > 0 ){
+    console.log('after');
+    console.log(services);
+        // setService(services?.find(service => service.id == id))
+        
+  }
+  
+  console.log(service)
+
+  if (services?.length < 1) {
+=======
   const [service, setService] = useState({})
   const router = useRouter()
   const id = useRouter().query.id;
@@ -29,18 +47,25 @@ const ServiceDetails = () => {
   }, [])
   console.log(service)
   if (Object.keys(service).length === 0) {
+>>>>>>> d7ef0c50b8e42e4e14ce62975c295da375bda4f5
     return <NormalLoader />
   }
   return (
     <>
+   
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
-      <div className="my-56 container px-10 lg:px-16 mx-auto">
+      <div className=" my-10 md:mt-20 container px-10 lg:px-16 mx-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
           <div className="left-service w-full lg:w-[72%]">
             <div className="h-[20%] overflow-hidden">
               <img
+<<<<<<< HEAD
+                className="w-full h-full bg-center hover:scale-[1.2] duration-500 object-cover"
+                src={currentService?.img}
+=======
                 className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
                 src={service?.img}
+>>>>>>> d7ef0c50b8e42e4e14ce62975c295da375bda4f5
                 alt=""
               />
             </div>
@@ -205,21 +230,6 @@ const ServiceDetails = () => {
                 }
               </div>
               <hr />
-
-              {/*             
-            <div className="flex justify-between px-10">
-              <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                We give best solution?
-              </h2>
-              <button className="text-2xl font-bold">+</button>
-            </div>
-            <hr />
-            <div className="flex justify-between px-10 ">
-              <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                We give best solution?
-              </h2>
-              <button className="text-2xl font-bold">+</button>
-            </div> */}
 
             </div>
           </div>
