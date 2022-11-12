@@ -1,3 +1,4 @@
+import StyleBtn from "../../../../components/StyleButton/StyleBtn"
 import WelcomeSlider from "./WelcomeSlider"
 
 
@@ -26,7 +27,7 @@ const WelcomeSection = () => {
               Consectetur adipisicing elit sed eiusmod tempor ncid parrot withdrew less a darn overheard foolish ran forwards. Labore et dolore magna aliqua enim ad minim veniam quis nostrud exerc eitation nisi ut aliquip ex ea consequat duis aute irure doly reprehenderit.
             </p>
           </div>
-          <button className="py-4 px-6 outline-0 bg-primary text-white text-xl rounded-sm hover:bg-secondary">Ask About Islam</button>
+          <button className="overflow-hidden py-4 "> <StyleBtn btnText={'Ask About Islam'}></StyleBtn></button>
         </div>
       </div>
     </div>
