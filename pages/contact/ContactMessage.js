@@ -1,3 +1,4 @@
+import StyleBtn from "../../components/StyleButton/StyleBtn"
 
 
 const ContactMessage = () => {
@@ -26,8 +27,9 @@ const ContactMessage = () => {
                 <div className="w-full">
              <textarea  className="border border-2 mb-8 px-5 w-full py-3 border-gray-300 placeholder-black outline-none" name="" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
             </div>
-            <div className="lg:w-full">
-              <input className="py-2 px-10 bg-primary w-full text-white" type="button" value="Submit" />
+            <div className="lg:w-full overflow-hidden">
+              {/* <input className="py-2 px-10 bg-primary w-full text-white" type="button" value="Submit" /> */}
+             <button className="py-3"> <StyleBtn className='' btnText={"Submit"}></StyleBtn></button>
             </div>
                 </form>
               </div>
