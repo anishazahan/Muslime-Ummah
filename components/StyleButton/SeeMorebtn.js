@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 
-const SeeMorebtn = () => {
+const SeeMorebtn = ({btnText}) => {
   return (
     <>
       <span
@@ -17,7 +17,7 @@ const SeeMorebtn = () => {
           <AiOutlineArrowRight  className="w-5 h-5 text-white"></AiOutlineArrowRight>
         </span>
         <span class="relative w-full text-left transition-colors duration-500 ease-in-out group-hover:text-white">
-          See More
+          {btnText}
         </span>
       </span>
     </>

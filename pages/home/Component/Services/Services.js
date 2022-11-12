@@ -27,7 +27,7 @@ const Services = () => {
 
       <div className="text-center mb-16 container mt-10">
         <Link href={`/services`} >
-          <SeeMorebtn></SeeMorebtn>
+          <SeeMorebtn btnText={"See More"}></SeeMorebtn>
         </Link>
       </div>
     </div>
