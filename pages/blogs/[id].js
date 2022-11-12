@@ -5,6 +5,7 @@ import { HiShare } from "react-icons/hi";
 import { FaShare } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
+import StyleBtn from "../../components/StyleButton/StyleBtn";
 const BlogDetails = () => {
   const id = useRouter().query.id;
   let blogs = useSelector(state => state.blog.blogs)
@@ -244,12 +245,13 @@ const BlogDetails = () => {
               required
             ></textarea>
           </div>
-          <div className=" my-8">
-            <input
+          <div className=" my-8 overflow-hidden py-4">
+            {/* <input
               className="text-white px-4 py-3 bg-primary text-medium hover:bg-secondary duration-500 cursor-pointer"
               type="submit"
               value="Post Comment"
-            />
+            /> */}
+            <button><StyleBtn btnText={'Submit'}></StyleBtn></button>
           </div>
         </form>
       </div>
