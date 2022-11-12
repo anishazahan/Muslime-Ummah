@@ -2,6 +2,7 @@
 import Link from "next/link";
 import SingleService from "../../../services/SingleService";
 import { useSelector } from 'react-redux';
+import SeeMorebtn from "../../../../components/StyleButton/SeeMorebtn";
 
 const Services = () => {
   let services = useSelector(state => state.service.services)
@@ -25,7 +26,9 @@ const Services = () => {
       </div>
 
       <div className="text-center mb-16 container mt-10">
-        <Link href={`/services`} className=" text-secondary underline font-medium">Learn More</Link>
+        <Link href={`/services`} >
+          <SeeMorebtn></SeeMorebtn>
+        </Link>
       </div>
     </div>
   );
