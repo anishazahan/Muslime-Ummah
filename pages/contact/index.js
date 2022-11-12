@@ -1,5 +1,6 @@
 import ServicesBreadcam from "../services/ServicesBreadcam"
 import ContactInfo from "./ContactInfo"
+import ContactMessage from "./ContactMessage"
 
 
 const index = () => {
@@ -7,6 +8,7 @@ const index = () => {
     <div>
       <ServicesBreadcam  logoText={'Contact Us'} ></ServicesBreadcam>
         <ContactInfo></ContactInfo>
+        <ContactMessage></ContactMessage>
     </div>
   )
 }
