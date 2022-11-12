@@ -5,7 +5,7 @@ const ContactMessage = () => {
     <section className="container lg:px-20 px-10 mx-auto mb-20">
       <h2 className="text-2xl font-semibold mb-10">Send Your message</h2>
             <div className="flex flex-col lg:flex-row justify-center items-stretch lg:space-x-5">
-              <div className="left w-6/12">
+              <div className="left w-full lg:w-6/12">
                 <form>
                 <div className="w-full">
               <input
@@ -32,7 +32,7 @@ const ContactMessage = () => {
 
                 </form>
               </div>
-              <div className="right w-6/12">
+              <div className="right w-full lg:w-6/12 mt-8 lg:mt-0">
                <div className="w-full h-full">
                <img className="h-full object-cover" src={'https://d32ogoqmya1dw8.cloudfront.net/images/sp/library/google_earth/google_maps_hello_world.jpg'} alt="" />
                </div>
