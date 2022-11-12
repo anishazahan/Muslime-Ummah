@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 const AboutIslam = () => {
@@ -29,8 +30,19 @@ const AboutIslam = () => {
             </div>
           </div>
           <div className="flex justify-center lg:justify-start space-x-4">
-            <button className="px-4 py-2 bg-white border border-2 font-semibold underline text-gray-600">Read More</button>
+           
+            <Link href="/about" class="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-0 underline shadow-inner group">
+            <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+            <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-secondary opacity-0 group-hover:opacity-100"></span>
+            <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Read More</span>
+            </Link>
+            
+           
             <button className="px-4 py-2 bg-primary text-amber-100  font-semibold  text-gray-600">Join Our Activity</button>
+            
           </div>
         </div>
 

@@ -20,6 +20,8 @@ const Team = () => {
         <button className='' onClick={()=>{setAllTeam(!allTeam)}}>{allTeam? <SeeMorebtn btnText={'See Less'}></SeeMorebtn>:<SeeMorebtn btnText={'See More'}></SeeMorebtn>}</button>
         
     </div>
+
+    
     </section>
   )
 }
