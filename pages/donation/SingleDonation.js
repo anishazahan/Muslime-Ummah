@@ -5,6 +5,7 @@ import ProgressBar from '@ramonak/react-progress-bar/dist/index';
 import moment from 'moment';
 
 const SingleDonation = ({ donation }) => {
+     console.log(donation);
      const formatedDate = moment(donation.date, 'YYYY-MM-DD').format('MMM DD YYYY')
 
      // get percentage 
