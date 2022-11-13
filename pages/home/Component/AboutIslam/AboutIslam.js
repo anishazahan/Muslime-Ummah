@@ -3,14 +3,16 @@ import StyleBtn from "../../../../components/StyleButton/StyleBtn";
 
 const AboutIslam = () => {
   return (
-    <section className="mx-auto container text-center lg:text-left px-10 lg:px-20 flex flex-wrap my-28 items-stretch">
-      <div className="about-content w-full lg:w-6/12">
+    <section className="mx-auto container text-center w-full xl:text-left px-10 lg:px-20 flex flex-wrap my-28 items-stretch bg-green-100 xl:bg-white">
+      <div className="about-content w-full xl:w-6/12 ">
         <div className="flex flex-col pr-4">
+          <div className="mx-auto xl:mx-0 pt-14">
           <img
-            className="w-52 mx-auto lg:mx-0"
+            className="w-52 "
             src={"http://kodeforest.net/html/islamic/images/hdg-img.png"}
             alt=""
           />
+          </div>
           <h2 className="text-2xl font-semibold uppercase text-gray-700 my-3 tracking-wide">
             About Us
           </h2>
@@ -20,7 +22,7 @@ const AboutIslam = () => {
             randomised words of Lorem Ipsum available, but the majority have
             suffered alteration in some form...
           </p>
-          <div className="flex justify-center lg:justify-start my-10 lg:space-x-6  flex-wrap">
+          <div className="flex justify-center mx-auto xl:mx-0 lg:justify-start my-10 lg:space-x-6  flex-wrap">
             <div className="flex flex-col mx-3 lg:mx-0">
               <h2 className="h-[100px] w-[100px]  font-semibold text-3xl flex items-center justify-center border border-gray-400 border-2 text-primary rounded-full">
                 10
@@ -54,7 +56,7 @@ const AboutIslam = () => {
               </h2>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-start space-x-4">
+          <div className="flex justify-center mx-auto xl:mx-0 lg:justify-start space-x-4">
             <Link
               href='/'
               class=" relative px-5 py-3 underline overflow-hidden font-medium text-secondary font-semibold bg-gray-100  border border-gray-100 rounded-0  shadow-inner group"
@@ -74,8 +76,8 @@ const AboutIslam = () => {
         </div>
       </div>
 
-      <div className="about-img md:flex hidden justify-center w-full lg:w-6/12 lg:mt-0 mt-5">
-        <div className="flex flex-col space-y-3 mr-3">
+      <div className="about-img md:flex hidden justify-center  w-full lg:w-6/12 lg:mt-0 pt-20">
+        <div className="flex flex-col space-y-3 mr-3 hidden xl:block">
           <div className="relative img-container">
             <img
               className="images duration-500"
@@ -104,7 +106,7 @@ const AboutIslam = () => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="card hidden xl:block">
           <img
             className="card-img"
             src={"http://kodeforest.net/html/islamic/extra-images/mosque2.jpg"}
