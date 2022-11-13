@@ -19,11 +19,11 @@ const Login = () => {
             <div class="flex flex-col space-y-5">
                 <label for="email">
                     <p class="font-medium text-slate-700 pb-2">Email address</p>
-                    <input id="email" name="email" type="email" class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter email address"/>
+                    <input id="email" name="email" type="email" class="w-full py-3 border border-slate-200 rounded-0 px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter email address"/>
                 </label>
                 <label for="password">
                     <p class="font-medium text-slate-700 pb-2">Password</p>
-                    <input id="password" name="password" type="password" class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter your password"/>
+                    <input id="password" name="password" type="password" class="w-full py-3 border border-slate-200 rounded-0 px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter your password"/>
                 </label>
                 <div class="flex flex-row justify-between">
                     <div>
@@ -36,7 +36,7 @@ const Login = () => {
                         <Link href="/" class="font-medium text-indigo-600">Forgot Password?</Link>
                     </div>
                 </div>
-                <button class="w-full py-3 font-medium text-white bg-secondary hover:bg-black duration-500 rounded-0 border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+                <button class="w-full py-3 font-medium text-white bg-secondary hover:bg-green-700 duration-500 rounded-0 border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                       </svg>
