@@ -6,7 +6,7 @@ import ServicesBreadcam from "../services/ServicesBreadcam"
 
 const index = () => {
   const donations = useSelector(state => state.donation.donations)
-  console.log(donations)
+  // console.log(donations)
 
 
      return (
