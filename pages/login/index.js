@@ -4,8 +4,7 @@ import Link from "next/link"
 const Login = () => {
   return (
     <>
-    
-<div class=" bg-green-100 py-16">
+<div class=" bg-green-100 py-14">
     <div class="max-w-lg mx-auto py-10 bg-white p-8 rounded-xl shadow shadow-slate-300">
         <h1 class="text-4xl font-medium">Please Login!!</h1>
         <p class="text-slate-500">Hi, Welcome back</p>
@@ -50,7 +49,6 @@ const Login = () => {
     </div>
     
 </div>
-    
     
     </>
 
