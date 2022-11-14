@@ -12,20 +12,20 @@ import { useSelector } from "react-redux";
 
 const Donation = () => {
     const [currentFund, setCurrentFund] = useState({})
+    // const [currentFund, setCurrentFund] = useState({})
     const funds = useSelector(state => state.donation.donations)
     useEffect(() => {
         setCurrentFund(funds[0])
-    }, [])
+    }, [funds])
 
     function handleSelectFund(e) {
         const fundName = e.target.value;
         const selectedFund = funds.find(fund => fund.donationName === fundName)
         setCurrentFund(selectedFund);
     }
-    const raised = currentFund.raised;
-    const goal = currentFund.goal;
+    const raised = currentFund?.raised;
+    const goal = currentFund?.goal;
     const percentage = parseInt(100 - (+Math.abs(100 - raised / goal * 100).toFixed(10)));
-    console.log(currentFund);
     return (
         <div className='mt-20 lg:mt-28 2xl:container mx-auto donate-section'>
             <section className="max-width mx-auto">
