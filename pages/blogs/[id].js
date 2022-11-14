@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NormalLoader from "../../components/Loader/NormalLoader";
+import StyleBtn from "../../components/StyleButton/StyleBtn";
+
 const BlogDetails = () => {
   const [blog, setBlog] = useState({})
   const router = useRouter()
