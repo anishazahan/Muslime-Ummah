@@ -3,8 +3,9 @@ import React from 'react'
 
 const PillerOfIslam = () => {
   return (
-    <section className='pb-28 pt-20 xl:container mx-auto bg-green-100'>
-        <div className="text-center space-y-6">
+    <section className='pb-28 pt-20 mx-auto bg-green-100 border'>
+       <div className="xl:container mx-auto">
+       <div className="text-center space-y-6">
             <h2 className='font-semibold text-[18px] text-primary'>Islamic Pillers</h2>
             <h1 className='text-3xl font-semibold'>5 Islamic Pillers of Islam</h1>
             <p className=" px-6 md:w-1/2 text-[16px] mx-auto">
@@ -41,6 +42,7 @@ const PillerOfIslam = () => {
                 <p className="text-primary text-xs font-medium">(faith)</p>
             </div>
             </div>
+       </div>
 
     </section>
   )
