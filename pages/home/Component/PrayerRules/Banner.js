@@ -1,6 +1,4 @@
-import React from 'react'
-
-import './Banner.css'
+import "./Banner.css";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,18 +10,10 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper";
-
-
-
 const Banner = () => {
-
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-
   return (
-
     <div className="">
-
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -44,7 +34,6 @@ const Banner = () => {
         <SwiperSlide>
           <img src="https://i.ibb.co/vHjLWQx/banner3.webp" />
         </SwiperSlide>
-
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -55,7 +44,6 @@ const Banner = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </SwiperSlide>
@@ -67,16 +55,9 @@ const Banner = () => {
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
         </SwiperSlide>
-
-
       </Swiper>
-
     </div>
+  );
+};
 
-
-  )
-}
-
-export default Banner
-
-
+export default Banner;

@@ -9,63 +9,36 @@ import SidebarContact from "../contact/SidebarContact";
 import Cateogory from "./Cateogory";
 import ServicesBreadcam from "./ServicesBreadcam";
 
-
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
-<<<<<<< HEAD
-  const [service,setService] = useState({})
-  // const [state,setState] = useState()
+  const [service, setService] = useState({});
+  const router = useRouter();
   const id = useRouter().query.id;
-  let services = useSelector(state => state)
- console.log(services)
-
-  if(services.length > 0 ){
-    console.log('after');
-    console.log(services);
-        // setService(services?.find(service => service.id == id))
-        
-  }
-  
-  console.log(service)
-
-  if (services?.length < 1) {
-=======
-  const [service, setService] = useState({})
-  const router = useRouter()
-  const id = useRouter().query.id;
-  let services = useSelector(state => state.service.services)
+  let services = useSelector((state) => state.service.services);
   // console.log(services)
   useEffect(() => {
-    const currentService = services.find(service => service.id == id)
+    const currentService = services.find((service) => service.id == id);
     if (currentService !== undefined) {
-      setService(currentService)
+      setService(currentService);
+    } else {
+      router.push("/services");
+      location.reload();
     }
-    else {
-      router.push("/services")
-      location.reload(); 
-    }
-  }, [])
-  console.log(service)
+  }, []);
+  console.log(service);
   if (Object.keys(service).length === 0) {
->>>>>>> d7ef0c50b8e42e4e14ce62975c295da375bda4f5
-    return <NormalLoader />
+    return <NormalLoader />;
   }
   return (
     <>
-   
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
       <div className=" my-10 md:mt-20 container px-10 lg:px-16 mx-auto">
         <div className="flex flex-col lg:flex-row lg:space-x-5 mx-auto ">
           <div className="left-service w-full lg:w-[72%]">
             <div className="h-[20%] overflow-hidden">
               <img
-<<<<<<< HEAD
-                className="w-full h-full bg-center hover:scale-[1.2] duration-500 object-cover"
-                src={currentService?.img}
-=======
                 className="w-full h-full hover:scale-[1.2] duration-500 object-cover"
                 src={service?.img}
->>>>>>> d7ef0c50b8e42e4e14ce62975c295da375bda4f5
                 alt=""
               />
             </div>
@@ -79,8 +52,8 @@ const ServiceDetails = () => {
             <p className="text-gray-700 mb-2">
               service-detail-img1.jpg Provide rehab facility dolor sit amet,
               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco.
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco.
             </p>
             <div className="flex flex-col md:flex-row justify-between mb-4">
               <div className="w-full my-3 md:my-0 md:w-[40%]">
@@ -95,18 +68,19 @@ const ServiceDetails = () => {
               <div className=" w-full md:w-[57%]">
                 <p className="text-gray-700">
                   Doctors and medical officers sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam
                 </p>
                 <p className="text-gray-700 mt-3">
-                  Duis aute irure dolor in reprehenderit in voluptate.exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in
+                  Duis aute irure dolor in reprehenderit in
+                  voluptate.exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in
                 </p>
                 <p className="text-gray-700 mt-3">
-                  Duis aute irure dolor in reprehenderit in voluptate.exercitation
-                  ullamco laboris nisi ut dolor in reprehenderit in voluptate.exercitation
-                  ullamco laboris nisi ut
+                  Duis aute irure dolor in reprehenderit in
+                  voluptate.exercitation ullamco laboris nisi ut dolor in
+                  reprehenderit in voluptate.exercitation ullamco laboris nisi
+                  ut
                 </p>
               </div>
             </div>
@@ -191,46 +165,78 @@ const ServiceDetails = () => {
             </h2>
 
             <div className="bg-slate-100 flex flex-col ">
-
               <div className="flex flex-col px-10 ">
-                <div onClick={() => setToggle(!toggle)} className="flex justify-between duration-500">
-                  {
-                    toggle ? <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                      We give best solution?
-                    </h2>
-                      <button className="text-2xl font-bold">-</button></>
-                      :
-                      <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                <div
+                  onClick={() => setToggle(!toggle)}
+                  className="flex justify-between duration-500"
+                >
+                  {toggle ? (
+                    <>
+                      {" "}
+                      <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
                         We give best solution?
                       </h2>
-                        <button className="text-2xl font-bold">+</button></>
-                  }
+                      <button className="text-2xl font-bold">-</button>
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                        We give best solution?
+                      </h2>
+                      <button className="text-2xl font-bold">+</button>
+                    </>
+                  )}
                 </div>
                 {
-                  <p className={`${toggle ? "opacity-100 h-16" : "opacity-0 h-0"} duration-300`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores voluptate, officiis animi beatae veritatis quae magnam officia corporis blanditiis.</p>
+                  <p
+                    className={`${
+                      toggle ? "opacity-100 h-16" : "opacity-0 h-0"
+                    } duration-300`}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    maiores voluptate, officiis animi beatae veritatis quae
+                    magnam officia corporis blanditiis.
+                  </p>
                 }
               </div>
               <hr />
               <div className="flex flex-col px-10 ">
-                <div onClick={() => setToggle(!toggle)} className="flex justify-between duration-500">
-                  {
-                    toggle ? <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
-                      We give best solution?
-                    </h2>
-                      <button className="text-2xl font-bold">-</button></>
-                      :
-                      <> <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                <div
+                  onClick={() => setToggle(!toggle)}
+                  className="flex justify-between duration-500"
+                >
+                  {toggle ? (
+                    <>
+                      {" "}
+                      <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
                         We give best solution?
                       </h2>
-                        <button className="text-2xl font-bold">+</button></>
-                  }
+                      <button className="text-2xl font-bold">-</button>
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      <h2 className="tracking-wide text-gray-800 text-[16px] font-semibold my-5">
+                        We give best solution?
+                      </h2>
+                      <button className="text-2xl font-bold">+</button>
+                    </>
+                  )}
                 </div>
                 {
-                  <p className={`${toggle ? "opacity-100 h-16" : "opacity-0 h-0"} duration-300`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores voluptate, officiis animi beatae veritatis quae magnam officia corporis blanditiis.</p>
+                  <p
+                    className={`${
+                      toggle ? "opacity-100 h-16" : "opacity-0 h-0"
+                    } duration-300`}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    maiores voluptate, officiis animi beatae veritatis quae
+                    magnam officia corporis blanditiis.
+                  </p>
                 }
               </div>
               <hr />
-
             </div>
           </div>
 
