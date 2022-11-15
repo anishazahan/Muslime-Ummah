@@ -1,4 +1,4 @@
-import "./Banner.css";
+
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
