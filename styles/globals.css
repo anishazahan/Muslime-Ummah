@@ -9,9 +9,10 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Merriweather', serif !important;
 
+}
+/* 
 body h1,
 h2,
 h3,
@@ -20,11 +21,10 @@ h5,
 h6,
 p,
 button {
-  font-family: 'Merriweather', serif !important;
-  /* color: rgba(0, 0, 0, 0.856);
+  color: rgba(0, 0, 0, 0.856);
   text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-  0px -4px 10px rgba(255,255,255,0.3); */
-}
+  0px -4px 10px rgba(255,255,255,0.3);
+} */
 
 /* i, a, img, input, button, textarea, ::before, ::after, nav ul ul, label, .logo, .logo > a img, nav > div > ul ul, nav > div > ul li, .testi-nav-thmb, td, .srv-inf, .serv-bx > i, .team-bx, .team-inf, .team-inf > span, .serv-inf2, .pagination > li, .rspn-cnt > li, .rspn-mnu-btn, .rspn-mnu-cls {
 	-webkit-transition: all .3s linear;

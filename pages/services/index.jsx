@@ -1,9 +1,14 @@
 import React from 'react';
+import MainServices from './MainServices';
+
+import ServicesBreadcam from './ServicesBreadcam';
 
 const services = () => {
      return (
           <div>
-               services page
+              <ServicesBreadcam  logoText={"OUR SERVICES"}></ServicesBreadcam>
+              <MainServices></MainServices>
+            
           </div>
      );
 };

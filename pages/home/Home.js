@@ -11,7 +11,6 @@ import Gallary from './Component/Gallary/Gallary'
 import HomeBlogEvent from './Component/HomeBlogEvent/HomeBlogEvent'
 import HomeTopVedioSection from './Component/HomeTopVedioSection/HomeTopVedioSection'
 import PillerOfIslam from './Component/PillerOfIslam/PillerOfIslam'
-import DonationCard from './Component/PrayerRules/Donate/DonationCard'
 import PrayerRules from './Component/PrayerRules/PrayerRules'
 import Remember from './Component/Remember/Remember'
 import Scholars from './Component/Schoolars/Scholars'
@@ -35,8 +34,6 @@ const Home = () => {
       <Donation />
       <PrayerRules />
       <Remember />
-
-
 
     </div>
   )

@@ -1,0 +1,34 @@
+[
+     {
+          "id":1,
+          "blogName": "Is Islam a Liberal Philosophy?",
+          "date": "Nov 17, 2020",
+          "writer": "Tazul Islam",
+          "blogText": "Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.",
+          "blogImg": "https://nauthemes.net/html/bismillah/assets/images/resources/post-img1-1.jpg"
+     },
+     {
+          "id":2,
+          "blogName": "Is Islam a Liberal Philosophy?",
+          "date": "Nov 17, 2020",
+          "writer": "Anisha Zahan",
+          "blogText": "Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.",
+          "blogImg": "https://nauthemes.net/html/bismillah/assets/images/resources/post-img1-2.jpg"
+     },
+     {
+          "id":3,
+          "blogName": "Is Islam a Liberal Philosophy?",
+          "date": "Nov 17, 2020",
+          "writer": "Anisha Zahan",
+          "blogText": "Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.",
+          "blogImg": "https://ihsan.templines.org/wp-content/uploads/2019/08/fahrul-azmi-Zv5Va4177_E-unsplash-1-360x280.jpg"
+     },
+     {
+          "id":4,
+          "blogName": "Is Islam a Liberal Philosophy?",
+          "date": "Nov 17, 2020",
+          "writer": "Anisha Zahan",
+          "blogText": "Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.",
+          "blogImg": "https://ihsan.templines.org/wp-content/uploads/2019/07/post002-360x280.jpg"
+     }
+]

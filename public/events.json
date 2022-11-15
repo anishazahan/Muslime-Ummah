@@ -1,0 +1,56 @@
+[
+     {
+          "id":1,
+          "eventName": "Importance Of Prayer In Islam",
+          "date": "2022-12-09T16:00:00+06:00",
+          "location": "Dehli, Jamia Mosque",
+          "time": "04:00PM - 08:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img1.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     },
+     {
+          "id":2,
+          "eventName": "Prayer Importance",
+          "date": "2022-11-25T18:00:00+06:00",
+          "location": "Florida, Islam Center",
+          "time": "06:00PM - 08:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img2.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     },
+     {
+          "id":3,
+          "eventName": "Islamic Teachings",
+          "date": "2022-11-25T16:00:00+06:00",
+          "location": "Berlin, Jamia Mosque",
+          "time": "04:00PM - 08:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img3.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     },
+     {
+          "id":4,
+          "eventName": "Importance of Eid",
+          "date": "2022-12-20T15:00:51+06:00",
+          "location": "Lahore, Mosque",
+          "time": "03:00PM - 0:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img4.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     },
+     {
+          "id":5,
+          "eventName": "Books & Islam",
+          "date": "2022-11-15T20:00:51+06:00",
+          "location": "Park Lane, Mosque",
+          "time": "08:00PM - 10:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img5.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     },
+     {
+          "id":6,
+          "eventName": "Importance Of Prayer In Islam",
+          "date": "2022-10-28T13:00:51+06:00",
+          "location": "Dhaka, Kakrail",
+          "time": "1:00PM - 04:00PM",
+          "eventImg": "https://nauthemes.net/html/bismillah/assets/images/resources/event-img6.jpg",
+          "eventDescription":"Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor."
+     }
+]

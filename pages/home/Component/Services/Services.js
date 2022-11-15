@@ -1,42 +1,37 @@
-import { useEffect, useState } from "react"
-import { FaQuran } from "react-icons/fa";
-import { BsArrowRightCircleFill} from "react-icons/bs";
 
+import Link from "next/link";
+import SingleService from "../../../services/SingleService";
+import { useSelector } from 'react-redux';
+import SeeMorebtn from "../../../../components/StyleButton/SeeMorebtn";
 
 const Services = () => {
-    const [services,setAllServices] = useState();
-    useEffect(()=>{
-        fetch('services.json')
-        .then(res => res.json())
-        .then(data => setAllServices(data));
+  let services = useSelector(state => state.service.services)
 
-    },[services])
+  // console.log(services);
   return (
     <div className="my-20 mx-auto px-10 lg:px-20 container">
-        <img className="w-40 mx-auto" src={'http://kodeforest.net/html/islamic/images/hdg-img.png'} alt="" />
-        <h1 className='text-3xl text-gray-800 my-5 text-center font-semibold mb-10'>OUR SERVICES</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 lg:gap-y-6 mx-auto">
-            {
-                services?.map(service=>{
-                    return <div className="service-card mx-auto">
-                       <div className="relative z-10">
-                       <img className="service-img" src={service.img} alt="absolute" />
-                       <div className="px-8 py-3 service-content duration-500">
-                       <p><FaQuran className="p-4 service-icon duration-500 rounded-full absolute z-20 bg-white text-primary mt-[-2.5rem] text-7xl border"></FaQuran></p>
-                       <h2 className="font-semibold text-[19px] tracking-wide mt-[3rem] my-3">{service.name}</h2>
-                       <div className="flex justify-between">
-                       <p className="text-gray-500 text-sm mb-5">{service.time}</p>
-                       <p><BsArrowRightCircleFill className="text-2xl text-secondary hidden arrow-btn duration-700"></BsArrowRightCircleFill></p>
-                       </div>
-                       </div>
-                       </div>
-                            
-                    </div>
-                })
-            }
-            </div>
-    </div>
-  )
-}
+      <img
+        className="w-40 mx-auto"
+        src={"http://kodeforest.net/html/islamic/images/hdg-img.png"}
+        alt=""
+      />
+      <h1 className="text-3xl text-gray-800 my-5 text-center font-semibold mb-5">
+        OUR SERVICES
+      </h1>
+      <h1 className=" text-gray-600 tracking-wide text-center font-semibold mb-16">
+      Ethical & Moral Beliefs That Guides To The Straight Path!
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 lg:gap-y-6 mx-auto">
+        {services?.map((service) => <SingleService key={service.id} service={service}></SingleService>).slice(0,6)}
+      </div>
 
-export default Services
+      <div className="text-center mb-16 container mt-10">
+        <Link href={`/services`} >
+          <SeeMorebtn btnText={"See More"}></SeeMorebtn>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Services;

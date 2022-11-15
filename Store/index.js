@@ -1,19 +1,22 @@
 import { configureStore } from '@reduxjs/toolkit'
-import authSlice from './auth/authSlice'
-import paymentSlice from './payment/paymentSlice'
-import reviewSlice from './review/reviewSlice'
-import roomSlice from './room/roomSlice'
+import blogSlice from './blog/blogSlice'
+import eventSlice from './event/eventSlice'
+import serviceslice from './service/serviceslice'
 import userSlice from './user/userSlice'
+import teamSlice from './team/teamSlice'
+import donationSlice from './donation/donationSlice'
 
 export const store = configureStore({
-	
 	reducer: {
-		auth: authSlice,
-		room: roomSlice,
-		review: reviewSlice,
 		user: userSlice,
-		booking: paymentSlice,
+		service: serviceslice,
+		blog: blogSlice,
+		event: eventSlice,
+		team:teamSlice,
+		donation:donationSlice,
 	},
 })
+
+export default store
 
 
