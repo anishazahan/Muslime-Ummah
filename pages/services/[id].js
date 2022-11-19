@@ -14,19 +14,21 @@ const ServiceDetails = () => {
   const [service, setService] = useState({});
   const router = useRouter();
   const id = useRouter().query.id;
+  console.log(id)
   let services = useSelector((state) => state.service.services);
-  // console.log(services)
-  useEffect(() => {
-    const currentService = services.find((service) => service.id == id);
-    if (currentService !== undefined) {
-      setService(currentService);
-    } else {
-      router.push("/services");
-      location.reload();
-    }
-  }, []);
-  console.log(service);
-  if (Object.keys(service).length === 0) {
+  console.log(services)
+  const currentService = services.length >0 && services.find((service) => service.id == id);
+  // useEffect(() => {
+    
+  //   if (currentService !== undefined) {
+  //     setService(currentService);
+  //   } else {
+  //     router.push("/services");
+  //     // location.reload();
+  //   }
+  // }, []);
+  // console.log(service);
+  if (currentService == undefined) {
     return <NormalLoader />;
   }
   return (

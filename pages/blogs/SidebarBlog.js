@@ -32,7 +32,7 @@ const SidebarBlog = () => {
         <div className="flex flex-col space-y-6 mx-auto lg:mx-0">
             {
                 news.map(singleNews=>{
-                    return  <div className="flex pl-6 pr-3 space-x-3 items-stretch">
+                    return  <div key={singleNews.img} className="flex pl-6 pr-3 space-x-3 items-stretch">
                     <div className="news-left">
                         <img className="h-full object-cover" src={singleNews.img} alt="" />
                     </div>
