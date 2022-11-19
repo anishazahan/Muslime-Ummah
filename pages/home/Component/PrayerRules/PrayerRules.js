@@ -1,19 +1,25 @@
-import React from 'react'
-
 const PrayerRules = () => {
   return (
-    <div className='my-20'>
-
+    <div className="my-20">
       <div className="mx-auto text-center">
-      <h2 className='text-xl text-black font-semibold text-center prayer-heading'>ISLAMIC PRAYER</h2>
+        <h2 className="text-xl text-black font-semibold text-center prayer-heading">
+          ISLAMIC PRAYER
+        </h2>
       </div>
-        <p className="text-center w-10/12 md:9/12 lg:w-3/5 mx-auto mt-5">Denean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean itudin. This is Photoshop's sion of Lorem Ipsum. Proin gravida nibh vel velit.</p>
-        <div className="mt-2 mx-auto w-full">
-        <img className='w-full mx-auto' src={"https://i.ibb.co/gT4XMqN/prayer-Img.jpg"} alt="" />
-        </div>
-
+      <p className="text-center w-10/12 md:9/12 lg:w-3/5 mx-auto mt-5">
+        Denean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin
+        gravida nibh vel velit auctor aliquet. Aenean itudin. This is
+        Photoshop's sion of Lorem Ipsum. Proin gravida nibh vel velit.
+      </p>
+      <div className="mt-2 mx-auto w-full">
+        <img
+          className="w-full mx-auto"
+          src={"https://i.ibb.co/gT4XMqN/prayer-Img.jpg"}
+          alt=""
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PrayerRules
+export default PrayerRules;

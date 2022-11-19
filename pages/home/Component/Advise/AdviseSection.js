@@ -1,4 +1,3 @@
-import React from "react";
 import "./AdviseSection";
 import { FaQuoteLeft, FaMosque } from "react-icons/fa";
 

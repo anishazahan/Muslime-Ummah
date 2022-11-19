@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
      let year = new Date().getFullYear();
      return (
-          <footer className="text-left bg-gray-100 text-gray-600">
+          <footer className="text-left bg-green-100 text-gray-600">
                 <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
                     <div className="mr-12 hidden lg:block">
                         <span>Get connected with us on social networks:</span>
@@ -67,7 +67,8 @@ const Footer = () => {
                             <h6
                                 className="
                             uppercase
-                            font-semibold
+                            text-primary
+                            font-bold
                             mb-4
                             flex
                             items-center
@@ -89,19 +90,19 @@ const Footer = () => {
                         </div>
                         <div className="">
                             <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                                Products
+                                Services
                             </h6>
                             <p className="mb-2 sm:mb-4">
-                                <Link href="/" className="text-gray-600">MEN</Link>
+                                <Link href="/" className="text-gray-600">Events</Link>
                             </p>
                             <p className="mb-2 sm:mb-4">
-                                <Link href="/" className="text-gray-600">WOMEN</Link>
+                                <Link href="/" className="text-gray-600">Donations</Link>
                             </p>
                             <p className="mb-2 sm:mb-4">
-                                <Link href="/" className="text-gray-600">KIDS</Link>
+                                <Link href="/" className="text-gray-600">BLogs</Link>
                             </p>
                             <p>
-                                <Link href="/" className="text-gray-600">BRANDS</Link>
+                                <Link href="/" className="text-gray-600">Voluntier</Link>
                             </p>
                         </div>
                         <div className="">
@@ -132,7 +133,7 @@ const Footer = () => {
                                         d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
                                     </path>
                                 </svg>
-                                New York, NY 10012, US
+                                Dhaka,Bangladesh.
                             </p>
                             <p className="flex items-center justify-center md:justify-start mb-2 sm:mb-4">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
@@ -167,9 +168,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-center p-6 bg-gray-200">
-                    <span> &copy; {year} Copyright: </span>
-                    <a target={"_blank"} className="text-gray-600 font-semibold" href="https://github.com/Developer-Rakib">Developer Rakib</a>
+                <div className="text-center p-6 bg-secondary">
+                    <span className="text-white"> &copy; {year} Copyright: </span>
+                    <a target={"_blank"} className="text-yellow-100 font-semibold" href="https://github.com/Developer-Rakib">Developer Rakib & Anisha Zahan</a>
                 </div>
         </footer>
      );
