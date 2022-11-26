@@ -12,12 +12,9 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
-<<<<<<< HEAD
   const [service,setService] = useState({})
-  // const [state,setState] = useState()
-  const id = useRouter().query.id;
   let services = useSelector(state => state)
- console.log(services)
+//  console.log(services)
 
   if(services.length > 0 ){
     console.log('after');
@@ -29,7 +26,6 @@ const ServiceDetails = () => {
   console.log(service)
 
   if (services?.length < 1) {
-=======
   const [service, setService] = useState({})
   const router = useRouter()
   const id = useRouter().query.id;
@@ -47,7 +43,6 @@ const ServiceDetails = () => {
   }, [])
   console.log(service)
   if (Object.keys(service).length === 0) {
->>>>>>> d7ef0c50b8e42e4e14ce62975c295da375bda4f5
     return <NormalLoader />
   }
   return (
