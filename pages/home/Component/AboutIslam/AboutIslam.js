@@ -7,11 +7,11 @@ const AboutIslam = () => {
       <div className="about-content w-full xl:w-6/12 ">
         <div className="flex flex-col pr-4">
           <div className="mx-auto xl:mx-0 pt-14">
-          <img
-            className="w-52 "
-            src={"http://kodeforest.net/html/islamic/images/hdg-img.png"}
-            alt=""
-          />
+            <img
+              className="w-52 "
+              src={"http://kodeforest.net/html/islamic/images/hdg-img.png"}
+              alt=""
+            />
           </div>
           <h2 className="text-2xl font-semibold uppercase text-gray-700 my-3 tracking-wide">
             About Us
@@ -59,14 +59,14 @@ const AboutIslam = () => {
           <div className="flex justify-center mx-auto xl:mx-0 lg:justify-start space-x-4">
             <Link
               href='/'
-              class=" relative px-5 py-3 underline overflow-hidden font-medium text-secondary font-semibold bg-gray-100  border border-gray-100 rounded-0  shadow-inner group"
+              className=" relative px-5 py-3 underline overflow-hidden font-medium text-secondary font-semibold bg-gray-100  border border-gray-100 rounded-0  shadow-inner group"
             >
-              <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-              <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-              <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-              <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-              <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-secondary opacity-0 group-hover:opacity-100"></span>
-              <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">
+              <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+              <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+              <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+              <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+              <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-secondary opacity-0 group-hover:opacity-100"></span>
+              <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">
                 See More
               </span>
             </Link>

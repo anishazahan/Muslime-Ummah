@@ -10,7 +10,7 @@ const Events = () => {
       <ServicesBreadcam logoText={"Events"} />
       <div className='flex flex-wrap justify-center mx-auto'>
         {
-          events.map(event => <SingleEvent event={event} />)
+          events.map(event => <SingleEvent key={event._id} event={event} />)
         }
       </div>
     </div>

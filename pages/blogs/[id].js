@@ -1,3 +1,4 @@
+import { GetStaticProps, GetStaticPaths } from "next";
 import { FiUser } from "react-icons/fi";
 import { MdOutlineUpdate } from "react-icons/md";
 import { FaComment, FaQuoteLeft } from "react-icons/fa";
@@ -8,6 +9,8 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NormalLoader from "../../components/Loader/NormalLoader";
 import StyleBtn from "../../components/StyleButton/StyleBtn";
+import { data } from "autoprefixer";
+
 
 const BlogDetails = () => {
   const [blog, setBlog] = useState({})
@@ -16,7 +19,7 @@ const BlogDetails = () => {
   let blogs = useSelector(state => state.blog?.blogs)
 
   useEffect(() => {
-        const currentBlog = blogs.find(blog => blog.id == id);
+        const currentBlog = blogs.find(blog => blog._id == id);
         if (currentBlog !== undefined) {
           setBlog(currentBlog)
         }
@@ -51,13 +54,13 @@ const BlogDetails = () => {
           <p>
             <FiUser className=" text-primary font-semibold"></FiUser>
           </p>
-          <h2 className="text-xs text-gray-500"> By {blog.writer} </h2>
+          <h2 className="text-xs text-gray-500"> By {"blog.writer"} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
             <MdOutlineUpdate className=" text-primary font-semibold"></MdOutlineUpdate>
           </p>
-          <h2 className="text-xs text-gray-500"> {blog.date} </h2>
+          <h2 className="text-xs text-gray-500"> {"blog.date"} </h2>
         </div>
         <div className="flex items-center space-x-1">
           <p>
@@ -68,7 +71,7 @@ const BlogDetails = () => {
       </div>
       <div className="">
         <p className="text-sm text-gray-600 mb-3">
-          {blog.blogText}
+          {"blog.blogText"}
         </p>
       </div>
 
@@ -278,3 +281,72 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+
+// export const getStaticPaths = async () => {
+//   //* STEP A => Fetch all products data from the Heroku server
+//   // let blogs = useSelector(state => state.blog?.blogs)
+//   let blogs = [
+//     {
+//       id: "1",
+//       name: "Rakib"
+//     },
+//     { 
+//       id:"2",
+//       name: "rahat" 
+//     }
+//   ]
+
+  //* STEP B=> Confirm if the endpoint is active
+//   if (blogs.length > 0) {
+//     //* STEP C => Convert fetched data to JSON
+//     // const data = (await response.json()) as ProductType[];
+
+//     //* STEP D => Extract all slug values in the products object and avoid repeated value using getSlugs function
+//     const paths = blogs.map((id) => {
+//       return {
+//         // params: {id: movie.show.id.},
+//         params: {
+//           blogId: id.toString(),
+//         },
+//       };
+//     });
+
+//     return {
+//       paths,
+//       fallback: false,
+//     };
+//   }
+// };
+
+// export const getStaticProps = async (context) => {
+//   //* STEP A => Extract the slug of the URL (This value will be matched with possible product categories, if it exists)
+//   const { params } = context;
+//   const id = params.id;
+
+//   //* STEP B => Fetch all products data from the Heroku server
+//   // let blogs = useSelector(state => state.blog?.blogs)
+//   let blogs = [
+//     {
+//       id: "1",
+//       name: "Rakib"
+//     },
+//     { 
+//       id:"2",
+//       name: "rahat" 
+//     }
+//   ]
+
+//   //* STEP B=> Confirm if the endpoint is active
+//   if (blogs.length > 0) {
+//     // const data = (await response.json()) as ProductType[];
+
+//     //* STEP E => Filter out only the product associated to a specific product slug
+//     const blogData = blogs.find(blog => blog.id == id);
+
+//     return {
+//       props: {
+//         blog: blogData,
+//       },
+//     };
+//   }
+// };

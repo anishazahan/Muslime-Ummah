@@ -5,9 +5,9 @@ import { donationActions } from './donationSlice';
 const getDonations = () => {
 	return async dispatch => {
 		try {
-			const { data } = await axios.get('donations.json')
+			const { data } = await axios.get('http://localhost:5001/api/donation/allDonations')
 			if (data) {
-				dispatch(donationActions.getDonations(data))
+				dispatch(donationActions.getDonations(data.donations))
 			}
 		} catch (error) {
 			console.log(error)

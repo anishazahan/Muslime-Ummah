@@ -53,8 +53,8 @@ const Donation = () => {
                         <h2 className='text-3xl md:text-4xl font-semibold tracking-wide'>Make Your Donation</h2>
 
                         <div>
-                            <label for="donate" class="block text-sm font-medium text-gray-900 dark:text-gray-400">Select Fund</label>
-                            <select onChange={(e) => handleSelectFund(e)} id="donate" class="w-10/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <label htmlFor="donate" className="block text-sm font-medium text-gray-900 dark:text-gray-400">Select Fund</label>
+                            <select onChange={(e) => handleSelectFund(e)} id="donate" className="w-10/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 {
                                     funds.map(fund => {
                                         return (
@@ -98,38 +98,38 @@ const Donation = () => {
 
                                 <div className="">
                                     <input type="radio" id="html" name="fav_language" value="HTML" />
-                                    <label className="text-slate-500 font-semibold" for="html">Paypal</label>
+                                    <label className="text-slate-500 font-semibold" htmlFor="html">Paypal</label>
                                 </div>
 
                                 <div className="">
                                     <input type="radio" id="html" name="fav_language" value="HTML" />
-                                    <label className="text-slate-500 font-semibold" for="html">Strip</label>
+                                    <label className="text-slate-500 font-semibold" htmlFor="html">Strip</label>
                                 </div>
 
                                 <div className="">
                                     <input type="radio" id="html" name="fav_language" value="HTML" />
-                                    <label className="text-slate-500 font-semibold" for="html">Credit Card</label>
+                                    <label className="text-slate-500 font-semibold" htmlFor="html">Credit Card</label>
                                 </div>
                                 <div className="">
                                     <input type="radio" id="html" name="fav_language" value="HTML" />
-                                    <label className="text-slate-500 font-semibold" for="html">Other Sourch</label>
+                                    <label className="text-slate-500 font-semibold" htmlFor="html">Other Sourch</label>
                                 </div>
                             </div>
                         </div>
 
-                        
+
 
 
                         <form className='w-full'>
-                        <div>
-                            <h2 className='text-[17px] text-gray-900 font-medium tracking-wide lg:mt-4'>Chose Amount</h2>
-                            <div className="input flex  space-x-2">
-                                <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black cursor-pointer' type="text" placeholder='$' value={200} readOnly/>
-                                <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black  cursor-pointer' type="text" placeholder='$' value={400} readOnly/>
-                                <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black  cursor-pointer' type="text" placeholder='$' value={500} readOnly/>
-                                <input className='border p-2 m-1 text-gray-500 placeholder-black ' type="number" placeholder=' Other Amount $' />
+                            <div>
+                                <h2 className='text-[17px] text-gray-900 font-medium tracking-wide lg:mt-4'>Chose Amount</h2>
+                                <div className="input flex  space-x-2">
+                                    <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black cursor-pointer' type="text" placeholder='$' value={200} readOnly />
+                                    <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black  cursor-pointer' type="text" placeholder='$' value={400} readOnly />
+                                    <input className='border w-1/6 lg:w-1/12 p-2 m-1 text-gray-500 placeholder-black  cursor-pointer' type="text" placeholder='$' value={500} readOnly />
+                                    <input className='border p-2 m-1 text-gray-500 placeholder-black ' type="number" placeholder=' Other Amount $' />
+                                </div>
                             </div>
-                        </div>
 
                             <div className="input-field flex flex-col w-full">
 

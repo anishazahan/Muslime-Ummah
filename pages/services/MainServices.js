@@ -20,7 +20,7 @@ const MainServices = () => {
         Ethical & Moral Beliefs That Guides To The Straight Path!
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-8 lg:gap-y-6 mx-auto">
-          {services?.map((service) => <SingleService key={service.id} service={service}></SingleService>)}
+          {services?.map((service) => <SingleService key={service._id} service={service}></SingleService>)}
         </div>
 
       </div>

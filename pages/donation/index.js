@@ -14,7 +14,7 @@ const index = () => {
                <ServicesBreadcam logoText={"Donation"} />
       <div className='flex flex-wrap justify-center mx-auto'>
         {
-          donations.map(donation => <SingleDonation donation={donation} />)
+          donations.map(donation => <SingleDonation key={donation._id} donation={donation} />)
         }
       </div>
 

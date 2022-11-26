@@ -1,6 +1,4 @@
 import React from 'react'
-
-import './Banner.css'
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 

@@ -7,6 +7,7 @@ const getBlogs = () => {
 		try {
 			const { data } = await axios.get('blogs.json')
 			if (data) {
+				// console.log(data);
 				dispatch(blogActions.getBlogs(data))
 			}
 		} catch (error) {
