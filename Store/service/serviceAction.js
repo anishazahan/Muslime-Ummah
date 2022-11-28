@@ -5,9 +5,9 @@ import { serviceActions } from './serviceslice';
 const getServices = () => {
 	return async dispatch => {
 		try {
-			const { data } = await axios.get('http://localhost:5001/api/service/allServices')
+			const { data } = await axios.get('services.json')
 			if (data) {
-				dispatch(serviceActions.getServices(data.services))
+				dispatch(serviceActions.getServices(data))
 			}
 		} catch (error) {
 			console.log(error)

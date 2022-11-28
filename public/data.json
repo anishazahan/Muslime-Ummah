@@ -1,65 +1,52 @@
 [
-
-{
-    "id":"1",
-    "cateogory":"ramdan",
-    "img":"https://cdn.pixabay.com/photo/2015/10/27/06/47/prayer-1008385__340.jpg"
-  
-    
-},
-{
-    "id":"2",
-    "cateogory":"ramdan",
-    "img":"../../muslime-ummah/src/img/gallary7.jpg"
-    
-},
-{
-    "id":"3",
-    "cateogory":"ramdan",
-    "img":"../../muslime-ummah/src/img/gallary9.jpg"
-    
-},
-
-{
-    "id":"5",
-    "cateogory":"helping",
-    "img":"../../muslime-ummah/src/img/gallary.jpg"
-    
-},
-{
-    "id":"6",
-    "cateogory":"helping",
-    "img":"../../muslime-ummah/src/img/gallary2.jpg"
-    
-},
-{
-    "id":"7",
-    "cateogory":"helping",
-    "img":"../../muslime-ummah/src/img/gallary3.jpg"
-    
-},
-{
-    "id":"8",
-    "cateogory":"volunteir",
-    "img":"../../muslime-ummah/src/img/gallay4.jpg"
-    
-},
-{
-    "id":"9",
-    "cateogory":"volunteir",
-    "img":"../../muslime-ummah/src/img/gallary9.jpg"
-    
-},
-{
-    "id":"10",
-    "cateogory":"volunteir",
-    "img":"../../muslime-ummah/src/img/gallary3.jpg"
-    
-},
-{
-    "id":"11",
-    "cateogory":"volunteir",
-    "img":"../../muslime-ummah/src/img/galary11.jpg"
-    
-}
+    {
+        "_id": "1",
+        "cateogory": "ramdan",
+        "img": "https://cdn.pixabay.com/photo/2015/10/27/06/47/prayer-1008385__340.jpg"
+    },
+    {
+        "_id": "2",
+        "cateogory": "ramdan",
+        "img": "../../muslime-ummah/src/img/gallary7.jpg"
+    },
+    {
+        "_id": "3",
+        "cateogory": "ramdan",
+        "img": "../../muslime-ummah/src/img/gallary9.jpg"
+    },
+    {
+        "_id": "5",
+        "cateogory": "helping",
+        "img": "../../muslime-ummah/src/img/gallary.jpg"
+    },
+    {
+        "_id": "6",
+        "cateogory": "helping",
+        "img": "../../muslime-ummah/src/img/gallary2.jpg"
+    },
+    {
+        "_id": "7",
+        "cateogory": "helping",
+        "img": "../../muslime-ummah/src/img/gallary3.jpg"
+    },
+    {
+        "_id": "8",
+        "cateogory": "volunteir",
+        "img": "../../muslime-ummah/src/img/gallay4.jpg"
+    },
+    {
+        "_id": "9",
+        "cateogory": "volunteir",
+        "img": "../../muslime-ummah/src/img/gallary9.jpg"
+    },
+    {
+        "_id": "10",
+        "cateogory": "volunteir",
+        "img": "../../muslime-ummah/src/img/gallary3.jpg"
+    },
+    {
+        "_id": "11",
+        "cateogory": "volunteir",
+        "img": "../../muslime-ummah/src/img/galary11.jpg"
+    }
 ]

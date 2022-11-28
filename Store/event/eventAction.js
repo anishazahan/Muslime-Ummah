@@ -5,9 +5,9 @@ import { eventActions } from './eventSlice';
 const getEvents = () => {
 	return async dispatch => {
 		try {
-			const { data } = await axios.get('http://localhost:5001/api/event/allEvents')
+			const { data } = await axios.get('events.json')
 			if (data) {
-				dispatch(eventActions.getEvents(data.events))
+				dispatch(eventActions.getEvents(data))
 			}
 		} catch (error) {
 			console.log(error)

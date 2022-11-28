@@ -24,7 +24,7 @@ const BlogDetails = () => {
           setBlog(currentBlog)
         }
         else{
-          router.push("/blogs")
+          router.push("/")
           location.reload(); 
         }
   }, [])
