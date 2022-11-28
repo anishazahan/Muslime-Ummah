@@ -26,7 +26,6 @@ const ServiceDetails = () => {
         location.reload();
       }
     }, [])
-    // console.log(service)
     if (Object.keys(service).length === 0) {
       return <NormalLoader />
     }
