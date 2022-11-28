@@ -11,40 +11,25 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
-  const [service,setService] = useState({})
-  let services = useSelector(state => state)
-//  console.log(services)
-
-  // if(services.length > 0 ){
-  //   console.log('after');
-  //   console.log(services);
-  //       setService(services?.find(service => service.id == id))
-        
-  // }
-  
-  // console.log(service)
-
-  if (services?.length < 1) {
-  const [service, setService] = useState({})
-  const router = useRouter()
-  const id = useRouter().query.id;
-  let services = useSelector(state => state.service.services)
-  }
-  // console.log(services)
-  useEffect(() => {
-    const currentService = services.find(service => service.id == id)
-    if (currentService !== undefined) {
-      setService(currentService)
+    const [service, setService] = useState({})
+    const router = useRouter()
+    const id = useRouter().query.id;
+    let services = useSelector(state => state.service.services)
+    // console.log(services)
+    useEffect(() => {
+      const currentService = services.find(service => service._id == id)
+      if (currentService !== undefined) {
+        setService(currentService)
+      }
+      else {
+        router.push("/services")
+        location.reload();
+      }
+    }, [])
+    // console.log(service)
+    if (Object.keys(service).length === 0) {
+      return <NormalLoader />
     }
-    else {
-      router.push("/services")
-      location.reload(); 
-    }
-  }, [])
-  // console.log(service)
-  if (Object.keys(service).length === 0) {
-    return <NormalLoader />
-  }
   return (
     <>
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
