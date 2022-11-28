@@ -11,26 +11,24 @@ import ServicesBreadcam from "./ServicesBreadcam";
 
 const ServiceDetails = () => {
   const [toggle, setToggle] = useState(false);
-  const [service, setService] = useState({});
-  const router = useRouter();
-  const id = useRouter().query.id;
-  console.log(id)
-  let services = useSelector((state) => state.service.services);
-  console.log(services)
-  const currentService = services.length >0 && services.find((service) => service.id == id);
-  // useEffect(() => {
-    
-  //   if (currentService !== undefined) {
-  //     setService(currentService);
-  //   } else {
-  //     router.push("/services");
-  //     // location.reload();
-  //   }
-  // }, []);
-  // console.log(service);
-  if (currentService == undefined) {
-    return <NormalLoader />;
-  }
+    const [service, setService] = useState({})
+    const router = useRouter()
+    const id = useRouter().query.id;
+    let services = useSelector(state => state.service.services)
+    // console.log(services)
+    useEffect(() => {
+      const currentService = services.find(service => service._id == id)
+      if (currentService !== undefined) {
+        setService(currentService)
+      }
+      else {
+        router.push("/services")
+        location.reload();
+      }
+    }, [])
+    if (Object.keys(service).length === 0) {
+      return <NormalLoader />
+    }
   return (
     <>
       <ServicesBreadcam logoText={"OUR SERVICES DETAILS"}></ServicesBreadcam>
